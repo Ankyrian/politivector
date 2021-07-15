@@ -1,0 +1,89 @@
+body {
+    background-color: #e3e3e3;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h2 {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+}
+
+hr {
+  opacity: 0.4;
+}
+
+footer {
+  background-color: #ABABAB;
+  color: #FFFFFF;
+  margin-top: 40px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+    background-color: #11334c;
+    border: none;
+    border-radius: 9pt;
+    color: white;
+    cursor: pointer;
+    font-size: 300%;
+    font-weight: bold;
+    padding: 20px 25px;
+}
+
+#politivector-header {
+  background-color: #11334c;
+  color: #e3e3e3;
+  font-family: "Times New Roman", serif;
+  font-size: 300%;
+  padding: 15px;
+}
+
+#inner-header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#start-test-banner {
+  background-image: url("../images/HomepageBanner.png");
+  background-size: cover;
+  background-repeat:no-repeat;
+  height: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#text-content {
+  margin: auto;
+  width: 60%;
+}
+
+#d-agree {
+    background-color: #027508;
+}
+
+#agree {
+    background-color: #00d10b;
+}
+
+#neutral {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+#disagree {
+    background-color: #e00b00;
+}
+
+#d-disagree {
+    background-color: #8c0700;
+}
