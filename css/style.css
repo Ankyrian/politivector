@@ -59,12 +59,32 @@ footer {
   padding: 5px 25px;
 }
 
+.question-button {
+  border-radius: 8pt;
+  color: #FFFFFF;
+  font-size: large;
+  margin: 6px;
+  height: 8%;
+  width: 70%;
+}
+
 .pv_header {
   background-color: #11334c;
   color: #e3e3e3;
   font-family: "Times New Roman", serif;
-  font-size: 300%;
   padding: 15px;
+}
+
+.question-header {
+  font-size: 250%;
+}
+
+.page-header {
+  font-size: 300%;
+}
+
+.question-content {
+  text-align: center;
 }
 
 #homepage-header {
@@ -98,6 +118,13 @@ footer {
   width: 60%;
 }
 
+#question-font {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 180%;
+  text-align: center;
+}
+
 #d-agree {
     background-color: #027508;
 }
@@ -107,8 +134,7 @@ footer {
 }
 
 #neutral {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #ABABAB;
 }
 
 #disagree {
@@ -119,9 +145,17 @@ footer {
     background-color: #8c0700;
 }
 
+#back {
+  background-color: #11334c;
+}
+
 @media only screen and (max-width: 1100px) {
   .banner {
     height: 30%;
+  }
+
+  .question-button {
+    width: 90%;
   }
 
   #text-content {
