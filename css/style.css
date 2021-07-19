@@ -43,20 +43,41 @@ footer {
 }
 
 .button {
-    background-color: #11334c;
     border: none;
-    border-radius: 9pt;
     cursor: pointer;
-    padding: 5px 25px;
 }
 
-#politivector-header {
+.back-button {
+  left: 5px;
+  position: absolute;
+  background-color: transparent;
+}
+
+.start-test-button {
+  background-color: #11334c;
+  border-radius: 9pt;
+  padding: 5px 25px;
+}
+
+.pv_header {
   background-color: #11334c;
   color: #e3e3e3;
   font-family: "Times New Roman", serif;
   font-size: 300%;
   padding: 15px;
 }
+
+#homepage-header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+ #header-with-button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+ }
 
 #inner-header {
   align-items: center;
