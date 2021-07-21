@@ -125,6 +125,11 @@ footer {
   text-align: center;
 }
 
+#sticky-footer {
+  position: fixed;
+  bottom: 0px;
+}
+
 #d-agree {
     background-color: #027508;
 }
@@ -149,17 +154,21 @@ footer {
   background-color: #11334c;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 800px) {
   .banner {
     height: 30%;
   }
 
-  /* .question-button {
-    width: 90%;
-  } */
-
   #text-content {
     margin: auto;
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #question-font {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    font-size: 250%;
   }
 }
