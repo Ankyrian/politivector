@@ -62,9 +62,9 @@ footer {
 .question-button {
   border-radius: 8pt;
   color: #FFFFFF;
-  font-size: large;
+  font-size: 150%;
   margin: 6px;
-  height: 8%;
+  height: 50px;
   width: 70%;
 }
 
@@ -154,9 +154,9 @@ footer {
     height: 30%;
   }
 
-  .question-button {
+  /* .question-button {
     width: 90%;
-  }
+  } */
 
   #text-content {
     margin: auto;
