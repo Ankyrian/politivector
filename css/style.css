@@ -45,6 +45,7 @@ footer {
 .button {
     border: none;
     cursor: pointer;
+    outline: none;
 }
 
 .back-button {
