@@ -6,6 +6,7 @@ svg {
 .d_button {
   background-color: #0e446c;
   color: white;
+  cursor: pointer;
   border-style: solid;
   border-color: #11334c;
   border-width: 2px, 0px, 2px, 0px;
