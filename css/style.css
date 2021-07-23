@@ -146,24 +146,22 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-  .banner {
-    height: 30%;
-  }
-
-  #text-content {
-    margin: auto;
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
   .question-button {
     font-size: 250%;
+  }
+
+  .banner {
+    height: 30%;
   }
 
   #question-font {
     margin-top: 200px;
     margin-bottom: 200px;
     font-size: 350%;
+  }
+
+  #text-content {
+    margin: auto;
+    width: 90%;
   }
 }
