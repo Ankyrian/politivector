@@ -18,7 +18,6 @@
 .quote_container {
   background-color: #11334c;
   color: #FFFFFF;
-  height: 15%;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -92,6 +91,11 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .quote_container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   #quote_text {
     font-size: 14px;
     text-align: justify;
