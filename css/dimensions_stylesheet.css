@@ -1,8 +1,3 @@
-svg {
-  width: 100%;
-  max-width: 100%;
-}
-
 .d_button {
   background-color: #0e446c;
   color: white;
@@ -29,24 +24,10 @@ svg {
   margin: 0px;
 }
 
-#body_column {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 #description_text {
   margin: 25px;
   text-align: justify;
   font-size: 1.5vw;
-}
-
-#dimensions_content {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  flex: 1 1 auto;
 }
 
 #dimension_image {
@@ -62,16 +43,6 @@ svg {
 
 #dimensions_panel {
   background-color: #11334c;
-  width: 20%;
-  overflow: auto;
-  height: 100%;
-  max-height: 100%;
-}
-
-#dimensions_description {
-  width: 80%;
-  height: 100%;
-  max-height: 100%;
 }
 
 #quote_text {
@@ -80,4 +51,48 @@ svg {
   text-align: center;
   font-size: 1.6vw;
   width: 80%;
+}
+
+@media only screen and (min-width: 800px) {
+  .quote_container {
+    height: 15%;
+  }
+
+  #body_column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  #dimensions_content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex: 1 1 auto;
+  }
+
+  #dimensions_description {
+    width: 80%;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  #dimensions_panel {
+    background-color: #11334c;
+    width: 20%;
+    overflow: auto;
+    height: 100%;
+    max-height: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #quote_text {
+    font-size: 16px;
+  }
+
+  #description_text {
+    font-size: 12px;
+  }
 }
