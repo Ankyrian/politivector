@@ -89,7 +89,8 @@
 
 @media only screen and (max-width: 800px) {
   #quote_text {
-    font-size: 16px;
+    font-size: 14px;
+    text-align: justify;
   }
 
   #description_text {
