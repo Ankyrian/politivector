@@ -65,8 +65,8 @@ footer {
   color: #FFFFFF;
   font-size: 150%;
   margin: 6px;
-  height: 50px;
-  width: 70%;
+  height: 45px;
+  width: 75%;
 }
 
 .pv_header {
@@ -146,7 +146,7 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .question-button {
-    font-size: 250%;
+    font-size: 135%;
   }
 
   .banner {
@@ -154,9 +154,9 @@ footer {
   }
 
   #question-font {
-    margin-top: 200px;
-    margin-bottom: 200px;
-    font-size: 350%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 150%;
   }
 
   #text-content {
