@@ -88,8 +88,6 @@ footer {
   text-align: center;
 }
 
-
-
 #inner-header {
   align-items: center;
   display: flex;
@@ -162,7 +160,6 @@ footer {
   }
 
   #text-content {
-    margin: auto;
     width: 90%;
   }
 }
