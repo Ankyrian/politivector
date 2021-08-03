@@ -1,8 +1,112 @@
-.results_title {
+.img-left {
+  padding-right: 5px;
+}
+
+.img-right {
+  padding-left: 5px;
+}
+
+.results-title {
   background-color: #0e446c;
   color: #FFFFFF;
   font-size: 30px;
   font-weight: bold;
   padding: 10px;
   text-align: center;
+}
+
+.results-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.results-panel {
+  border-color: #11334c;
+  border-style: solid;
+  border-width: 2px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.rail {
+  color: #fff;
+  height: 20pt;
+  line-height: 20pt;
+  padding: 8pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+}
+
+.dimension-text {
+  position: relative;
+  justify-content: space-between;
+  margin-left: 160px;
+  top: 15px;
+  right: 160px;
+}
+
+.aligned {
+  position: relative;
+  top: 15px;
+  width: 50%;
+}
+
+.left-aligned {
+  text-align: left;
+  margin-left: 85px;
+}
+
+.right-aligned {
+  text-align: right;
+  margin-right: 85px;
+}
+
+.neutral {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+#nationalism {
+  background-color: #6e2421;
+  text-align: right;
+  width: 50%;
+}
+
+#int-nat-neutral {
+  width: 15%;
+}
+
+#internationalism {
+  background-color: #17223f;
+  width: 35%;
+}
+
+#globalism {
+  background-color: #515151;
+  width: 40%;
+}
+
+#glo-iso-neutral {
+  width: 20%;
+}
+
+#isolationism {
+  background-color: #5c3365;
+  width: 40%;
 }
