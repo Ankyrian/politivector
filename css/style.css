@@ -69,6 +69,10 @@ footer {
   width: 75%;
 }
 
+.header-logo {
+  height: 90px;
+}
+
 .pv_header {
   background-color: #11334c;
   color: #e3e3e3;
@@ -78,6 +82,10 @@ footer {
 
 .question-header {
   font-size: 250%;
+}
+
+.question-header-logo {
+  height: 55px;
 }
 
 .page-header {
@@ -147,16 +155,33 @@ footer {
 @media only screen and (max-width: 800px) {
   .question-button {
     font-size: 135%;
+    width: 85%;
+  }
+
+  .question-header {
+    font-size: 150%;
+  }
+
+  .question-header-logo {
+    height: 45px;
   }
 
   .banner {
     height: 30%;
   }
 
-  #question-font {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  .page-header {
     font-size: 150%;
+  }
+
+  .header-logo {
+    height: 45px;
+  }
+
+  #question-font {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 120%;
   }
 
   #text-content {
