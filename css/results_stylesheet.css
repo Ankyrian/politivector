@@ -105,3 +105,9 @@
   margin-bottom: 20px;
   width: 85%;
 }
+
+@media only screen and (max-width: 800px) {
+  #results-panel-content {
+    width: 100%;
+  }
+}
