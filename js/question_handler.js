@@ -1,13 +1,82 @@
-var dimensionScores = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var dimensionScores = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]];
 
-// TESTING DATA
-var testQuestion = {
-  text: 'Test question Test question Test question Test question Test question Test question Test question Test question'
+var randomizedQuestions;
+var currentQuestion;
+var currentIndex = -1;
+var changesHistory = [];
+
+function questionPageInit() {
+  randomizedQuestions = shuffle(questions);
+  nextQuestion()
 }
-//
 
-function replaceQuestion(question) {
-  document.getElementById('question-font').innerHTML = question.text;
+function questionAnswered(choice) {
+  dimensionId = currentQuestion.dimension;
+  switch (choice) {
+    case 0:
+      addScores(dimensionId, currentQuestion.aa);
+      break;
+    case 1:
+      addScores(dimensionId, currentQuestion.pa);
+      break;
+    case 2:
+      addScores(dimensionId, currentQuestion.n);
+      break;
+    case 3:
+      addScores(dimensionId, currentQuestion.pd);
+      break;
+    case 4:
+      addScores(dimensionId, currentQuestion.ad);
+      break;
+    default:
+      console.log("Unrecognized choice ID!");
+      break;
+  }
+  nextQuestion();
 }
 
-// document.addEventListener('DOMContentLoaded', replaceQuestion(testQuestion), false);
+function nextQuestion() {
+  currentIndex++;
+  if(currentIndex >= randomizedQuestions.length) {
+    console.log(dimensionScores);
+  }
+  else {
+    currentQuestion = randomizedQuestions[currentIndex];
+    document.getElementById('question-font').innerHTML = currentQuestion.text;
+  }
+}
+
+function addScores(dimensionId, scoreArr) {
+  var addedScore = scoreArr[0];
+  changesHistory[currentIndex] = [dimensionId, addedScore, 0];
+  dimensionScores[dimensionId][0] += addedScore;
+  if(scoreArr.length == 2) {
+    neutralScore = scoreArr[1];
+    changesHistory[currentIndex][2] = neutralScore;
+    dimensionScores[dimensionId][1] += neutralScore;
+  }
+}
+
+function previousQuestion() {
+  if(currentIndex >= 1) {
+    currentIndex--;
+    var history = changesHistory[currentIndex];
+    dimensionScores[history[0]][0] -= history[1];
+    dimensionScores[history[0]][1] -= history[2];
+    currentQuestion = randomizedQuestions[currentIndex];
+    document.getElementById('question-font').innerHTML = currentQuestion.text;
+  }
+}
+
+// Fisher–Yates Shuffle
+function shuffle(arr) {
+  var current = arr.length;
+  var next = 0;
+
+  while (0 !== current) {
+    next = Math.floor(current * Math.random());
+    current--;
+    [arr[current], arr[next]] = [arr[next], arr[current]];
+  }
+  return arr;
+}

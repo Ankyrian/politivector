@@ -3,10 +3,11 @@
         <title>Politivector Test</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
+        <script src="../data/questions.js"></script>
         <script src="../js/question_handler.js"></script>
     </head>
 
-    <body onload="replaceQuestion(testQuestion);">
+    <body onload="questionPageInit();">
       <div class="pv_header question-header">
         <div id="inner-header">
           <img class="question-header-logo" src="../images/Logo.png" alt="Politivector Logo">
@@ -21,22 +22,22 @@
 
         <div class="question-content">
           <div>
-            <button class="button question-button" id="d-agree">Absolutely Agree</button>
+            <button class="button question-button" id="d-agree" onclick="questionAnswered(0);">Absolutely Agree</button>
           </div>
           <div>
-            <button class="button question-button" id="agree">Partially Agree</button>
+            <button class="button question-button" id="agree" onclick="questionAnswered(1);">Partially Agree</button>
           </div>
           <div>
-            <button class="button question-button" id="neutral">Neutral</button>
+            <button class="button question-button" id="neutral" onclick="questionAnswered(2);">Neutral</button>
           </div>
           <div>
-            <button class="button question-button"  id="disagree">Partially Disagree</button>
+            <button class="button question-button"  id="disagree" onclick="questionAnswered(3);">Partially Disagree</button>
           </div>
           <div>
-              <button class="button question-button" id="d-disagree">Absolutely Disagree</button>
+              <button class="button question-button" id="d-disagree" onclick="questionAnswered(4);">Absolutely Disagree</button>
           </div>
           <div>
-            <button class="button question-button" id="back">Back</button>
+            <button class="button question-button" id="back" onclick="previousQuestion()">Back</button>
           </div>
         </div>
       </div>
