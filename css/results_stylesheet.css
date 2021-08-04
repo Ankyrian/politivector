@@ -1,9 +1,13 @@
 .img-left {
+  position: relative;
   padding-right: 5px;
+  left: 15px;
 }
 
 .img-right {
+  position: relative;
   padding-left: 5px;
+  right: 15px;
 }
 
 .results-title {
@@ -22,6 +26,8 @@
 }
 
 .results-panel {
+  background-image: url("../images/resultsMapBG.png");
+  background-size: cover;
   border-color: #11334c;
   border-style: solid;
   border-width: 2px;
@@ -34,6 +40,10 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+
+.text-row {
+  margin-top: -8px;
 }
 
 .column {
@@ -50,6 +60,11 @@
   padding: 10px;
   margin-top: 6px;
   margin-bottom: 6px;
+}
+
+.rail-text {
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .dimension-text {
@@ -84,32 +99,9 @@
   text-align: center;
 }
 
-#nationalism {
-  background-color: #6e2421;
-  text-align: right;
-  width: 50%;
-}
-
-#int-nat-neutral {
-  width: 15%;
-}
-
-#internationalism {
-  background-color: #17223f;
-  width: 35%;
-}
-
-#globalism {
-  background-color: #515151;
-  width: 40%;
-}
-
-#glo-iso-neutral {
-  width: 20%;
-}
-
-#isolationism {
-  background-color: #5c3365;
-  text-align: right;
-  width: 40%;
+#results-panel-content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 85%;
 }
