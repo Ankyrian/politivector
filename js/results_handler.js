@@ -30,11 +30,11 @@ function resultsPageInit() {
           </div>
           <div class="row">
             <img src="../images/${leftDimension.imageSrc}" alt="${leftDimension.name} Logo" height="80px" class="img-left">
-            <div class="rail" style="background-color: #${leftDimension.color}; text-align: left; width: ${leftPercent}%;">
+            <div class="rail" style="background-color: #${leftDimension.color}; text-align: left; width: ${calculateWidth(leftPercent)}%;">
               <span class="rail-text">${leftPercent}%</span>
             </div>
-            <div class="rail neutral" style="width: ${neutralPercent}%;">${neutralPercent}%</div>
-            <div class="rail" style="background-color: #${rightDimension.color}; text-align: right; width: ${rightPercent}%;">
+            ${neutralPercent > 0 ? `<div class="rail neutral" style="width: ${calculateWidth(neutralPercent)}%;">${neutralPercent}%</div>` : ``}
+            <div class="rail" style="background-color: #${rightDimension.color}; text-align: right; width: ${calculateWidth(rightPercent)}%;">
               <span class="rail-text">${rightPercent}%</span>
             </div>
             <img src="../images/${rightDimension.imageSrc}" alt="${rightDimension.name} Logo" height="80px" class="img-right">
@@ -88,4 +88,14 @@ function calculateScorePercentages(left, right) {
   console.log(neutralPercent);
   console.log(rightPercent);
   return [leftPercent, neutralPercent, rightPercent];
+}
+
+function calculateWidth(percent) {
+  if(percent == 0) {
+    return 0;
+  }
+  else if(percent < 6) {
+    return 5;
+  }
+  return percent
 }
