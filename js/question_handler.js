@@ -11,31 +11,32 @@ function questionPageInit() {
 }
 
 function questionAnswered(choice) {
+  dimensionId = currentQuestion.dimension;
+  switch (choice) {
+    case 0:
+      addScores(dimensionId, currentQuestion.aa);
+      break;
+    case 1:
+      addScores(dimensionId, currentQuestion.pa);
+      break;
+    case 2:
+      addScores(dimensionId, currentQuestion.n);
+      break;
+    case 3:
+      addScores(dimensionId, currentQuestion.pd);
+      break;
+    case 4:
+      addScores(dimensionId, currentQuestion.ad);
+      break;
+    default:
+      console.log("Unrecognized choice ID!");
+      break;
+  }
   if(currentIndex + 1 >= randomizedQuestions.length) {
-    console.log(dimensionScores);
+    // console.log(dimensionScores);
+    initializesResults();
   }
   else {
-    dimensionId = currentQuestion.dimension;
-    switch (choice) {
-      case 0:
-        addScores(dimensionId, currentQuestion.aa);
-        break;
-      case 1:
-        addScores(dimensionId, currentQuestion.pa);
-        break;
-      case 2:
-        addScores(dimensionId, currentQuestion.n);
-        break;
-      case 3:
-        addScores(dimensionId, currentQuestion.pd);
-        break;
-      case 4:
-        addScores(dimensionId, currentQuestion.ad);
-        break;
-      default:
-        console.log("Unrecognized choice ID!");
-        break;
-    }
     nextQuestion();
   }
 }
@@ -55,6 +56,14 @@ function addScores(dimensionId, scoreArr) {
     changesHistory[currentIndex][2] = neutralScore;
     dimensionScores[dimensionId][1] += neutralScore;
   }
+}
+
+function initializesResults() {
+  var generatedUrl = `results.html?d0=${dimensionScores[0][0]},${dimensionScores[0][1]}`;
+  for(var i = 1; i < dimensionScores.length; i++) {
+    generatedUrl += `&d${i}=${dimensionScores[i][0]},${dimensionScores[i][1]}`
+  }
+  location.href = generatedUrl;
 }
 
 function previousQuestion() {
