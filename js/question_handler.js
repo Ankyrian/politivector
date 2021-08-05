@@ -33,7 +33,6 @@ function questionAnswered(choice) {
       break;
   }
   if(currentIndex + 1 >= randomizedQuestions.length) {
-    // console.log(dimensionScores);
     initializesResults();
   }
   else {
@@ -75,6 +74,7 @@ function previousQuestion() {
     dimensionScores[history[0]][1] -= history[2];
     currentQuestion = randomizedQuestions[currentIndex];
     document.getElementById('question-font').innerHTML = currentQuestion.text;
+    document.getElementById('question-number').innerHTML = `Question ${currentIndex + 1} / ${questions.length}`
   }
 }
 
