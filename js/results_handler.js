@@ -14,6 +14,10 @@ function getDimensionById(dimensionId) {
 function resultsPageInit() {
   var resultsBody = document.getElementById('results-panel-content');
   var scoresMap = generateScoresMap();
+  if(window.matchMedia("(max-width: 800px)").matches) {
+    document.getElementById("special-footer").style.position = "fixed";
+    document.getElementById("special-footer").style.bottom = "0px";
+  }
   preferredRenderOrder.forEach(element => {
     var leftDimension = getDimensionById(element[0]);
     var rightDimension = getDimensionById(element[1]);
