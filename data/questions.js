@@ -37,7 +37,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Humans, either through evolutionary superiority or divine decree, are the rightful owners of nature.",
+    "text": "Humans, either through their superiority, are the rightful owners of nature.",
     "dimension": 0,
     "aa": [7],
     "pa": [5, 0.5],
@@ -46,7 +46,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "The value of a single human life is greater than the value of a small ecosystem.",
+    "text": "Sacrificing ecosystems for human use is acceptable.",
     "dimension": 0,
     "aa": [7],
     "pa": [5, 0.5],
@@ -55,7 +55,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Civilizational advancement cannot be abandoned for the sake of inconsequential effects on nature.",
+    "text": "Advancement of civilization cannot be abandoned for the sake of inconsequential effects on nature.",
     "dimension": 0,
     "aa": [7],
     "pa": [5, 0.5],
@@ -102,7 +102,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Diverse societies tend to dissolve into unitary formations.",
+    "text": "Diverse societies tend to fraction into unitary parts.",
     "dimension": 1,
     "aa": [7],
     "pa": [5, 0.5],
@@ -111,7 +111,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "We live in an age where nation-states have replaced empires, multiculturalism is inapplicable in the modern world.",
+    "text": "In the modern world, where nation states have replaced empires, multiculturalism is inapplicable.",
     "dimension": 1,
     "aa": [7],
     "pa": [5, 0.5],
@@ -178,7 +178,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Given the many criticisms of Athenian democracy, participatory democracy is an even more foolish attempt.",
+    "text": "Given the many historical examples of democracies degrading into tyrannies, participatory democracy is a foolish attempt.",
     "dimension": 3,
     "aa": [7],
     "pa": [5, 0.5],
@@ -216,7 +216,7 @@ var questions = [
 
   // Capitalism
   {
-    "text": "Human nature’s tendency to selfishness is a reliable basis for economical models.",
+    "text": "Human nature’s tendency to selfishness is a reliable basis for economic models.",
     "dimension": 4,
     "aa": [7],
     "pa": [5, 0.5],
@@ -243,7 +243,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Within legality, no harm comes from corporate endeavors.",
+    "text": "Within legal boundaries, no harm comes from corporate endeavors.",
     "dimension": 4,
     "aa": [7],
     "pa": [5, 0.5],
@@ -263,7 +263,7 @@ var questions = [
 
   // Communism
   {
-    "text": "Revenues and capital should be taxed proportionally to ensure proper distribution of wealth.",
+    "text": "Revenues and capital should be taxed proportionally to ensure fair distribution of wealth.",
     "dimension": 5,
     "aa": [7],
     "pa": [5, 0.5],
@@ -272,7 +272,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Minimum salary must be at a level enough to sustain entertainment expenses, in addition to basic need spendings.",
+    "text": "Minimum salary must be enough to sustain entertainment expenses, in addition to basic need spendings.",
     "dimension": 5,
     "aa": [7],
     "pa": [5, 0.5],
@@ -346,7 +346,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Modernity is the facade of imposed degeneration.",
+    "text": "Modernity is imposed degeneration in disguise.",
     "dimension": 6,
     "aa": [7],
     "pa": [5, 0.5],
@@ -357,7 +357,7 @@ var questions = [
 
   // Democracy
   {
-    "text": "In elections and referendums, extreme ideas cancel one another, extracting the most reasonable option.",
+    "text": "In elections and referendums extreme ideas cancel one another, leaving only the most reasonable option.",
     "dimension": 7,
     "aa": [7],
     "pa": [5, 0.5],
@@ -413,7 +413,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Nature has intrinsic rights to protection regardless of human law.",
+    "text": "Nature has intrinsic rights to protection, regardless of human law.",
     "dimension": 8,
     "aa": [7],
     "pa": [5, 0.5],
@@ -469,7 +469,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Those who have higher influence on state affairs than the average voter deserve their position.",
+    "text": "Those who have higher influence on state affairs than the average voter, deserve their position.",
     "dimension": 9,
     "aa": [7],
     "pa": [5, 0.5],
@@ -478,7 +478,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "The educated few are much more difficult to manipulate than the ignorant majority, preventing government corruption.",
+    "text": "The educated few are much more difficult to manipulate than the ignorant majority, thus preventing government corruption.",
     "dimension": 9,
     "aa": [7],
     "pa": [5, 0.5],
@@ -487,7 +487,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Vote equality wrongfully elevates the uneducated many to the same value as the competent elite.",
+    "text": "Vote equality wrongfully elevates the uneducated majority to the same value as the competent elite.",
     "dimension": 9,
     "aa": [7],
     "pa": [5, 0.5],
@@ -507,7 +507,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Individuals should be equally concerned about the inhabitants of their and foreign countries.",
+    "text": "Individuals should be equally concerned about foreigners as if they are compatriots.",
     "dimension": 10,
     "aa": [7],
     "pa": [5, 0.5],
@@ -525,7 +525,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Conjoint economies with mutual dependency are applicable concepts.",
+    "text": "Highly interdependent economies can be sustainable.",
     "dimension": 10,
     "aa": [7],
     "pa": [5, 0.5],
@@ -554,7 +554,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Every country must pay reparations for the crimes they’ve committed.",
+    "text": "Every country must pay reparations for the crimes they have committed.",
     "dimension": 11,
     "aa": [7],
     "pa": [5, 0.5],
@@ -563,7 +563,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Foreigners should be allowed the exact same rights and freedoms in politics as citizens.",
+    "text": "Foreigners should be given the exact same rights and freedoms in politics as citizens.",
     "dimension": 11,
     "aa": [7],
     "pa": [5, 0.5],
@@ -601,7 +601,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Deep economic ties only makes countries dependent on exterior factors.",
+    "text": "Deep economic ties only make countries dependent on exterior factors.",
     "dimension": 12,
     "aa": [7],
     "pa": [5, 0.5],
@@ -619,7 +619,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Countries\’ internal affairs should be of no concern to other countries.",
+    "text": "Countries’ internal affairs should be of no concern to other countries.",
     "dimension": 12,
     "aa": [7],
     "pa": [5, 0.5],
@@ -639,7 +639,7 @@ var questions = [
 
   // Libertarianism
   {
-    "text": "States should not have the right to collecting their citizens\’ personal information.",
+    "text": "States should not have the right to collect their citizens’ personal information.",
     "dimension": 13,
     "aa": [7],
     "pa": [5, 0.5],
@@ -666,7 +666,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "The right to anonymity should be guaranteed.",
+    "text": "The right to anonymity on the internet should be guaranteed.",
     "dimension": 13,
     "aa": [7],
     "pa": [5, 0.5],
@@ -695,7 +695,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "The perfect state is rendered ineffective if merit is not the basis of domestic appointments.",
+    "text": "The perfect state is rendered ineffective if merit is not the basis of political appointments.",
     "dimension": 14,
     "aa": [7],
     "pa": [5, 0.5],
@@ -722,7 +722,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Leaders afraid of the capabilities of their inferiors are not good leaders.",
+    "text": "Leaders afraid of the capabilities of their subordinates are not good leaders.",
     "dimension": 14,
     "aa": [7],
     "pa": [5, 0.5],
@@ -751,7 +751,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Development of military technologies is the main source of human technological advancement.",
+    "text": "Development of military technologies is the most notable source of technological advancement.",
     "dimension": 15,
     "aa": [7],
     "pa": [5, 0.5],
@@ -874,7 +874,7 @@ var questions = [
 
   // Pacifism
   {
-    "text": "The fallouts of military interventions are never truly preferable.",
+    "text": "The aftermath of military interventions are never truly justifiable.",
     "dimension": 18,
     "aa": [7],
     "pa": [5, 0.5],
@@ -901,7 +901,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Military only consumes government budget and offers nothing unique in return.",
+    "text": "Military only consumes government budget and offers nothing useful in return.",
     "dimension": 18,
     "aa": [7],
     "pa": [5, 0.5],
@@ -921,7 +921,7 @@ var questions = [
 
   // Partisanship
   {
-    "text": "Loyalty is an absolute necessity in state business.",
+    "text": "Loyalty is an absolute priority in state business.",
     "dimension": 19,
     "aa": [7],
     "pa": [5, 0.5],
@@ -948,7 +948,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Uniformity of allegiances is more important in state affairs than merit.",
+    "text": "Loyalty to a common authority is more important in state affairs than merit.",
     "dimension": 19,
     "aa": [7],
     "pa": [5, 0.5],
@@ -1033,7 +1033,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Promises which will gain popular support are legitimate tools in politics.",
+    "text": "Promises which will gain popular support are legitimate tools in politics, regardless of their fulfillment.",
     "dimension": 21,
     "aa": [7],
     "pa": [5, 0.5],
@@ -1051,7 +1051,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "The elite use government authority for selfish gains, only the populace can truly run a state for its intended purpose of servitude.",
+    "text": "The elite use the government authority for selfish gains, hence only the populace can truly run a state for its intended purpose.",
     "dimension": 21,
     "aa": [7],
     "pa": [5, 0.5],
@@ -1089,7 +1089,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Religious commandments will become obsolete if they are not already.",
+    "text": "Religious commandments will become obsolete, if not outdated already.",
     "dimension": 22,
     "aa": [7],
     "pa": [5, 0.5],
@@ -1109,7 +1109,7 @@ var questions = [
 
   // Theocracy
   {
-    "text": "The one true religion is clearly known.",
+    "text": "Out of all current religions, the one true religion is clearly known.",
     "dimension": 23,
     "aa": [7],
     "pa": [5, 0.5],
@@ -1136,7 +1136,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "All humankind knows to be morally right stems from religion.",
+    "text": "All humankind knows of morality stems from religion.",
     "dimension": 23,
     "aa": [7],
     "pa": [5, 0.5],
