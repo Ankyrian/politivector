@@ -11,39 +11,39 @@ function questionPageInit() {
 }
 
 function questionAnswered(choice) {
-  dimensionId = currentQuestion.dimension;
-  switch (choice) {
-    case 0:
-      addScores(dimensionId, currentQuestion.aa);
-      break;
-    case 1:
-      addScores(dimensionId, currentQuestion.pa);
-      break;
-    case 2:
-      addScores(dimensionId, currentQuestion.n);
-      break;
-    case 3:
-      addScores(dimensionId, currentQuestion.pd);
-      break;
-    case 4:
-      addScores(dimensionId, currentQuestion.ad);
-      break;
-    default:
-      console.log("Unrecognized choice ID!");
-      break;
+  if(currentIndex + 1 >= randomizedQuestions.length) {
+    console.log(dimensionScores);
   }
-  nextQuestion();
+  else {
+    dimensionId = currentQuestion.dimension;
+    switch (choice) {
+      case 0:
+        addScores(dimensionId, currentQuestion.aa);
+        break;
+      case 1:
+        addScores(dimensionId, currentQuestion.pa);
+        break;
+      case 2:
+        addScores(dimensionId, currentQuestion.n);
+        break;
+      case 3:
+        addScores(dimensionId, currentQuestion.pd);
+        break;
+      case 4:
+        addScores(dimensionId, currentQuestion.ad);
+        break;
+      default:
+        console.log("Unrecognized choice ID!");
+        break;
+    }
+    nextQuestion();
+  }
 }
 
 function nextQuestion() {
   currentIndex++;
-  if(currentIndex >= randomizedQuestions.length) {
-    console.log(dimensionScores);
-  }
-  else {
-    currentQuestion = randomizedQuestions[currentIndex];
-    document.getElementById('question-font').innerHTML = currentQuestion.text;
-  }
+  currentQuestion = randomizedQuestions[currentIndex];
+  document.getElementById('question-font').innerHTML = currentQuestion.text;
 }
 
 function addScores(dimensionId, scoreArr) {
