@@ -45,6 +45,7 @@ function nextQuestion() {
   currentIndex++;
   currentQuestion = randomizedQuestions[currentIndex];
   document.getElementById('question-font').innerHTML = currentQuestion.text;
+  document.getElementById('question-number').innerHTML = `Question ${currentIndex + 1} / ${questions.length}`
 }
 
 function addScores(dimensionId, scoreArr) {

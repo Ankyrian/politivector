@@ -136,25 +136,44 @@ footer {
 #d-agree {
     background-color: #027508;
 }
+#d-agree:hover {
+  background-color: #11334c;
+}
 
 #agree {
     background-color: #00d10b;
+}
+#agree:hover {
+  background-color: #11334c;
 }
 
 #neutral {
     background-color: #ABABAB;
 }
+#neutral:hover {
+  background-color: #11334c;
+}
 
 #disagree {
     background-color: #e00b00;
+}
+#disagree:hover {
+  background-color: #11334c;
 }
 
 #d-disagree {
     background-color: #8c0700;
 }
+#d-disagree:hover {
+  background-color: #11334c;
+}
 
 #back {
   background-color: #11334c;
+  width: 50%;
+}
+#back:hover {
+  background-color: #000;
 }
 
 @media only screen and (max-width: 800px) {
