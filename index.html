@@ -2,11 +2,13 @@
 	<head>
     <title>Politivector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="data/questions.js"></script>
+    <script src="js/home_handler.js"></script>
 		<script src="js/redirect.js"></script>
 	</head>
 
-	<body>
+	<body onload="homepageInit()">
 		<div class="pv_header page-header">
       <div id="inner-header">
         <img class="header-logo" src="images/Logo.png" alt="Politivector Logo">
@@ -32,7 +34,7 @@
   
       <h2>How does it work?</h2>
       <p>
-        <i>Politivector</i> is a test with XXX multiple choice questions. In each question, you will be given a prompt or a statement related to politics, and will be asked your opinion on the matter ranging from <b>Strongly Agree</b> to <b>Strongly Disagree</b>.
+        <i>Politivector</i> is a test with <span id="question-amount"></span> multiple choice questions. In each question, you will be given a prompt or a statement related to politics, and will be asked your opinion on the matter ranging from <b>Strongly Agree</b> to <b>Strongly Disagree</b>.
       </p>
       <p>
         Each answer will then affect your final score in their respective dimensions. You can go to the <a href="views/dimensions.html">Dimensions page</a> to learn more about the dimensions of interest available in <i>Politivector</i>.
