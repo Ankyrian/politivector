@@ -84,9 +84,6 @@ function calculateScorePercentages(left, right) {
       rightActual -= rightDecimal;
     }
   }
-  console.log(leftPercent);
-  console.log(neutralPercent);
-  console.log(rightPercent);
   return [leftPercent, neutralPercent, rightPercent];
 }
 
