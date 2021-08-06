@@ -1,7 +1,3 @@
-.dimensions_header {
-  font-size: 150%;
-}
-
 .d_button {
   background-color: #0e446c;
   color: white;
@@ -25,6 +21,10 @@
 
 .dimensions_footer {
   margin: 0px;
+}
+
+.dimensions_logo {
+  height: 65px;
 }
 
 #description_text {
@@ -94,6 +94,10 @@
   .quote_container {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .dimensions_logo {
+    height: 45px;
   }
 
   #quote_text {
