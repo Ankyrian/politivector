@@ -67,6 +67,12 @@
   margin-left: 8px;
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .dimension-text {
   position: relative;
   justify-content: space-between;
