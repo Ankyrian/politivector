@@ -4,11 +4,15 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/results_stylesheet.css">
     <script src="../data/dimensions.js"></script>
+    <script src="../js/redirect.js"></script>
     <script src="../js/results_handler.js"></script>
   </head>
   
   <body onload="resultsPageInit()">
     <div class="pv_header page-header">
+      <button class="button back-button">
+        <img class="header-logo" src="../images/homeicon.png" alt="Home Button" onclick="redirect('../index.html')">
+      </button>
       <div id="inner-header">
         <img src="../images/Logo.png" alt="Politivector Logo" height="90px">
         Politivector

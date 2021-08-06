@@ -55,6 +55,10 @@ footer {
   background-color: transparent;
 }
 
+.back-button-upper {
+  top: -7px;
+}
+
 .start-test-button {
   background-color: #11334c;
   border-radius: 9pt;
