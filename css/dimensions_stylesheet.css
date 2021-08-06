@@ -1,4 +1,4 @@
-.d_button {
+.d-button {
   background-color: #0e446c;
   color: white;
   cursor: pointer;
@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.quote_container {
+.quote-container {
   background-color: #11334c;
   color: #FFFFFF;
   align-items: center;
@@ -19,21 +19,21 @@
   justify-content: center;
 }
 
-.dimensions_footer {
+.dimensions-footer {
   margin: 0px;
 }
 
-.dimensions_logo {
+.dimensions-logo {
   height: 65px;
 }
 
-#description_text {
+#description-text {
   margin: 25px;
   text-align: justify;
   font-size: 1.5vw;
 }
 
-#dimension_image {
+#dimension-image {
   height: 45%;
   max-height: 45%;
   background-image: url("../images/assimilationism.png");
@@ -44,11 +44,11 @@
   margin-bottom: 2.5%;
 }
 
-#dimensions_panel {
+#dimensions-panel {
   background-color: #11334c;
 }
 
-#quote_text {
+#quote-text {
   font-style: italic;
   font-weight: bold;
   text-align: center;
@@ -57,17 +57,17 @@
 }
 
 @media only screen and (min-width: 800px) {
-  .quote_container {
+  .quote-container {
     height: 15%;
   }
 
-  #body_column {
+  #body-column {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
   
-  #dimensions_content {
+  #dimensions-content {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -75,13 +75,13 @@
     flex: 1 1 auto;
   }
 
-  #dimensions_description {
+  #dimensions-description {
     width: 80%;
     height: 100%;
     max-height: 100%;
   }
 
-  #dimensions_panel {
+  #dimensions-panel {
     background-color: #11334c;
     width: 20%;
     overflow: auto;
@@ -91,21 +91,21 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .quote_container {
+  .quote-container {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
-  .dimensions_logo {
+  .dimensions-logo {
     height: 45px;
   }
 
-  #quote_text {
+  #quote-text {
     font-size: 14px;
     text-align: justify;
   }
 
-  #description_text {
+  #description-text {
     font-size: 14px;
   }
 }
