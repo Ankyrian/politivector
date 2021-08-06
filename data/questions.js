@@ -37,7 +37,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Humans, either through their superiority, are the rightful owners of nature.",
+    "text": "Humans, through their superiority, are the rightful owners of nature.",
     "dimension": 0,
     "aa": [7],
     "pa": [5, 0.5],
