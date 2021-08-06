@@ -82,13 +82,6 @@ body {
   margin-left: 8px;
 }
 
-.content-wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .dimension-text {
   position: relative;
   justify-content: space-between;
@@ -130,6 +123,9 @@ body {
 
 #special-footer {
   flex: 0 1 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 800px) {
