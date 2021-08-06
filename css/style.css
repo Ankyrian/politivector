@@ -224,6 +224,10 @@ footer {
     height: 45px;
   }
 
+  .back-button-upper {
+    top: 0px;
+  }
+
   #question-font {
     margin-top: 25px;
     margin-bottom: 25px;
