@@ -7,7 +7,8 @@ var changesHistory = [];
 
 function questionPageInit() {
   randomizedQuestions = shuffle(questions);
-  nextQuestion()
+  nextQuestion();
+  backButtonSet();
 }
 
 function questionAnswered(choice) {
@@ -42,6 +43,7 @@ function questionAnswered(choice) {
 
 function nextQuestion() {
   currentIndex++;
+  backButtonSet();
   currentQuestion = randomizedQuestions[currentIndex];
   document.getElementById('question-font').innerHTML = currentQuestion.text;
   document.getElementById('question-number').innerHTML = `Question ${currentIndex + 1} / ${questions.length}`
@@ -69,6 +71,7 @@ function initializesResults() {
 function previousQuestion() {
   if(currentIndex >= 1) {
     currentIndex--;
+    backButtonSet();
     var history = changesHistory[currentIndex];
     dimensionScores[history[0]][0] -= history[1];
     dimensionScores[history[0]][1] -= history[2];
@@ -89,4 +92,20 @@ function shuffle(arr) {
     [arr[current], arr[next]] = [arr[next], arr[current]];
   }
   return arr;
+}
+
+function backButtonSet() {
+  var backButtonStyle = document.getElementById("back").style;
+  if(currentIndex == 0) {
+    backButtonStyle.cursor = "not-allowed";
+    backButtonStyle.backgroundColor = "inherit";
+    backButtonStyle.color = "#000";
+    backButtonStyle.borderStyle = "solid";
+  }
+  else if(currentIndex == 1){
+    backButtonStyle.cursor = "pointer";
+    backButtonStyle.backgroundColor = "#11334c";
+    backButtonStyle.color = "#fff";
+    backButtonStyle.borderStyle = "none";
+  }
 }
