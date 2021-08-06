@@ -97,15 +97,9 @@ function shuffle(arr) {
 function backButtonSet() {
   var backButtonStyle = document.getElementById("back").style;
   if(currentIndex == 0) {
-    backButtonStyle.cursor = "not-allowed";
-    backButtonStyle.backgroundColor = "inherit";
-    backButtonStyle.color = "#000";
-    backButtonStyle.borderStyle = "solid";
+    backButtonStyle.visibility = "hidden";
   }
   else if(currentIndex == 1){
-    backButtonStyle.cursor = "pointer";
-    backButtonStyle.backgroundColor = "#11334c";
-    backButtonStyle.color = "#fff";
-    backButtonStyle.borderStyle = "none";
+    backButtonStyle.visibility = "visible";
   }
 }
