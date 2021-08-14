@@ -178,7 +178,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Given the many historical examples of democracies degrading into tyrannies, participatory democracy is a foolish attempt.",
+    "text": "In desperate times, dictatorship is a reliable option for democracies.",
     "dimension": 3,
     "aa": [7],
     "pa": [5, 0.5],
@@ -234,7 +234,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Consumer demand is the only reliable force for regulating the market.",
+    "text": "Supply and demand are the only reliable force for regulating the market.",
     "dimension": 4,
     "aa": [7],
     "pa": [5, 0.5],
@@ -281,7 +281,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Government intervention is necessary for a stable economy.",
+    "text": "Government intervention on corporations is necessary for a stable economy.",
     "dimension": 5,
     "aa": [7],
     "pa": [5, 0.5],
@@ -469,7 +469,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Those who have higher influence on state affairs than the average voter, deserve their position.",
+    "text": "Those who have higher influence on state affairs than the average voter, deserve their position simply because they were able to obtain it.",
     "dimension": 9,
     "aa": [7],
     "pa": [5, 0.5],
@@ -525,7 +525,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Highly interdependent economies can be sustainable.",
+    "text": "The advantages of interdependent economies outweigh the disadvantages.",
     "dimension": 10,
     "aa": [7],
     "pa": [5, 0.5],
@@ -565,8 +565,8 @@ var questions = [
   {
     "text": "Foreigners should be given the exact same rights and freedoms in politics as citizens.",
     "dimension": 11,
-    "aa": [7],
-    "pa": [5, 0.5],
+    "aa": [9],
+    "pa": [6, 0.5],
     "n": [0, 3],
     "pd": [2, 0.5],
     "ad": [0]
@@ -583,8 +583,8 @@ var questions = [
   {
     "text": "Borders are arbitrary, and should eventually be abolished.",
     "dimension": 11,
-    "aa": [7],
-    "pa": [5, 0.5],
+    "aa": [9],
+    "pa": [6, 0.5],
     "n": [0, 3],
     "pd": [2, 0.5],
     "ad": [0]
@@ -628,7 +628,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "International organizations restrict the domestic liberties of their member states.",
+    "text": "International organizations restrict the domestic liberties of their member states to an unacceptable degree.",
     "dimension": 12,
     "aa": [7],
     "pa": [5, 0.5],
@@ -751,7 +751,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Development of military technologies is the most notable source of technological advancement.",
+    "text": "Development of military technologies is the most beneficial source of technological advancement.",
     "dimension": 15,
     "aa": [7],
     "pa": [5, 0.5],
@@ -789,7 +789,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Humanity constantly evolves for the better, with the contemporary always exceeding the traditional.",
+    "text": "Humanity constantly evolves for the better.",
     "dimension": 16,
     "aa": [7],
     "pa": [5, 0.5],
@@ -800,7 +800,7 @@ var questions = [
   {
     "text": "Societies that reject change are destined to fade away.",
     "dimension": 16,
-    "aa": [7],
+    "aa": [8],
     "pa": [5, 0.5],
     "n": [0, 3],
     "pd": [2, 0.5],
@@ -809,8 +809,8 @@ var questions = [
   {
     "text": "Traditions are habits that are no longer useful in the modern world.",
     "dimension": 16,
-    "aa": [7],
-    "pa": [5, 0.5],
+    "aa": [9],
+    "pa": [6, 0.5],
     "n": [0, 3],
     "pd": [2, 0.5],
     "ad": [0]
@@ -818,8 +818,8 @@ var questions = [
   {
     "text": "Customs hinder a society’s ability to improve and advance.",
     "dimension": 16,
-    "aa": [7],
-    "pa": [5, 0.5],
+    "aa": [8],
+    "pa": [5.5, 0.5],
     "n": [0, 3],
     "pd": [2, 0.5],
     "ad": [0]
@@ -854,7 +854,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "Historical tendencies of a people provide reliable information regarding their modern behavior.",
+    "text": "Historical tendencies of a nation provide reliable information regarding their modern behavior.",
     "dimension": 17,
     "aa": [7],
     "pa": [5, 0.5],
@@ -903,8 +903,8 @@ var questions = [
   {
     "text": "Military only consumes government budget and offers nothing useful in return.",
     "dimension": 18,
-    "aa": [7],
-    "pa": [5, 0.5],
+    "aa": [9],
+    "pa": [6, 0.5],
     "n": [0, 3],
     "pd": [2, 0.5],
     "ad": [0]
@@ -968,7 +968,7 @@ var questions = [
 
   // Pluralism
   {
-    "text": "Addition or replacement of official languages is not a concern for societies.",
+    "text": "Addition or replacement of official languages does pose a threat towards the societies.",
     "dimension": 20,
     "aa": [7],
     "pa": [5, 0.5],
@@ -1145,7 +1145,7 @@ var questions = [
     "ad": [0]
   },
   {
-    "text": "A conflict between faith and human comprehension of reality implies an error in human logic.",
+    "text": "There is no true evidence refuting religion, only human misunderstanding.",
     "dimension": 23,
     "aa": [7],
     "pa": [5, 0.5],
