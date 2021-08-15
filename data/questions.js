@@ -968,7 +968,7 @@ var questions = [
 
   // Pluralism
   {
-    "text": "Addition or replacement of official languages does pose a threat towards the societies.",
+    "text": "Addition or replacement of official languages does not pose a threat towards societies.",
     "dimension": 20,
     "aa": [7],
     "pa": [5, 0.5],
