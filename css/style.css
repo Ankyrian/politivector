@@ -63,6 +63,19 @@ footer {
   background-color: #11334c;
   border-radius: 9pt;
   padding: 5px 25px;
+  margin: 3%;
+}
+
+.dimensions-button {
+  position: relative;
+  background-color: #11334c;
+  border-radius: 9pt;
+  padding: 0px 10px;
+}
+
+.dimensions-button-text {
+  color: #FFFFFF;
+  size: 120%;
 }
 
 .question-button {
@@ -109,6 +122,8 @@ footer {
 
 #start-test {
   background-image: url("../images/HomepageBanner.png");
+  display: flex;
+  flex-direction: column;
 }
 
 #future-plans {
