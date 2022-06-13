@@ -1,0 +1,273 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 1.5em 8em;
+}
+
+a {
+  text-decoration: none;
+  color: #1559AD;
+  font-size: 1.0rem;
+
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+
+  background: url("../assets/banner.png");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 20%;
+}
+
+header {
+  display: flex;
+  background: none;
+  justify-content: center;
+
+  a {
+    display: none;
+  }
+
+  .mini-logo {
+    background: url("../assets/mini.png");
+    display: inline-block;
+    height: 50px;
+  }
+
+  nav {
+    position: unset;
+    display: inline-block;
+    vertical-align: center;
+    width: auto;
+    height: auto;
+    background: none;
+    text-align: center;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+
+      a {
+        display: block;
+        padding: .75em 2em;
+        color: white;
+        margin-top: .3em;
+        font-size: .9rem;
+
+        &:hover {
+          text-decoration-line: underline;
+        }
+      }
+
+      #home {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.hero {
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: 85vh;
+
+  h1 {
+    font-size: 3rem;
+    margin-top: 1em;
+    line-height: 3.3rem;
+    font-weight: bolder;
+  }
+
+  .subhead {
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+
+  .headtext {
+    font-weight: lighter;
+  }
+
+  a {
+    display: none;
+  }
+
+  button.start-test {
+    background-color: #0D305C;
+    border: solid #1559AD;
+    color: white;
+    padding: 1em 3em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2em;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #1559AD;
+    }
+  }
+}
+
+.more-info {
+  display: flex;
+  justify-content: center;
+
+  .center {
+    width: 100%;
+
+    .feature {
+      margin-bottom: 10%;
+      display: flex;
+      justify-content: space-evenly;
+
+      .content {
+        width: 100%;
+
+        .title {
+          font-size: 1.0em;
+          font-weight: bold;
+        }
+
+        .description {
+          font-size: 0.8em;
+          font-weight: lighter;
+        }
+      }
+
+      .number-box {
+        display: none;
+      }
+
+      .footer {
+        text-align: center;
+        margin-bottom: 5%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .hero {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .subhead {
+      font-size: 3vh;
+      margin-top: -1em;
+    }
+
+    .headtext {
+      margin-top: .1em;
+      font-size: 2vh;
+    }
+
+    button.start-test {
+      background-color: #1559AD;
+      margin: 1em -.5em;
+
+      &:hover {
+        background-color: #0D305C;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    margin: 1.5em 1.5em;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+
+  .hero-img {
+    left: auto;
+    right: 0;
+    width: 50%;
+  }
+
+  header {
+    justify-content: space-between;
+
+    a {
+      display: unset;
+    }
+  }
+
+  .hero {
+    width: 45%;
+    color: black;
+    text-align: left;
+    height: 80vh;
+
+    h1 {
+      margin-top: 2em;
+    }
+
+    .subhead {
+      font-size: 1.2em;
+    }
+
+    .headtext {
+      font-size: .9em;
+    }
+
+    a {
+      display: inline;
+    }
+
+    button.start-test {
+      display: block;
+      background-color: #1559AD;
+      border: none;
+      margin: 1.5em -.5em;
+
+      &:hover {
+        background-color: #0D305C;
+      }
+    }
+  }
+
+  .more-info {
+    .center {
+      width: 75%;
+
+      .feature {
+        .content {
+          width: 50%;
+        }
+
+        .number-box {
+          display: unset;
+
+          .numbering {
+            vertical-align: center;
+            font-size: 5em;
+            font-weight: bolder;
+            text-align: center;
+          }
+        }
+
+        .footer {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

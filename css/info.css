@@ -1,0 +1,121 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 1.5em 8em;
+}
+
+a {
+  text-decoration: none;
+  color: #1559AD;
+  font-size: 1rem;
+}
+a:hover {
+  text-decoration-line: underline;
+}
+
+header {
+  display: flex;
+  background: none;
+  justify-content: center;
+}
+header a {
+  display: none;
+}
+header .mini-logo {
+  background: url("../assets/mini.png");
+  display: inline-block;
+  height: 50px;
+}
+header nav {
+  position: unset;
+  display: inline-block;
+  vertical-align: center;
+  width: auto;
+  height: auto;
+  background: none;
+  text-align: center;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+header nav ul a {
+  display: block;
+  padding: 0.75em 2em;
+  color: black;
+  margin-top: 0.3em;
+  font-size: 0.9rem;
+}
+header nav ul a:hover {
+  text-decoration-line: underline;
+}
+header nav ul #future-plans {
+  font-weight: bold;
+}
+
+.hero {
+  width: 100%;
+  height: 70vh;
+  margin-top: 20vh;
+  text-align: center;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1;
+}
+.hero #gradient {
+  padding: 0.5rem;
+  background-color: #1559AD;
+  background-image: linear-gradient(45deg, #ef4040, #4018df);
+  background-size: cover;
+  background-position-x: -2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero img {
+  margin-top: 10vh;
+  height: 12vh;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+}
+.plans .center {
+  width: 100%;
+}
+.plans .center .plan {
+  margin-bottom: 2em;
+}
+.plans .center .plan .title {
+  font-size: 1em;
+  font-weight: bold;
+}
+.plans .center .plan .description {
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    margin: 1.5em 1.5em;
+  }
+}
+@media only screen and (min-width: 920px) {
+  header {
+    justify-content: space-between;
+  }
+  header a {
+    display: unset;
+  }
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .plans .center {
+    width: 75%;
+  }
+}
+
+/*# sourceMappingURL=info.css.map */
