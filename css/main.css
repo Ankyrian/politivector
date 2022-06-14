@@ -139,8 +139,7 @@ header nav ul #home {
 @media only screen and (max-width: 376px) {
   .hero h1 {
     font-size: 2.5rem;
-    margin-top: 0.5em;
-    color: #9b1717;
+    margin-top: 0.7em;
   }
   .hero .subhead {
     font-size: 3vh;
