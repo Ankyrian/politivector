@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 1.5em 8em;
@@ -73,6 +77,9 @@ header nav ul #future-plans {
   background-position-x: -2rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.hero a {
+  cursor: pointer;
 }
 .hero img {
   margin-top: 10vh;
