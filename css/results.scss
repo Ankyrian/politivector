@@ -97,10 +97,6 @@ header {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     margin-top: 2em;
-
-    &:hover {
-      background-color: #1559AD;
-    }
   }
 }
 
@@ -276,6 +272,12 @@ header {
         font-size: 2.5rem;
         line-height: .75rem;
         color: white;
+      }
+    }
+
+    button.start-test {
+      &:hover {
+        background-color: #1559AD;
       }
     }
   }

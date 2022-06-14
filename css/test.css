@@ -20,8 +20,12 @@ a:hover {
 .wrapper a .logo {
   margin-left: 0;
   margin-right: auto;
-  height: 20vh;
+  height: 25vh;
   margin-top: 0.2vh;
+  background: url("../assets/mini.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 .wrapper #inner-header {
   align-items: center;
@@ -43,7 +47,7 @@ a:hover {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 0.5em;
+  margin-top: 0;
   margin-bottom: 1.5em;
   font-size: 0.9rem;
   font-weight: lighter;
@@ -91,25 +95,48 @@ a:hover {
   body {
     margin: 1.5em 1.5em;
   }
+  .wrapper a .logo {
+    height: 10vh;
+    margin-bottom: 0.1em;
+  }
   .wrapper #inner-header {
+    font-size: 0.8rem;
     margin-top: -0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  #text-content {
+    width: 85vw;
   }
   #text-content #question-font {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    height: 3.5em;
+  }
+  #text-content .question-content .question-button {
     height: 2.5em;
+    max-height: 8vh;
+    width: 80%;
+    margin: 0.25em;
+    font-size: 0.75em;
   }
 }
 @media only screen and (min-width: 920px) {
+  .wrapper a .logo {
+    height: 20vh;
+    background: url("../assets/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
   .wrapper #inner-header {
     font-size: 1.5rem;
+    margin-bottom: 0.5em;
   }
   #text-content {
     left: 35vw;
     width: 30vw;
   }
   #text-content #question-font {
-    font-size: 1.2rem;
+    font-size: 1rem;
     height: 4em;
   }
   #text-content .question-content #d-agree:hover {

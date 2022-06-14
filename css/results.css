@@ -90,9 +90,6 @@ header nav ul a:hover {
   font-weight: bold;
   margin-top: 2em;
 }
-.hero button.start-test:hover {
-  background-color: #1559AD;
-}
 
 .content-box {
   display: flex;
@@ -236,6 +233,9 @@ header nav ul a:hover {
     font-size: 2.5rem;
     line-height: 0.75rem;
     color: white;
+  }
+  .hero button.start-test:hover {
+    background-color: #1559AD;
   }
   .content-box {
     display: flex;

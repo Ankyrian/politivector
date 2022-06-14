@@ -21,8 +21,12 @@ a {
     .logo {
       margin-left: 0;
       margin-right: auto;
-      height: 20vh;
+      height: 25vh;
       margin-top: .2vh;
+      background: url("../assets/mini.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
     }
   }
 
@@ -47,7 +51,7 @@ a {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: .5em;
+    margin-top: 0;
     margin-bottom: 1.5em;
     font-size: .9rem;
     font-weight: lighter;
@@ -107,24 +111,55 @@ a {
   }
 
   .wrapper {
+    a {
+      .logo {
+        height: 10vh;
+        margin-bottom: .1em;
+      }
+    }
+
     #inner-header {
+      font-size: .8rem;
       margin-top: -.5em;
-      margin-bottom: .5em;
+      margin-bottom: 1.5em;
     }
   }
 
   #text-content {
+    width: 85vw;
+
     #question-font {
-      font-size: .75rem;
-      height: 2.5em;
+      font-size: .9rem;
+      height: 3.5em;
+    }
+
+    .question-content {
+      .question-button {
+        height: 2.5em;
+        max-height: 8vh;
+        width: 80%;
+        margin: .25em;
+        font-size: .75em;
+      }
     }
   }
 }
 
 @media only screen and (min-width: 920px) {
   .wrapper {
+    a {
+      .logo {
+        height: 20vh;
+        background: url("../assets/logo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+    }
+
     #inner-header {
       font-size: 1.5rem;
+      margin-bottom: .5em;
     }
   }
 
@@ -133,7 +168,7 @@ a {
     width: 30vw;
 
     #question-font {
-      font-size: 1.2rem;
+      font-size: 1.0rem;
       height: 4em;
     }
 
