@@ -185,6 +185,10 @@ header {
   body {
     margin: 1.5em 1.5em;
   }
+
+  .hero {
+    height: 90vh;
+  }
 }
 
 @media only screen and (min-width: 920px) {
@@ -207,7 +211,6 @@ header {
     width: 45%;
     color: black;
     text-align: left;
-    height: 90vh;
 
     h1 {
       margin-top: 2em;
