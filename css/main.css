@@ -61,9 +61,6 @@ header nav ul a {
   margin-top: 0.3em;
   font-size: 0.9rem;
 }
-header nav ul a:hover {
-  text-decoration-line: underline;
-}
 header nav ul #home {
   font-weight: bold;
 }
@@ -139,9 +136,10 @@ header nav ul #home {
   width: 100%;
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 376px) {
   .hero h1 {
     font-size: 2.5rem;
+    margin-top: 0.5em;
   }
   .hero .subhead {
     font-size: 3vh;
@@ -154,9 +152,6 @@ header nav ul #home {
   .hero button.start-test {
     background-color: #1559AD;
     margin: 1em -0.5em;
-  }
-  .hero button.start-test:hover {
-    background-color: #0D305C;
   }
 }
 @media only screen and (max-width: 640px) {
