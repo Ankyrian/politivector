@@ -69,7 +69,7 @@ header nav ul #home {
   width: 100%;
   color: white;
   text-align: center;
-  height: 85vh;
+  height: 90vh;
 }
 .hero h1 {
   font-size: 3rem;
@@ -157,9 +157,6 @@ header nav ul #home {
 @media only screen and (max-width: 640px) {
   body {
     margin: 1.5em 1.5em;
-  }
-  .hero {
-    height: 90vh;
   }
 }
 @media only screen and (min-width: 920px) {
