@@ -76,51 +76,27 @@ a {
 
     #d-agree {
       background: #259612;
-
-      &:hover {
-        background: #0D305C;
-      }
     }
 
     #agree {
       background: #34d41a;
-
-      &:hover {
-        background: #0D305C;
-      }
     }
 
     #neutral {
       background: #c3c3c3;
-
-      &:hover {
-        background: #0D305C;
-      }
     }
 
     #disagree {
       background: #dd2222;
-
-      &:hover {
-        background: #0D305C;
-      }
     }
 
     #d-disagree {
       background: #9b1717;
-
-      &:hover {
-        background: #0D305C;
-      }
     }
 
     #back {
       background: #1559AD;
       width: 20%;
-
-      &:hover {
-        background: #0D305C;
-      }
     }
   }
 }
@@ -159,6 +135,44 @@ a {
     #question-font {
       font-size: 1.2rem;
       height: 4em;
+    }
+
+    .question-content {
+      #d-agree {
+        &:hover {
+          background: #0D305C;
+        }
+      }
+
+      #agree {
+        &:hover {
+          background: #0D305C;
+        }
+      }
+
+      #neutral {
+        &:hover {
+          background: #0D305C;
+        }
+      }
+
+      #disagree {
+        &:hover {
+          background: #0D305C;
+        }
+      }
+
+      #d-disagree {
+        &:hover {
+          background: #0D305C;
+        }
+      }
+
+      #back {
+        &:hover {
+          background: #0D305C;
+        }
+      }
     }
   }
 

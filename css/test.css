@@ -70,39 +70,21 @@ a:hover {
 #text-content .question-content #d-agree {
   background: #259612;
 }
-#text-content .question-content #d-agree:hover {
-  background: #0D305C;
-}
 #text-content .question-content #agree {
   background: #34d41a;
-}
-#text-content .question-content #agree:hover {
-  background: #0D305C;
 }
 #text-content .question-content #neutral {
   background: #c3c3c3;
 }
-#text-content .question-content #neutral:hover {
-  background: #0D305C;
-}
 #text-content .question-content #disagree {
   background: #dd2222;
-}
-#text-content .question-content #disagree:hover {
-  background: #0D305C;
 }
 #text-content .question-content #d-disagree {
   background: #9b1717;
 }
-#text-content .question-content #d-disagree:hover {
-  background: #0D305C;
-}
 #text-content .question-content #back {
   background: #1559AD;
   width: 20%;
-}
-#text-content .question-content #back:hover {
-  background: #0D305C;
 }
 
 @media only screen and (max-width: 640px) {
@@ -129,6 +111,24 @@ a:hover {
   #text-content #question-font {
     font-size: 1.2rem;
     height: 4em;
+  }
+  #text-content .question-content #d-agree:hover {
+    background: #0D305C;
+  }
+  #text-content .question-content #agree:hover {
+    background: #0D305C;
+  }
+  #text-content .question-content #neutral:hover {
+    background: #0D305C;
+  }
+  #text-content .question-content #disagree:hover {
+    background: #0D305C;
+  }
+  #text-content .question-content #d-disagree:hover {
+    background: #0D305C;
+  }
+  #text-content .question-content #back:hover {
+    background: #0D305C;
   }
 }
 
