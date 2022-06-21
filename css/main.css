@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  margin: 1.5em 8em;
+  margin: 1.5em 1.5em;
 }
 
 a {
@@ -12,20 +16,6 @@ a:hover {
   text-decoration-line: underline;
 }
 
-.hero-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-  background: url("../assets/banner.png");
-  background-size: cover;
-  background-position-x: 50%;
-  background-position-y: 20%;
-}
-
 header {
   display: flex;
   background: none;
@@ -33,11 +23,6 @@ header {
 }
 header a {
   display: none;
-}
-header .mini-logo {
-  background: url("../assets/mini.png");
-  display: inline-block;
-  height: 50px;
 }
 header nav {
   position: unset;
@@ -57,113 +42,28 @@ header nav ul {
 header nav ul a {
   display: block;
   padding: 0.75em 2em;
-  color: white;
   margin-top: 0.3em;
   font-size: 0.9rem;
 }
-header nav ul #home {
-  font-weight: bold;
+header nav ul a:hover {
+  text-decoration-line: underline;
 }
 
-.hero {
-  width: 100%;
-  color: white;
-  text-align: center;
-  height: 90vh;
-}
-.hero h1 {
-  font-size: 3rem;
-  margin-top: 1em;
-  line-height: 3.3rem;
-  font-weight: bolder;
-}
-.hero .subhead {
-  font-size: 1.4rem;
-  font-weight: normal;
-}
-.hero .headtext {
-  font-weight: lighter;
-}
-.hero a {
-  display: none;
-}
-.hero button.start-test {
-  background-color: #0D305C;
-  border: solid #1559AD;
-  color: white;
-  padding: 1em 3em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 2em;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-}
-.hero button.start-test:hover {
-  background-color: #1559AD;
-}
-
-.more-info {
-  display: flex;
-  justify-content: center;
-}
-.more-info .center {
-  width: 100%;
-}
-.more-info .center .feature {
-  margin-bottom: 10%;
-  display: flex;
-  justify-content: space-evenly;
-}
-.more-info .center .feature .content {
-  width: 100%;
-}
-.more-info .center .feature .content .title {
-  font-size: 1em;
-  font-weight: bold;
-}
-.more-info .center .feature .content .description {
-  font-size: 0.8em;
-  font-weight: lighter;
-}
-.more-info .center .feature .number-box {
-  display: none;
-}
-.more-info .center .feature .footer {
-  text-align: center;
-  margin-bottom: 5%;
-  width: 100%;
-}
-
-@media only screen and (max-width: 376px) {
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-top: 0.7em;
-  }
-  .hero .subhead {
-    font-size: 3vh;
-    margin-top: -1em;
-  }
-  .hero .headtext {
-    margin-top: 0.1em;
-    font-size: 2vh;
-  }
-  .hero button.start-test {
-    background-color: #1559AD;
-    margin: 1em -0.5em;
+@media only screen and (max-width: 760px) and (orientation: portrait) and (min-width: 360px) {
+  header nav ul a {
+    padding: 0.9em 2.2em;
+    font-size: 1rem;
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 760px) and (orientation: portrait) and (min-width: 360px) and (min-width: 400px) {
+  header nav ul a {
+    padding: 0.9em 1.9em;
+    font-size: 1.15rem;
+  }
+}
+@media only screen and (min-width: 760px) {
   body {
-    margin: 1.5em 1.5em;
-  }
-}
-@media only screen and (min-width: 920px) {
-  .hero-img {
-    left: auto;
-    right: 0;
-    width: 50%;
+    margin: 1.5em 5em;
   }
   header {
     justify-content: space-between;
@@ -171,49 +71,18 @@ header nav ul #home {
   header a {
     display: unset;
   }
-  .hero {
-    width: 45%;
-    color: black;
-    text-align: left;
+  header .mini-logo {
+    background: url("../assets/mini.png");
+    display: inline-block;
+    height: 50px;
   }
-  .hero h1 {
-    margin-top: 2em;
+}
+@media only screen and (min-width: 1400px) {
+  body {
+    margin: 1.5em 15em;
   }
-  .hero .subhead {
-    font-size: 1.2em;
-  }
-  .hero .headtext {
-    font-size: 0.9em;
-  }
-  .hero a {
-    display: inline;
-  }
-  .hero button.start-test {
-    display: block;
-    background-color: #1559AD;
-    border: none;
-    margin: 1.5em -0.5em;
-  }
-  .hero button.start-test:hover {
-    background-color: #0D305C;
-  }
-  .more-info .center {
-    width: 75%;
-  }
-  .more-info .center .feature .content {
-    width: 50%;
-  }
-  .more-info .center .feature .number-box {
-    display: unset;
-  }
-  .more-info .center .feature .number-box .numbering {
-    vertical-align: center;
-    font-size: 5em;
-    font-weight: bolder;
-    text-align: center;
-  }
-  .more-info .center .feature .footer {
-    width: 50%;
+  header {
+    padding-top: 1em;
   }
 }
 

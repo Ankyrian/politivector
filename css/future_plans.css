@@ -1,0 +1,118 @@
+@import "main.css";
+header nav ul a {
+  color: black;
+}
+header nav ul #future-plans {
+  font-weight: bolder;
+}
+
+.hero {
+  width: 100%;
+  height: 70vh;
+  margin-top: 20vh;
+  text-align: center;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1;
+}
+.hero #gradient {
+  padding: 0.5rem;
+  background-color: #1559AD;
+  background-image: linear-gradient(45deg, #ef4040, #4018df);
+  background-size: cover;
+  background-position-x: -2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero a {
+  cursor: pointer;
+}
+.hero a img {
+  margin-top: 10vh;
+  height: 12vh;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+}
+.plans .center {
+  width: 100%;
+}
+.plans .center .plan {
+  margin-bottom: 2em;
+}
+.plans .center .plan .title {
+  font-size: 1em;
+  font-weight: bold;
+}
+.plans .center .plan .description {
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 760px) and (orientation: portrait) and (max-width: 360px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 760px) and (orientation: portrait) and (min-width: 360px) {
+  .plans .center .plan .title {
+    font-size: 1.1em;
+  }
+  .plans .center .plan .description {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 760px) and (orientation: portrait) and (min-width: 400px) {
+  .plans .center .plan .title {
+    font-size: 1.2em;
+  }
+  .plans .center .plan .description {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-height: 460px) and (orientation: landscape) {
+  .hero {
+    height: 78vh;
+    margin-top: 12vh;
+    display: flex;
+    justify-content: center;
+  }
+  .hero div {
+    margin-right: 3em;
+  }
+  .hero a img {
+    margin-top: 1em;
+    height: 5em;
+  }
+}
+@media only screen and (max-height: 460px) and (orientation: landscape) and (min-height: 360px) {
+  .hero {
+    height: 72vh;
+    margin-top: 18vh;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .plans .center {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .plans .center .plan {
+    margin-bottom: 10%;
+  }
+  .plans .center .plan .title {
+    font-size: 1.5em;
+  }
+  .plans .center .plan .description {
+    font-size: 1.2em;
+  }
+}
+
+/*# sourceMappingURL=future_plans.css.map */

@@ -1,58 +1,6 @@
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 1.5em 1.5em;
-}
-
-a {
-  text-decoration: none;
-  color: #1559AD;
-  font-size: 1rem;
-}
-a:hover {
-  text-decoration-line: underline;
-}
-
-header {
-  display: flex;
-  background: none;
-  justify-content: center;
-}
-header a {
-  display: none;
-}
-header .mini-logo {
-  background: url("../assets/mini.png");
-  display: inline-block;
-  height: 50px;
-}
-header nav {
-  position: unset;
-  display: inline-block;
-  vertical-align: center;
-  width: auto;
-  height: auto;
-  background: none;
-  text-align: center;
-}
-header nav ul {
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
+@import "main.css";
 header nav ul a {
-  display: block;
-  padding: 0.75em 2em;
   color: black;
-  margin-top: 0.3em;
-  font-size: 0.9rem;
-}
-header nav ul a:hover {
-  text-decoration-line: underline;
 }
 
 .hero {
@@ -190,9 +138,6 @@ header nav ul a:hover {
 }
 
 @media only screen and (max-width: 640px) {
-  body {
-    margin: 1.5em 1.5em;
-  }
   .content-box .results-panel {
     font-size: 1.2vh;
   }
@@ -207,23 +152,13 @@ header nav ul a:hover {
   }
 }
 @media only screen and (min-width: 640px) {
-  body {
-    margin: 1.5em 8em;
-  }
-  header {
-    justify-content: space-between;
-  }
-  header a {
-    display: unset;
-  }
   .hero {
     width: 100%;
     height: 90vh;
     text-align: center;
-    background: url("../assets/blob.png") center center;
+    background: url("../assets/blob.png") no-repeat center center;
     background-size: contain;
     background-position-y: -3em;
-    background-repeat: no-repeat;
   }
   .hero div {
     padding-top: 22vh;
@@ -329,6 +264,21 @@ header nav ul a:hover {
     height: 2.5em;
     color: #000;
     text-align: center;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .hero div {
+    padding-top: 24vh;
+  }
+  .hero div h1 {
+    font-size: 4rem;
+    line-height: 1rem;
+  }
+  .hero button.start-test {
+    font-size: 1.2rem;
+  }
+  .hero button.start-test:hover {
+    background-color: #1559AD;
   }
 }
 

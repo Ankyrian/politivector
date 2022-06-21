@@ -9,23 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/questions.css">
     <script type="text/javascript" src="data/questions.js"></script>
     <script type="text/javascript" src="scripts/question_handler.js"></script>
 </head>
 <body onload="questionPageInit();">
     <div class="wrapper">
         <a href="index.html">
-            <!--<img class="logo" src="assets/logo.png" alt="">-->
             <div class="logo"></div>
         </a>
         <div id="inner-header">
             <span id="question-number"></span>
         </div>
+        <div id="question-font"></div>
     </div>
     <div id="text-content">
-        <div id="question-font"></div>
-        
         <div class="question-content">
             <div>
                 <button class="button question-button" id="d-agree" onclick="questionAnswered(0);">Absolutely Agree

@@ -1,0 +1,171 @@
+@import "main.css";
+
+header {
+  nav {
+    ul {
+      a {
+        color: black;
+      }
+
+      #future-plans {
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 70vh;
+  margin-top: 20vh;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  #gradient {
+    padding: .5rem;
+    background-color: #1559AD;
+    background-image: linear-gradient(45deg, #ef4040, #4018df);
+    background-size: cover;
+    background-position-x: -2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  a {
+    cursor: pointer;
+
+    img {
+      margin-top: 10vh;
+      height: 12vh;
+    }
+  }
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+
+  .center {
+    width: 100%;
+
+    .plan {
+      margin-bottom: 2em;
+
+      .title {
+        font-size: 1.0em;
+        font-weight: bold;
+      }
+
+      .description {
+        font-size: .8em;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) and (orientation: portrait) {
+  @media (max-width: 360px) {
+    .hero {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @media (min-width: 360px) {
+    .plans {
+      .center {
+        .plan {
+          .title {
+            font-size: 1.1em;
+          }
+
+          .description {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 400px) {
+    .plans {
+      .center {
+        .plan {
+          .title {
+            font-size: 1.2em;
+          }
+
+          .description {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 460px) and (orientation: landscape) {
+  .hero {
+    height: 78vh;
+    margin-top: 12vh;
+    display: flex;
+    justify-content: center;
+
+    div {
+      margin-right: 3em;
+    }
+
+    a {
+      img {
+        margin-top: 1em;
+        height: 5em;
+      }
+    }
+  }
+  
+  @media (min-height: 360px) {
+    .hero {
+      height: 72vh;
+      margin-top: 18vh;
+    }
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .hero {
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+
+  .plans {
+    .center {
+      width: 75%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .plans {
+    .center {
+      .plan {
+        margin-bottom: 10%;
+
+        .title {
+          font-size: 1.5em;
+        }
+
+        .description {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
