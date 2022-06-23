@@ -103,7 +103,7 @@ header nav ul #future-plans {
     width: 75%;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1600px) {
   .plans .center .plan {
     margin-bottom: 10%;
   }
