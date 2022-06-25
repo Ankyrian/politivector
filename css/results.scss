@@ -14,11 +14,6 @@ header {
   width: 100%;
   height: 100vh;
   text-align: center;
-  background: url("../assets/blob.png") no-repeat center center;
-  background-size: cover;
-  background-position-y: -4.25em;
-  margin: 0 -5em;
-  padding: 0 5em;
 
   div {
     padding-top: 7.5em;
@@ -46,6 +41,22 @@ header {
   }
 }
 
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+
+  img {
+    width: 150%;
+    margin-top: 10%;
+    margin-left: -25%;
+  }
+}
+
 .content-box {
   display: flex;
   flex-flow: column;
@@ -54,8 +65,9 @@ header {
 
   p {
     display: inline-block;
-    width: 200%;
-    margin-left: -50%;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 3em;
     text-align: center;
     font-size: 1.2rem;
     line-height: 2rem;
@@ -230,6 +242,26 @@ header {
       }
     }
   }
+
+  @media (min-width: 500px) {
+    .container {
+      img {
+        width: 110%;
+        margin-top: 10%;
+        margin-left: -5%;
+      }
+    }
+  }
+
+  @media (min-width: 600px) {
+    .container {
+      img {
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 0;
+      }
+    }
+  }
 }
 
 @media only screen and (max-height: 760px) and (orientation: landscape) {
@@ -245,8 +277,6 @@ header {
 
   .hero {
     margin-top: -5em;
-    background-size: cover;
-    background-position-y: -15em;
 
     div {
       padding-top: 5.5em;
@@ -254,6 +284,14 @@ header {
       h1 {
         font-size: 2rem;
       }
+    }
+  }
+
+  .container {
+    img {
+      width: 150%;
+      margin-top: -75%;
+      margin-left: -20%;
     }
   }
 
@@ -273,8 +311,6 @@ header {
 
   @media (min-width: 600px) {
     .hero {
-      background-position-y: -18em;
-
       div {
         padding-top: 6em;
 
@@ -296,8 +332,6 @@ header {
 
   @media (min-width: 700px) {
     .hero {
-      background-position-y: -20em;
-
       div {
         padding-top: 7em;
 
@@ -330,15 +364,20 @@ header {
   }
 
   .hero {
-    background-size: contain;
-    background-position-y: -2em;
-
     div {
       padding-top: 12em;
 
       h1 {
         font-size: 2.5rem;
       }
+    }
+  }
+
+  .container {
+    img {
+      width: 80%;
+      margin-top: -5%;
+      margin-left: 10%;
     }
   }
 
@@ -358,73 +397,58 @@ header {
 
   @media (min-width: 1000px) {
     .hero {
-      background-size: contain;
-      background-position-y: -5em;
+      div {
+        padding-top: 13em;
+      }
+    }
+
+    .container {
+      img {
+        width: 70%;
+        margin-top: 5%;
+        margin-left: 15%;
+      }
     }
   }
 
   @media (min-width: 1200px) {
     .hero {
-      background-position-y: -6em;
-
       div {
-        padding-top: 15em;
+        padding-top: 13em;
 
         h1 {
-          font-size: 4rem;
+          font-size: 3rem;
         }
       }
 
       button.start-test {
-        font-size: 1rem;
+        font-size: .9rem;
+      }
+    }
+
+    .container {
+      img {
+        width: 55%;
+        margin-top: 0;
+        margin-left: 22.5%;
       }
     }
 
     .content-box {
-      margin-top: -2em;
-      margin-bottom: 3.5em;
+      margin-top: 0;
+      margin-bottom: 1.5em;
 
       p {
-        font-size: 2.5rem;
-        line-height: 3rem;
-      }
-    }
-
-    @media (max-height: 800px) {
-      .hero {
-        background-position-y: -2em;
-
-        div {
-          padding-top: 13em;
-
-          h1 {
-            font-size: 3rem;
-          }
-        }
-
-        button.start-test {
-          font-size: .9rem;
-        }
-      }
-
-      .content-box {
-        margin-top: 0;
-        margin-bottom: 1.5em;
-
-        p {
-          font-size: 1.5rem;
-          line-height: 2rem;
-        }
+        font-size: 1.5rem;
+        line-height: 2rem;
       }
     }
   }
 
   @media (min-width: 1300px) {
     .hero {
-      background-position-y: -6em;
-
       div {
-        padding-top: 10em;
+        padding-top: 12em;
 
         h1 {
           font-size: 3rem;
@@ -433,6 +457,12 @@ header {
 
       button.start-test {
         font-size: 1rem;
+      }
+    }
+
+    .container {
+      img {
+        margin-top: -2.5%;
       }
     }
 
@@ -446,10 +476,8 @@ header {
       }
     }
 
-    @media (min-height: 900px) {
+    @media (min-height: 800px) {
       .hero {
-        background-position-y: -8em;
-
         div {
           padding-top: 12em;
 
@@ -458,14 +486,18 @@ header {
           }
         }
       }
+
+      .container {
+        img {
+          margin-top: 2.5%;
+        }
+      }
     }
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .hero {
-    background-position-y: -6em;
-
     div {
       padding-top: 15em;
 
@@ -486,6 +518,14 @@ header {
     p {
       font-size: 2.5rem;
       line-height: 3rem;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    .container {
+      img {
+        margin-top: -5%;
+      }
     }
   }
 }
