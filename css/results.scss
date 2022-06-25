@@ -127,23 +127,23 @@ header {
 
         .text-row {
           margin-top: -1em;
+          font-size: 2vh;
 
           .aligned {
             position: relative;
             top: 1.5vh;
-            width: 45%;
           }
 
           .left-aligned {
             text-align: left;
-            margin-left: 4.1em;
-            width: unset;
+            margin-left: 3.5em;
+            width: 100%;
           }
 
           .right-aligned {
             width: 100%;
             text-align: right;
-            margin-right: 4.1em;
+            margin-right: 3.5em;
           }
         }
       }
@@ -187,6 +187,27 @@ header {
 }
 
 @media only screen and (max-width: 760px) and (orientation: portrait) {
+  .content-box {
+    #results-panel-content {
+      .row {
+        .column {
+          .text-row {
+            margin-top: -1em;
+            font-size: 1.5vh;
+
+            .left-aligned {
+              margin-left: 4em;
+            }
+
+            .right-aligned {
+              margin-right: 4em;
+            }
+          }
+        }
+      }
+    }
+  }
+
   @media (min-width: 360px) {
     .hero {
       margin-top: -.8em;
@@ -405,8 +426,16 @@ header {
     .container {
       img {
         width: 70%;
-        margin-top: 5%;
+        margin-top: -2%;
         margin-left: 15%;
+      }
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .container {
+      img {
+        margin-top: -5%;
       }
     }
   }

@@ -111,21 +111,21 @@ header nav ul a {
 }
 .content-box #results-panel-content .row .column .text-row {
   margin-top: -1em;
+  font-size: 2vh;
 }
 .content-box #results-panel-content .row .column .text-row .aligned {
   position: relative;
   top: 1.5vh;
-  width: 45%;
 }
 .content-box #results-panel-content .row .column .text-row .left-aligned {
   text-align: left;
-  margin-left: 4.1em;
-  width: unset;
+  margin-left: 3.5em;
+  width: 100%;
 }
 .content-box #results-panel-content .row .column .text-row .right-aligned {
   width: 100%;
   text-align: right;
-  margin-right: 4.1em;
+  margin-right: 3.5em;
 }
 .content-box #results-panel-content .row .img-left {
   position: relative;
@@ -158,6 +158,18 @@ header nav ul a {
   text-align: center;
 }
 
+@media only screen and (max-width: 760px) and (orientation: portrait) {
+  .content-box #results-panel-content .row .column .text-row {
+    margin-top: -1em;
+    font-size: 1.5vh;
+  }
+  .content-box #results-panel-content .row .column .text-row .left-aligned {
+    margin-left: 4em;
+  }
+  .content-box #results-panel-content .row .column .text-row .right-aligned {
+    margin-right: 4em;
+  }
+}
 @media only screen and (max-width: 760px) and (orientation: portrait) and (min-width: 360px) {
   .hero {
     margin-top: -0.8em;
@@ -309,8 +321,13 @@ header nav ul a {
   }
   .container img {
     width: 70%;
-    margin-top: 5%;
+    margin-top: -2%;
     margin-left: 15%;
+  }
+}
+@media only screen and (min-width: 760px) and (min-width: 1100px) {
+  .container img {
+    margin-top: -5%;
   }
 }
 @media only screen and (min-width: 760px) and (min-width: 1200px) {
