@@ -2,6 +2,12 @@
 header nav ul a {
   color: black;
 }
+header nav ul p {
+  color: black;
+}
+header nav ul .language {
+  visibility: hidden;
+}
 
 .hero {
   width: 100%;

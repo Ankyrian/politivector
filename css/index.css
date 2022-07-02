@@ -2,6 +2,9 @@
 header nav ul a {
   color: white;
 }
+header nav ul p {
+  color: white;
+}
 header nav ul #home {
   font-weight: bolder;
 }
@@ -59,6 +62,24 @@ header nav ul #home {
   border-radius: 2em;
   margin-top: 1em;
 }
+.hero .language {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.2em;
+}
+.hero .language a {
+  color: white;
+  display: inline;
+  padding: 0.75em 0;
+  font-size: 0.75rem;
+}
+.hero .language p {
+  color: white;
+  display: inline;
+  padding: 0.75em 0.1em;
+  margin-top: 0;
+  font-size: 0.75rem;
+}
 
 .more-info {
   display: flex;
@@ -115,6 +136,12 @@ header nav ul #home {
   .hero button.start-test {
     font-size: 0.8rem;
   }
+  .hero .language a {
+    font-size: 0.8rem;
+  }
+  .hero .language p {
+    font-size: 0.8rem;
+  }
   .more-info .center .feature .content .title {
     font-size: 1.1em;
   }
@@ -141,6 +168,12 @@ header nav ul #home {
     padding: 1em 3em;
     border-radius: 3em;
   }
+  .hero .language a {
+    font-size: 0.9rem;
+  }
+  .hero .language p {
+    font-size: 0.9rem;
+  }
   .more-info .center .feature .content .title {
     font-size: 1.2em;
   }
@@ -151,6 +184,12 @@ header nav ul #home {
 @media only screen and (max-height: 760px) and (orientation: landscape) {
   .hero-img {
     background-position-y: 45%;
+  }
+  .hero {
+    margin-top: -0.5em;
+  }
+  .hero .language {
+    display: none;
   }
   .more-info {
     margin-top: -2.5em;

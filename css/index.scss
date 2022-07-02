@@ -7,6 +7,10 @@ header {
         color: white;
       }
 
+      p {
+        color: white;
+      }
+
       #home {
         font-weight: bolder;
       }
@@ -71,6 +75,27 @@ header {
     padding: 1em 3em;
     border-radius: 2em;
     margin-top: 1em;
+  }
+
+  .language {
+    display: flex;
+    justify-content: center;
+    margin-top: .2em;
+
+    a {
+      color: white;
+      display: inline;
+      padding: .75em 0;
+      font-size: .75rem;
+    }
+
+    p {
+      color: white;
+      display: inline;
+      padding: .75em .1em;
+      margin-top: 0;
+      font-size: .75rem;
+    }
   }
 }
 
@@ -142,6 +167,16 @@ header {
       button.start-test {
         font-size: .8rem;
       }
+
+      .language {
+        a {
+          font-size: .8rem;
+        }
+
+        p {
+          font-size: .8rem;
+        }
+      }
     }
 
     .more-info {
@@ -184,6 +219,16 @@ header {
         padding: 1em 3em;
         border-radius: 3em;
       }
+
+      .language {
+        a {
+          font-size: .9rem;
+        }
+
+        p {
+          font-size: .9rem;
+        }
+      }
     }
 
     .more-info {
@@ -207,6 +252,14 @@ header {
 @media only screen and (max-height: 760px) and (orientation: landscape) {
   .hero-img {
     background-position-y: 45%;
+  }
+
+  .hero {
+    margin-top: -.5em;
+
+    .language {
+      display: none;
+    }
   }
 
   .more-info {

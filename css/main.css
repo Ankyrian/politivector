@@ -48,16 +48,51 @@ header nav ul a {
 header nav ul a:hover {
   text-decoration-line: underline;
 }
+header nav ul .language {
+  display: flex;
+  margin-bottom: auto;
+  justify-content: right;
+  padding-left: 0.75em;
+}
+header nav ul .language a {
+  display: inline;
+  padding: 0.75em 0;
+}
+header nav ul .language p {
+  display: inline;
+  padding: 0.75em 0.1em;
+  margin-top: 0.3em;
+  font-size: 0.9rem;
+}
 
+@media only screen and (max-width: 760px) and (orientation: portrait) {
+  header nav ul .language {
+    display: none;
+  }
+}
 @media only screen and (max-width: 760px) and (orientation: portrait) and (min-width: 360px) {
   header nav ul a {
     padding: 0.9em 2.2em;
+    font-size: 1rem;
+  }
+  header nav ul .language a {
+    padding: 0.9em 0;
+    font-size: 1rem;
+  }
+  header nav ul .language p {
+    padding: 0.9em 0.1em;
     font-size: 1rem;
   }
 }
 @media only screen and (max-width: 760px) and (orientation: portrait) and (min-width: 360px) and (min-width: 400px) {
   header nav ul a {
     padding: 0.9em 1.9em;
+    font-size: 1.15rem;
+  }
+  header nav ul .language a {
+    font-size: 1.15rem;
+  }
+  header nav ul .language p {
     font-size: 1.15rem;
   }
 }

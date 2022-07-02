@@ -7,6 +7,10 @@ header {
         color: black;
       }
 
+      p {
+        color: black;
+      }
+
       #future-plans {
         font-weight: bolder;
       }
@@ -31,7 +35,7 @@ header {
     background-color: #1559AD;
     background-image: linear-gradient(45deg, #ef4040, #4018df);
     background-size: cover;
-    background-position-x: -2rem;
+    background-position-x: 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -112,6 +116,16 @@ header {
 }
 
 @media only screen and (max-height: 460px) and (orientation: landscape) {
+  header {
+    nav {
+      ul {
+        .language {
+          display: none;
+        }
+      }
+    }
+  }
+
   .hero {
     height: 78vh;
     margin-top: 12vh;

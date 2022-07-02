@@ -51,11 +51,40 @@ header {
           text-decoration-line: underline;
         }
       }
+
+      .language {
+        display: flex;
+        margin-bottom: auto;
+        justify-content: right;
+        padding-left: .75em;
+
+        a {
+          display: inline;
+          padding: .75em 0;
+        }
+
+        p {
+          display: inline;
+          padding: .75em .1em;
+          margin-top: .3em;
+          font-size: .9rem;
+        }
+      }
     }
   }
 }
 
 @media only screen and (max-width: 760px) and (orientation: portrait) {
+  header {
+    nav {
+      ul {
+        .language {
+          display: none;
+        }
+      }
+    }
+  }
+
   @media (min-width: 360px) {
     header {
       nav {
@@ -63,6 +92,18 @@ header {
           a {
             padding: .9em 2.2em;
             font-size: 1rem;
+          }
+
+          .language {
+            a {
+              padding: .9em 0;
+              font-size: 1rem;
+            }
+
+            p {
+              padding: .9em .1em;
+              font-size: 1rem;
+            }
           }
         }
       }
@@ -75,6 +116,16 @@ header {
             a {
               padding: .9em 1.9em;
               font-size: 1.15rem;
+            }
+
+            .language {
+              a {
+                font-size: 1.15rem;
+              }
+
+              p {
+                font-size: 1.15rem;
+              }
             }
           }
         }
