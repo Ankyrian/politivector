@@ -178,7 +178,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "In desperate times, dictatorship is a reliable option for democracies.",
+        "text": "In desperate times, temporary dictatorship is a reliable option for democracies.",
         "dimension": 3,
         "aa": [7],
         "pa": [5, 0.5],
@@ -892,7 +892,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Peace through domination is not peace at all.",
+        "text": "Peace through domination is no peace at all.",
         "dimension": 18,
         "aa": [7],
         "pa": [5, 0.5],

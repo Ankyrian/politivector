@@ -37,7 +37,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "İnsanlık, üstüğünlüğünden dolayı, tabiatın haklı sahibidir.",
+        "text": "İnsanlık, doğaya karşı üstünlüğünden dolayı, tabiatın meşru sahibidir.",
         "dimension": 0,
         "aa": [7],
         "pa": [5, 0.5],
@@ -64,7 +64,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Onu gözlemleyecek bilinç olmadıkça, doğanın bir değeri yoktur.",
+        "text": "Doğanın, onu gözlemleyecek bir bilinç olmadıkça bir değeri yoktur.",
         "dimension": 0,
         "aa": [7],
         "pa": [5, 0.5],
@@ -102,7 +102,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Çeşitli toplumlar, tekil parçalara bölünmeye eğilimlidirler.",
+        "text": "Kültür veya fikir bakımından homojen olmayan toplumlar, bölünmeye eğilimlidirler.",
         "dimension": 1,
         "aa": [7],
         "pa": [5, 0.5],
@@ -140,7 +140,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Cezai sistemlerin amacı, yıkıcı bireylerin toplumdan uzaklaştırılmasıdır.",
+        "text": "Cezai sistemlerin amacı, topluma zararlı bireylerin toplumdan uzaklaştırılmasıdır.",
         "dimension": 2,
         "aa": [7],
         "pa": [5, 0.5],
@@ -149,7 +149,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Birinin yumruk savurma özgürlüğü, bir başkasının burnunun başladığı yerde biter.",
+        "text": "Bir bireyin özgürlükleri, bir başka bireyin özgürlüklerinin başladığı yerde biter.",
         "dimension": 2,
         "aa": [7],
         "pa": [5, 0.5],
@@ -178,7 +178,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Çaresiz zamanlarda diktatörlük, demokrasiler için güvenli bir seçenektir.",
+        "text": "Çaresiz zamanlarda geçici diktatörlük, demokrasiler için güvenli bir seçenektir.",
         "dimension": 3,
         "aa": [7],
         "pa": [5, 0.5],
@@ -205,7 +205,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Demokrasi, kendini imha eğilimleri olan ve yozlaşmaya oldukça müsait bir sistemdir.",
+        "text": "Demokrasi, kendini yok etme eğilimleri olan ve yozlaşmaya oldukça müsait bir sistemdir.",
         "dimension": 3,
         "aa": [7],
         "pa": [5, 0.5],
@@ -225,7 +225,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Piyasa ekonomisi, denetlenmediği zaman optimaldir.",
+        "text": "Piyasa ekonomisi, denetlenmediği zaman en verimli halindedir.",
         "dimension": 4,
         "aa": [7],
         "pa": [5, 0.5],
@@ -243,7 +243,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Yasa çerçevesinde, şirket hareketlerinden zarar doğmaz.",
+        "text": "Şirketlerin yasa çerçevesindeki hareketlerinden zarar doğmaz.",
         "dimension": 4,
         "aa": [7],
         "pa": [5, 0.5],
@@ -252,7 +252,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Ölçüleri fark etmeksizin her servet, haklı kazanılmıştır.",
+        "text": "Miktarı fark etmeksizin her servet, haklı kazanılmıştır.",
         "dimension": 4,
         "aa": [7],
         "pa": [5, 0.5],
@@ -365,8 +365,8 @@ var questions = [
         "pd": [2, 0.5],
         "ad": [0]
     },
-    {
-        "text": "Yalnızca halkın kendisi, kendini gerçekten temsil edebilir ve ihtiyaçlar ile isteklerini dillendirebilir.",
+    { 
+        "text": "Halkı gerçekten temsil edip, ihtiyaçlarını ve isteklerini dillendirebilecek tek merci halkın kendisidir",
         "dimension": 7,
         "aa": [7],
         "pa": [5, 0.5],
@@ -404,7 +404,7 @@ var questions = [
 
     // Ecocentrism
     {
-        "text": "İnsan aktivitelerinden dolayı türlerin yok olması kabul edilemez.",
+        "text": "İnsan aktivitelerinden dolayı canlı türlerinin yok olması kabul edilemezdir.",
         "dimension": 8,
         "aa": [7],
         "pa": [5, 0.5],
@@ -422,7 +422,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "İnsan yaşamı için hayati oluşu, doğanın korunması için yeterli bir sebeptir.",
+        "text": "Doğanın insan yaşamı için hayati oluşu, onun korunması için yeterli bir sebeptir.",
         "dimension": 8,
         "aa": [7],
         "pa": [5, 0.5],
@@ -451,7 +451,7 @@ var questions = [
 
     // Elitism
     {
-        "text": "Entellektüellik, yalnızca belli kesimlerde bulunur.",
+        "text": "Entelektüellik, yalnızca belli kesimlerde bulunur.",
         "dimension": 9,
         "aa": [7],
         "pa": [5, 0.5],
@@ -460,7 +460,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Belli kitlelerin memnuniyeti, bir siyasetçi için halkın memnuniyetinden daha önemlidir.",
+        "text": "Bir siyasetçi için, belli kitlelerin memnuniyeti, halkın memnuniyetinden daha önemlidir.",
         "dimension": 9,
         "aa": [7],
         "pa": [5, 0.5],
@@ -487,7 +487,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Oy eşitliği, eğitimsiz çoğunluğa haksızca yetkin elitle aynı değeri biçer.",
+        "text": "Oy eşitliği, eğitimsiz çoğunluğa yetkin elitle haksızca aynı değeri biçer.",
         "dimension": 9,
         "aa": [7],
         "pa": [5, 0.5],
@@ -525,7 +525,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Birbirine bağımlı ekonomilerin avantajları dezavantajlarından fazladır.",
+        "text": "Birbirine bağımlı ekonomilerin avantajları, dezavantajlarından fazladır.",
         "dimension": 10,
         "aa": [7],
         "pa": [5, 0.5],
@@ -563,7 +563,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Yabancılar siyasette vatandaşlarla birebir aynı hak ve özgürlüklere sahip olmalıdırlar.",
+        "text": "Yabancılar, siyasette vatandaşlarla birebir aynı hak ve özgürlüklere sahip olmalıdırlar.",
         "dimension": 11,
         "aa": [9],
         "pa": [6, 0.5],
@@ -581,7 +581,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Sınırlar keyfidir ve eninde sonunda kaldırılmalıdırlar.",
+        "text": "Sınırlar anlamsızdır ve eninde sonunda kaldırılmalıdırlar.",
         "dimension": 11,
         "aa": [9],
         "pa": [6, 0.5],
@@ -610,7 +610,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Hakiki refah, mutlak kendine yetebilirlikten gelir.",
+        "text": "Hakiki refah, tamamen kendine yetebilmekten gelir.",
         "dimension": 12,
         "aa": [7],
         "pa": [5, 0.5],
@@ -686,7 +686,7 @@ var questions = [
 
     // Meritocracy
     {
-        "text": "Sadece yetkinliklerini kanıtlamış olanlar, güç mevkilerine getirilmelidir.",
+        "text": "Güç mevkilerine, sadece yetkinliklerini kanıtlamış olanlar getirilmelidir.",
         "dimension": 14,
         "aa": [7],
         "pa": [5, 0.5],
@@ -695,7 +695,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Siyasi atamaların temeli liyakat olmadıkça mükemmel devlet bile etkisiz hale gelir.",
+        "text": "Siyasi atamaların temeli liyakat olmadıkça kusursuz bir devlet bile etkisiz hale gelir.",
         "dimension": 14,
         "aa": [7],
         "pa": [5, 0.5],
@@ -713,7 +713,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Yetkinler fark yaratmak, niteliksizler ise şahsi kazanç için sorumluluk üstlenirler.",
+        "text": "Yetkinler fark yaratmak için, niteliksizler ise şahsi kazanç için sorumluluk üstlenirler.",
         "dimension": 14,
         "aa": [7],
         "pa": [5, 0.5],
@@ -789,7 +789,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "İnsanlık, her zaman daha iyisine evrilir.",
+        "text": "İnsanlık her zaman daha iyiye doğru evrilir.",
         "dimension": 16,
         "aa": [7],
         "pa": [5, 0.5],
@@ -854,7 +854,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Ulusların tarihi eğilimleri, güncel davranışları için güvenilir öngörü sağlar.",
+        "text": "Ulusların tarihi eğilimleri, güncel davranışları için güvenilir öngörüler sağlar.",
         "dimension": 17,
         "aa": [7],
         "pa": [5, 0.5],
@@ -863,7 +863,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Hakiki bir devlet, birleşmiş bir halkça uğruna savaşılmış ve kurulmuş devlettir.",
+        "text": "Ancak birleşmiş bir halkın uğruna savaştığı ve kurduğu bir devlet hakiki bir devlettir.",
         "dimension": 17,
         "aa": [7],
         "pa": [5, 0.5],
@@ -874,7 +874,7 @@ var questions = [
 
     // Pacifism
     {
-        "text": "Askeri müdahalelerin neticeleri, katiyen meşrulaştırılamaz.",
+        "text": "Askeri müdahalelerin neticeleri katiyen meşrulaştırılamaz.",
         "dimension": 18,
         "aa": [7],
         "pa": [5, 0.5],
@@ -892,7 +892,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Mutlak hakimiyet ve baskıdan gelen barış, hakiki barış değildir.",
+        "text": "Zoraki hakimiyetten doğan barış, hakiki barış değildir.",
         "dimension": 18,
         "aa": [7],
         "pa": [5, 0.5],
@@ -901,7 +901,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Ordu, işe yarar hiçbir dönüşü olmadan, yalnızca devlet bütçesini tüketir.",
+        "text": "Ordu, işe yarar hiçbir dönüşü olmadan yalnızca devlet bütçesini tüketir.",
         "dimension": 18,
         "aa": [9],
         "pa": [6, 0.5],
@@ -977,7 +977,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Yabancı katılımı, ulusal kültürleri zenginleştirir.",
+        "text": "Yabancıların topluma katılımı, ulusal kültürleri zenginleştirir.",
         "dimension": 20,
         "aa": [7],
         "pa": [5, 0.5],
@@ -986,7 +986,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Bireylerden kültürel geçmişlerini bırakmalarını istemek pratik değildir.",
+        "text": "Bireylerden kültürel geçmişlerini unutmalarını istemek mantıklı değildir.",
         "dimension": 20,
         "aa": [7],
         "pa": [5, 0.5],
@@ -995,7 +995,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Çeşitlilik, daha yetkin ve esnek toplumlar yaratır.",
+        "text": "Toplumsal çeşitlilik, daha yetkin ve esnek toplumlar yaratır.",
         "dimension": 20,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1024,7 +1024,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Çoğunluğu manipüle etmek, iktidar olabilmek için zorunludur.",
+        "text": "Çoğunluğu manipüle etmek, iktidar olabilmek için bir zorunluluktur.",
         "dimension": 21,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1089,7 +1089,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Dini emirler, halihazırda değillerse bile, nihayetinde eskiyecektir.",
+        "text": "Dini emirler, halihazırda değillerse bile, nihayetinde eskiyecektirler.",
         "dimension": 22,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1118,7 +1118,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "İnsan zihinleri, dini diretmelerin ardındaki sebepleri anlamaktan acizdirler, bu yüzden dini emirler sorgulanmamalıdırlar.",
+        "text": "İnsan zihinleri, dini emirlerin ardındaki sebepleri anlamaktan acizdirler, bu yüzden dini emirler sorgulanmamalıdırlar.",
         "dimension": 23,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1145,7 +1145,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Dini yalanlayan doğru tek bir kanıt yoktur, yalnızca insanların yanlış anlaması vardır.",
+        "text": "Dini yalanlayan tek bir doğru kanıt yoktur, yalnızca insanların yanlış anlaması vardır.",
         "dimension": 23,
         "aa": [7],
         "pa": [5, 0.5],
