@@ -22,8 +22,11 @@ const app = express();
 
 /// SERVER SETUP
 
+app.use(express.static(__dirname));
 app.get('/', (req, res) => {
     res.sendFile("index.html", {root: "."});
 })
 const server = http.createServer(app);
-server.listen(port);
+server.listen(port, () => {
+    console.log(`Listening on port ${port}...`);
+});
