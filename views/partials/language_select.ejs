@@ -1,0 +1,5 @@
+<% if(locale == "en") { %> 
+        <li class="language"><a><b>EN</b></a><p>|</p><a href="<%= path %>?lang=tr">TR</a></li>
+<% } if(locale == "tr") { %> 
+        <li class="language"><a href="<%= path %>?lang=en">EN</a><p>|</p><a><b>TR</b></a></li>
+<% } %>
