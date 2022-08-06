@@ -61,7 +61,7 @@ function addScores(dimensionId, scoreArr) {
 }
 
 function initializesResults() {
-    var generatedUrl = `results.html?d0=${dimensionScores[0][0]},${dimensionScores[0][1]}`;
+    var generatedUrl = `/results?d0=${dimensionScores[0][0]},${dimensionScores[0][1]}`;
     for(var i = 1; i < dimensionScores.length; i++) {
         generatedUrl += `&d${i}=${dimensionScores[i][0]},${dimensionScores[i][1]}`
     }

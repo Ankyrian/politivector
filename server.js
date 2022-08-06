@@ -33,18 +33,22 @@ server.listen(port, () => {
 
 /// ROUTES
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
     res.render("index.ejs");
 })
 
-app.get('/future', (req, res) => {
+app.get("/future", (req, res) => {
     res.render("future_plans.ejs");
 })
 
-app.get('/start', (req, res) => {
+app.get("/start", (req, res) => {
     res.render("questions.ejs");
 })
 
-app.get('*', (req, res) => {
+app.get("/results", (req, res) => {
+    res.render("results.ejs");
+})
+
+app.get("*", (req, res) => {
     res.sendFile("404.html", {root: "./public"});
 })
