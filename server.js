@@ -15,6 +15,7 @@ function getArgs() {
 
 const express = require("express");
 const http = require("http");
+const path = require("path");
 
 const arguments = getArgs();
 const port = arguments["port"];
@@ -22,9 +23,9 @@ const app = express();
 
 /// SERVER SETUP
 
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, "/public")));
 app.get('/', (req, res) => {
-    res.sendFile("index.html", {root: "."});
+    res.render("index.ejs");
 })
 const server = http.createServer(app);
 server.listen(port, () => {
