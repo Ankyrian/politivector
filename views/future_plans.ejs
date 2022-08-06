@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,9 +19,9 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="/" id="home">Home</a></li>
-                    <li><a href="/future" id="future-plans">Future Plans</a></li>
-                    <li class="language"><a href="/future?lang=en"><b>EN</b></a><p>|</p><a href="/future?lang=tr">TR</a></li>
+                    <li><a href="/" id="home"><%= __("Home") %></a></li>
+                    <li><a href="/future" id="future-plans"><%= __("Future") %></a></li>
+                    <%- include("partials/language_select.ejs", {path: "/future", locale: getLocale()}) %> 
                 </ul>
             </nav>
         </header>
@@ -41,51 +41,27 @@
     <section class="plans" id="scroll-to">
         <div class="center">
             <div class="plan">
-                <p class="title">Questions</p>
-                <p class="description">Currently, the questions in the test are of our mildly informed making. These
-                    questions were formulated using the most basic topics of discussion in politics and political
-                    philosophy. Our intention, after Politivector proves itself to be a valuable project, is to rework
-                    the questions to make the evaluation algorithm more accurate and informational.</p>
-                <p class="description">The ultimate goal regarding the veracity of the questions available in
-                    Politivector is to prepare a set of educated questions with experts and professors willing to
-                    participate in this project.</p>
+                <p class="title"><%= __("futureQuestionsHeader") %></p>
+                <p class="description"><%= __("futureQuestionsOne") %></p>
+                <p class="description"><%= __("futureQuestionsTwo") %></p>
             </div>
             <div class="plan">
-                <p class="title">Data</p>
-                <p class="description">Right now, Politivector obtains absolutely no data from its users whatsoever.
-                    While data collection and analysis for a small-scale project such as Politivector is a distant goal,
-                    we wish to be able to compare test takers’ results —anonymous results, of course— and present a
-                    comprehensive image regarding the distribution of ideologies across the world.</p>
-                <p class="description">One thought-through feature is to add a country, and maybe city, selector. This
-                    location information provided would allow us to display ideological maps of our anonymous test
-                    takers’ countries. The information portrayed by such distribution and concentration maps could be
-                    especially useful in demographic, social, and political studies.</p>
-                <p class="description">Another possibility is to apply various data science methods to the data provided
-                    to us by our test takers. One specific method is “clustering”. Clustering would allow us to group
-                    together data points, seeing if they agree on a common center.</p>
-                <p class="description">This analysis could present many new perspectives regarding the status of
-                    political philosophy in the modern world, such as how fragmented certain ideologies are, which
-                    political parties best satiate their peoples’ needs, and where a newcomer into politics could align
-                    themselves as a starting point.</p>
-                <p class="description">Data collection and analysis is probably the most intricate of our long-term
-                    goals, which is why it is the enhancement we wish to implement last.</p>
+                <p class="title"><%= __("futureDataHeader") %></p>
+                <p class="description"><%= __("futureDataOne") %></p>
+                <p class="description"><%= __("futureDataTwo") %></p>
+                <p class="description"><%= __("futureDataThree") %></p>
+                <p class="description"><%= __("futureDataFour") %></p>
+                <p class="description"><%= __("futureDataFive") %></p>
             </div>
             <div class="plan">
-                <p class="title">Results</p>
-                <p class="description">Currently, we are using a simple percentage bar format to display test results.
-                    There are much more imaginative ways of visualizing information, some of which we may choose to add
-                    into Politivector.</p>
-                <p class="description">A conventional format is the political compass, which is a 2D plane containing
-                    Authoritarian/Liberal and Economic Left/Right axes. This form of visualization cannot be applied to
-                    all 12 dimensions of Politivector (humans are not good at comprehending 12D), but affiliated
-                    dimensions could be “plotted” against one another.</p>
-                <p class="description">We will further discuss what visuals could be used to display information output
-                    by Politivector, and include ones we see informational and attractive.</p>
+                <p class="title"><%= __("futureResultsHeader") %></p>
+                <p class="description"><%= __("futureResultsOne") %></p>
+                <p class="description"><%= __("futureResultsTwo") %></p>
+                <p class="description"><%= __("futureResultsThree") %></p>
             </div>
             <div class="plan">
-                <p class="title">Much More!</p>
-                <p class="description">We will establish channels of communication to receive feedback from our test
-                    takers, and improve Politivector in ways we could not imagine.</p>
+                <p class="title"><%= __("futureModeHeader") %></p>
+                <p class="description"><%= __("futureModeOne") %></p>
             </div>
         </div>
     </section>

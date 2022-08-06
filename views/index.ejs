@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,9 +21,9 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="/" id="home">Home</a></li>
-                    <li><a href="/future" id="future-plans">Future Plans</a></li>
-                    <li class="language"><a href="?lang=en"><b>EN</b></a><p>|</p><a href="?lang=tr">TR</a></li>
+                    <li><a href="/" id="home"><%= __("Home") %></a></li>
+                    <li><a href="/future" id="future-plans"><%= __("Future") %></a></li>
+                    <%- include("partials/language_select.ejs", {path: "/", locale: getLocale()}) %> 
                 </ul>
             </nav>
         </header>
