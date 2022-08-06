@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="/" id="home">Home</a></li>
                     <li><a href="/future" id="future-plans">Future Plans</a></li>
-                    <li class="language"><a href="future_plans.html"><b>EN</b></a><p>|</p><a href="turkish/future_plans_tr.html">TR</a></li>
+                    <li class="language"><a href="/future?lang=en"><b>EN</b></a><p>|</p><a href="/future?lang=tr">TR</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,9 +29,9 @@
     
     <section class="hero">
         <div>
-            <h1>Take a look at our</h1>
-            <h1 id="gradient">Future Plans</h1>
-            <h1>for Politivector</h1>
+            <h1><%= __("futureHeaderOne") %></h1>
+            <h1 id="gradient"><%= __("futureHeaderTwo") %></h1>
+            <h1><%= __("futureHeaderThree") %></h1>
         </div>
         <a onclick="document.getElementById('scroll-to').scrollIntoView()">
             <img src="assets/arrow.png" alt="">
