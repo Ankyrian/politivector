@@ -1,6 +1,7 @@
 {
     "Home": "Home",
     "Future": "Future Plans",
+    "test": "Test",
 
     "indexHeader": "Get a sense of your ideology.",
     "indexHeaderSubtitle": "A global test designed for a global audience to better comprehend where they stand.",
@@ -14,9 +15,7 @@
 
     "secondParaHeader": "How does it work?",
     "secondParaOnePartOne": "Politivector is a test with 120 multiple choice questions. In each question, you will be given a prompt or a statement related to politics, and will be asked your opinion on the matter ranging from ",
-    "stronglyAgree": "Strongly Agree",
     "secondParaOnePartTwo": "to",
-    "stronglyDisagree": "Strongly Disagree",
     "secondParaOnePartThree": ".",
     "secondParaTwo": "Once the test is complete, you will be provided a visual summary of your political tendencies determined through your answers.</",
 
@@ -50,6 +49,15 @@
 
     "futureModeHeader": "Much More!",
     "futureModeOne": "We will establish channels of communication to receive feedback from our test takers, and improve Politivector in ways we could not imagine.",
+
+
+    "question": "Question",
+    "stronglyAgree": "Strongly Agree",
+    "agree": "Partially Agree",
+    "neutral": "Neutral",
+    "disagree": "Partially Disagree",
+    "stronglyDisagree": "Strongly Disagree",
+    "back": "Back",
 
 
     "placeholder": ""

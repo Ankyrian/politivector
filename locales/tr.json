@@ -1,6 +1,7 @@
 {
     "Home": "Anasayfa",
     "Future": "Gelecek Planları",
+    "test": "Test",
 
 
 	"indexHeader": "İdeolojinizin farkına varın.",
@@ -15,9 +16,7 @@
 
     "secondParaHeader": "Nasıl çalışıyor?",
     "secondParaOnePartOne": "Politivector 120 çoktan seçmeli sorudan oluşan bir testtir. Her soruda siyasetle alakalı bir konu hakkında ",
-    "stronglyAgree": "Kesinlikle Katılıyorum",
     "secondParaOnePartTwo": "ile",
-    "stronglyDisagree": "Kesinlikle Katılmıyorum",
     "secondParaOnePartThree": " arasında değişen görüşünüz sorulacaktır.",
     "secondParaTwo": "Testiniz sonuçlandığında siyasi eğilimlerinizin cevaplarınızca belirlenen görsel bir özeti size sunulacaktır.",
 
@@ -51,6 +50,14 @@
 
     "futureModeHeader": "Çok Daha Fazlası!",
     "futureModeOne": "Kullanıcılarımızdan dönüt alabilmek için iletişim kanalları kuracak ve Politivector'ü hayal bile edemediğimiz şekillerde geliştireceğiz.",
+
+    "question": "Soru",
+    "stronglyAgree": "Kesinlikle Katılıyorum",
+    "agree": "Kısmen Katılıyorum",
+    "neutral": "Tarafsızım",
+    "disagree": "Kısmen Katılmıyorum",
+    "stronglyDisagree": "Kesinlikle Katılmıyorum",
+    "back": "Geri",
 
 
     "placeholder": ""
