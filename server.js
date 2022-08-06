@@ -23,11 +23,28 @@ const app = express();
 
 /// SERVER SETUP
 
+app.set("view engine", "ejs"); // for templating
+
 app.use(express.static(path.join(__dirname, "/public")));
-app.get('/', (req, res) => {
-    res.render("index.ejs");
-})
 const server = http.createServer(app);
 server.listen(port, () => {
     console.log(`Listening on port ${port}...`);
 });
+
+/// ROUTES
+
+app.get('/', (req, res) => {
+    res.render("index.ejs");
+})
+
+app.get('/future', (req, res) => {
+    res.render("future_plans.ejs");
+})
+
+app.get('/start', (req, res) => {
+    res.render("questions.ejs");
+})
+
+app.get('*', (req, res) => {
+    res.sendFile("404.html", {root: "./public"});
+})
