@@ -1,7 +1,31 @@
 {
-    "indexHeader": "İdeolojinizin farkına varın.",
+	"indexHeader": "İdeolojinizin farkına varın.",
+	"indexHeaderSubtitle": "Küresel bir kitlenin tutumlarını anlamaları için tasarlanmış küresel bir test.",
+	"indexHeaderText": "Politivector devamlı gelişen bir proje. Politivector’ü bir testten çok daha fazlası haline getirmek için birçok planımız var.",
+	"learnMore": "Daha fazlası",
+    "startTest": "Teste Başla",
+
+    "firstParaHeader": "Politivector nedir?",
+    "firstParaOne": "Politivector, siyasal eğilimlerin göreceli bir özetini çıkartmak için hazırlanmış genel sorulardan oluşan bir testtir.",
+    "firsParaTwo": "Politivector’ün arkasındaki asıl amaç hazırda varolan siyasi testlerin ülkeye bağlı dil ve olgularından bağımsız uluslararası bir test yaratmaktır. Her ülkenin siyasi yelpazesinin değiştiğinin farkındayız, ve hedefimiz siyasi eğilimleri en genel ancak bilgilendirici şekilde görselleştirmektir.",
+
+    "secondParaHeader": "Nasıl çalışıyor?",
+    "secondParaOnePartOne": "Politivector 120 çoktan seçmeli sorudan oluşan bir testtir. Her soruda siyasetle alakalı bir konu hakkında ",
+    "stronglyAgree": "Kesinlikle Katılıyorum",
+    "secondParaOnePartTwo": "ile",
+    "stronglyDisagree": "Kesinlikle Katılmıyorum",
+    "secondParaOnePartThree": " arasında değişen görüşünüz sorulacaktır.",
+    "secondParaTwo": "Testiniz sonuçlandığında siyasi eğilimlerinizin cevaplarınızca belirlenen görsel bir özeti size sunulacaktır.",
+
+    "thirdParaHeader": "Neden sonuçlarda “En Yakın Eşleşme” yok?",
+    "thirdParaOne": "Politivector, testi çözen herkese kültür ve milliyet fark etmeksizin küresel anlamda anlaşılabilecek sonuçlar sunmayı hedefliyor. Bizim gözlemimiz,  siyasi tutumu nitelendirmekte kullanılan dilin, bulunulan yere göre değiştiği yönündedir. Başka bir deyişle, siyasi pusulanın merkezi her ülkede kaymaktadır.",
+    "thirdParaTwo": "Bu sebeple “En Yakın Eşleşme” veya ideolojik sınıflandırma özelliğini dahil etmeme tercihinde bulunduk.",
+
+    "waitHeader": "Daha fazlası için bekleyin!",
+    "waitPara": "Politivector’ün doğruluğu, kapsamı ve içeriği hakkında daha çok planımız var. “Gelecek Planlar” sayfamızı sık sık ziyaret ederek siyasi eğilimleriniz hakkındaki bilgileriniz güncel tutun ve Politivector’ün kabiliyetleriyle ilgili olan ilerlememizi takip edin.",
+
 
     "futureHeaderOne": "Politivector’le ilgili",
-    "futureHeaderTwo": "Gelecek Planlarımıza",
-    "futureHeaderThree": "bir göz atın"
+	"futureHeaderTwo": "Gelecek Planlarımıza",
+	"futureHeaderThree": "bir göz atın"
 }
