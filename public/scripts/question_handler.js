@@ -4,10 +4,10 @@ var randomizedQuestions;
 var currentQuestion;
 var currentIndex = -1;
 var changesHistory = [];
-var questionLocale;
+var questionsText;
 
-function questionPageInit(question) {
-    questionLocale = question;
+function questionPageInit(questionsJSON) {
+    questionsText = JSON.parse(questionsJSON);
     randomizedQuestions = shuffle(questions);
     nextQuestion();
     backButtonSet();
@@ -48,7 +48,7 @@ function nextQuestion() {
     backButtonSet();
     currentQuestion = randomizedQuestions[currentIndex];
     document.getElementById('question-font').innerHTML = currentQuestion.text;
-    document.getElementById('question-number').innerHTML = `${questionLocale} ${currentIndex + 1} / ${questions.length}`
+    document.getElementById('question-number').innerHTML = `${questionsText.question} ${currentIndex + 1} / ${questions.length}`
 }
 
 function addScores(dimensionId, scoreArr) {
@@ -79,7 +79,7 @@ function previousQuestion() {
         dimensionScores[history[0]][1] -= history[2];
         currentQuestion = randomizedQuestions[currentIndex];
         document.getElementById('question-font').innerHTML = currentQuestion.text;
-        document.getElementById('question-number').innerHTML = `${questionLocale} ${currentIndex + 1} / ${questions.length}`
+        document.getElementById('question-number').innerHTML = `${questionsText.question} ${currentIndex + 1} / ${questions.length}`
     }
 }
 

@@ -11,11 +11,21 @@ function getArgs() {
     return argDict;
 }
 
+function getQuestions(locale) {
+    let questions;
+    if (!locale || locale == "en") {
+        questions = questionsTextEN;
+    } else if (locale == "tr") {
+        questions = questionsTextTR;
+    }
+    return JSON.stringify(questions);
+}
+
 /// MIDDLEWARES
 
 function detectLocaleQuery(req, res, next) {
     if (req.query.lang) {
-        res.cookie("locale", req.query.lang, { maxAge: 900000, httpOnly: true });
+        res.cookie("locale", req.query.lang, { maxAge: 90000000, httpOnly: true });
     }
     next();
 }
@@ -32,25 +42,23 @@ const arguments = getArgs();
 const port = arguments["port"];
 const app = express();
 
+const questionsTextEN = require("./public/data/questions_text_en.json"),
+    questionsTextTR = require("./public/data/questions_text_tr.json");
+
 /// i18n
 
 i18n.configure({
-    // setup some locales - other locales default to en silently
-    locales: ["en", "tr"],
-    // defualt locale will be en until changed by user (also defaults for non-existent locale code)
-    defaultLocale: "en",
-    // sets a custom cookie name to parse locale settings from
-    cookie: "locale",
-    // query parameter to switch locale (ie. /home?lang=ch) 
-    // I added this despite having the cookie since the cookie method requires a refresh to take effect
-    queryParameter: 'lang',
-    // where to store json files - defaults to './locales'
-    directory: path.join(__dirname, "locales")
+    locales: ["en", "tr"], // setup some locales - other locales default to en silently
+    defaultLocale: "en", // defualt locale will be en until changed by user (also defaults for non-existent locale code)
+    cookie: "locale", // sets a custom cookie name to parse locale settings from
+    // I added queryParameter despite having the cookie since the cookie method requires a refresh to take effect
+    queryParameter: 'lang', // query parameter to switch locale (ie. /home?lang=ch) 
+    directory: path.join(__dirname, "locales") // where to store json files - defaults to './locales'
 });
 
 /// SERVER SETUP
 
-app.set("view engine", "ejs"); // for templating
+app.set("view engine", "ejs");
 
 app.use(cookieParser());
 app.use(detectLocaleQuery);
@@ -73,7 +81,7 @@ app.get("/future", (req, res) => {
 })
 
 app.get("/start", (req, res) => {
-    res.render("questions.ejs");
+    res.render("questions.ejs", {questionsTextJSON: getQuestions(req.cookies.locale)});
 })
 
 app.get("/results", (req, res) => {
