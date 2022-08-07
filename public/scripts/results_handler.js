@@ -44,10 +44,10 @@ function resultsPageInit() {
   });
 }
 
-function generateScoresMap() {
+function generateScoresMap(resultsQuery) {
   var result = new Map();
-  var query = window.location.search.substring(1);
-  var dimensions = query.split("&");
+  console.log(resultsQuery);
+  var dimensions = resultsQuery.split("&");
   for (var i = 0; i < dimensions.length; i++) {
     var idScoresPair = dimensions[i].split("=");
     var scoresPair = idScoresPair[1].split(",");
@@ -94,4 +94,12 @@ function calculateWidth(percent) {
     return 5;
   }
   return percent
+}
+
+module.exports = {
+    getDimensionById,
+    generateScoresMap,
+    calculateScorePercentages,
+    calculateWidth,
+    preferredRenderOrder
 }

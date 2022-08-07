@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/results.css">
     <script src="data/dimensions.js"></script>
-    <script src="scripts/results_handler.js"></script>
+    <!-- <script src="scripts/results_handler.js"></script> -->
   </head>
-  
-  <body onload="resultsPageInit()">
+
+  <body> <%# onload="resultsPageInit()" %> 
     <header>
       <a href="/">
         <img class="mini-logo" src="assets/mini.png" alt="">
@@ -45,6 +45,19 @@
         </div>
         <div id="results-panel-content">
   
+            <% let scoresMap = resultsHandler.generateScoresMap(resultsQuery); %>
+            <% resultsHandler.preferredRenderOrder.forEach(element => { %> 
+                <% let percentagesArr = 
+                    resultsHandler.calculateScorePercentages(scoresMap.get(`d${element[0]}`), scoresMap.get(`d${element[1]}`)); %>
+                <%- include("partials/dimension_partial.ejs", {
+                    leftDimension: resultsHandler.dimensions[element[0]],
+                    rightDimension: resultsHandler.dimensions[element[1]],
+                    leftPercent: percentagesArr[0],
+                    neutralPercent: percentagesArr[1],
+                    rightPercent: percentagesArr[2]
+                }) %> 
+            <% }); %>
+
         </div>
       </div>
     </div>

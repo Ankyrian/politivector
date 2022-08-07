@@ -43,7 +43,9 @@ const port = arguments["port"];
 const app = express();
 
 const questionsTextEN = require("./public/data/questions_text_en.json"),
-    questionsTextTR = require("./public/data/questions_text_tr.json");
+    questionsTextTR = require("./public/data/questions_text_tr.json"),
+    resultsGenerationFunctions = require("./public/scripts/results_handler"),
+    dimensions = require("./public/data/dimensions.js");
 
 /// i18n
 
@@ -85,7 +87,11 @@ app.get("/start", (req, res) => {
 })
 
 app.get("/results", (req, res) => {
-    res.render("results.ejs");
+    res.render("results.ejs", {
+        resultsHandler: resultsGenerationFunctions,
+        resultsQuery: req.query,
+        dimensions: dimensions
+    });
 })
 
 app.get("*", (req, res) => {
