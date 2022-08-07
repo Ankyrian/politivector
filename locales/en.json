@@ -1,6 +1,7 @@
 {
     "Home": "Home",
     "Future": "Future Plans",
+    "Results": "Your Results",
     "test": "Test",
 
     "indexHeader": "Get a sense of your ideology.",
@@ -59,6 +60,40 @@
     "stronglyDisagree": "Strongly Disagree",
     "back": "Back",
 
+
+    "resultsHeaderOne": "The results",
+    "resultsHeaderTwo": "are",
+    "resultsHeaderThree": "in!",
+
+    "viewResults": "View Results",
+
+    "logo": "Logo",
+
+    "Anthropocentrism": "Anthropocentrism",
+    "Assimilationism": "Assimilationism",
+    "Authoritarianism": "Authoritarianism",
+    "Autocracy": "Autocracy",
+    "Accumulation": "Accumulation",
+    "Distribution": "Distribution",
+    "Conservatism": "Conservatism",
+    "Democracy": "Democracy",
+    "Ecocentrism": "Ecocentrism",
+    "Elitism": "Elitism",
+    "Globalism": "Globalism",
+    "Internationalism": "Internationalism",
+    "Isolationism": "Isolationism",
+    "Libertarianism": "Libertarianism",
+    "Meritocracy": "Meritocracy",
+    "Militarism": "Militarism",
+    "Modernism": "Modernism",
+    "Nationalism": "Nationalism",
+    "Pacifism": "Pacifism",
+    "Partisanship": "Partisanship",
+    "Pluralism": "Pluralism",
+    "Populism": "Populism",
+    "Secularism": "Secularism",
+    "Theocracy": "Theocracy",
+    
 
     "placeholder": ""
 }

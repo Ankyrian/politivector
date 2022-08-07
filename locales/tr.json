@@ -1,6 +1,7 @@
 {
     "Home": "Anasayfa",
     "Future": "Gelecek Planları",
+    "Results": "Sonuçlarınız",
     "test": "Test",
 
 
@@ -58,6 +59,39 @@
     "disagree": "Kısmen Katılmıyorum",
     "stronglyDisagree": "Kesinlikle Katılmıyorum",
     "back": "Geri",
+
+
+    "resultsHeaderOne": "Sonuçlar",
+    "resultsHeaderTwo": "hazır!",
+
+    "viewResults": "Görüntüle",
+
+    "logo": "Logosu",
+
+    "Anthropocentrism": "Antroposentrizm",
+    "Assimilationism": "Asimilasyonizm",
+    "Authoritarianism": "Otoriteryanizm",
+    "Autocracy": "Otokrasi",
+    "Accumulation": "Birikim",
+    "Distribution": "Dağıtım",
+    "Conservatism": "Muhafazakarlık",
+    "Democracy": "Demokrasi",
+    "Ecocentrism": "Çevrecilik",
+    "Elitism": "Elitizm",
+    "Globalism": "Küreselcilik",
+    "Internationalism": "Enternasyonalizm",
+    "Isolationism": "İzolasyonizm",
+    "Libertarianism": "Özgürlükçülük",
+    "Meritocracy": "Liyakat",
+    "Militarism": "Militarizm",
+    "Modernism": "Çağdaşçılık",
+    "Nationalism": "Milliyetçilik",
+    "Pacifism": "Pasifizm",
+    "Partisanship": "Sadakat",
+    "Pluralism": "Çoğulculuk",
+    "Populism": "Popülizm",
+    "Secularism": "Laiklik",
+    "Theocracy": "Teokrasi",
 
 
     "placeholder": ""
