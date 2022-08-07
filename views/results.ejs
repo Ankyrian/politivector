@@ -4,47 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results - Politivector</title>
+    <title><%= __("Results") %> - Politivector</title>
     <link rel="icon" type="image/png" href="assets/logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/results.css">
-    <script src="data/dimensions.js"></script>
-    <script src="scripts/results_handler.js"></script>
   </head>
-  
-  <body onload="resultsPageInit()">
+
+  <body>
     <header>
       <a href="/">
         <img class="mini-logo" src="assets/mini.png" alt="">
       </a>
       <nav>
         <ul>
-          <li><a href="/" id="home">Home</a></li>
-          <li><a href="/future" id="future-plans">Future Plans</a></li>
-          <li class="language"><a href="results.html"><b>EN</b></a><p>|</p><a href="turkish/results_tr.html">TR</a></li>
+          <li><a href="/" id="home"><%= __("Home") %></a></li>
+          <li><a href="/future" id="future-plans"><%= __("Future") %></a></li>
         </ul>
       </nav>
     </header>
   
     <section class="hero">
       <div>
-        <h1>Your Results</h1>
-        <h1>are</h1>
-        <h1>ready!</h1>
+        <h1><%= __("resultsHeaderOne") %></h1>
+        <h1><%= __("resultsHeaderTwo") %></h1>
+        <% if (getLocale() != "tr") { %>
+            <h1><%= __("resultsHeaderThree") %></h1>
+        <% } %>
       </div>
-      <button class="start-test" onclick="document.getElementById('scroll-to').scrollIntoView()">&#8595; View Results &#8595;</button>
+      <button class="start-test" onclick="document.getElementById('scroll-to').scrollIntoView()">&#8595; <%= __("viewResults") %> &#8595;</button>
     </section>
     <div class="container"><img src="assets/blob.png" alt=""></div>
     <div class="content-box">
-      <p>Results</p>
+      <p><%= __("Results") %></p>
       <div class="results-content results-panel" id="scroll-to">
         <div id="inner-header">
           <img src="assets/logo.png" alt="Politivector Logo">
         </div>
         <div id="results-panel-content">
   
+            <% let scoresMap = resultsHandler.generateScoresMap(resultsQuery); %>
+            <% resultsHandler.preferredRenderOrder.forEach(element => { %> 
+                <% let percentagesArr = 
+                    resultsHandler.calculateScorePercentages(scoresMap[element[0]], scoresMap[element[1]]); %>
+                <%- include("partials/dimension_partial.ejs", {
+                    leftDimension: dimensions[element[0]],
+                    rightDimension: dimensions[element[1]],
+                    leftPercent: percentagesArr[0],
+                    neutralPercent: percentagesArr[1],
+                    rightPercent: percentagesArr[2]
+                }) %> 
+            <% }); %>
+
         </div>
       </div>
     </div>

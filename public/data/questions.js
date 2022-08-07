@@ -28,7 +28,7 @@
 var questions = [
     // Anthropocentrism
     {
-        "text": "Exploitation of the environment for human benefit is legitimate.",
+        "text": "0-1",
         "dimension": 0,
         "aa": [7],
         "pa": [5, 0.5],
@@ -37,7 +37,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Humans, through their superiority, are the rightful owners of nature.",
+        "text": "0-2",
         "dimension": 0,
         "aa": [7],
         "pa": [5, 0.5],
@@ -46,7 +46,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Sacrificing ecosystems for human use is acceptable.",
+        "text": "0-3",
         "dimension": 0,
         "aa": [7],
         "pa": [5, 0.5],
@@ -55,7 +55,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Advancement of civilization cannot be abandoned for the sake of inconsequential effects on nature.",
+        "text": "0-4",
         "dimension": 0,
         "aa": [7],
         "pa": [5, 0.5],
@@ -64,7 +64,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Without sentience to observe it, nature has no value.",
+        "text": "0-5",
         "dimension": 0,
         "aa": [7],
         "pa": [5, 0.5],
@@ -75,7 +75,7 @@ var questions = [
 
     // Assimilationism
     {
-        "text": "Unintegrated multiculturalism is a threat to any given society.",
+        "text": "1-1",
         "dimension": 1,
         "aa": [7],
         "pa": [5, 0.5],
@@ -84,7 +84,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Immigrants must integrate into the societies in which they live.",
+        "text": "1-2",
         "dimension": 1,
         "aa": [7],
         "pa": [5, 0.5],
@@ -93,7 +93,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Multicultural societies are bound to suffer ethnic, social, and cultural friction.",
+        "text": "1-3",
         "dimension": 1,
         "aa": [7],
         "pa": [5, 0.5],
@@ -102,7 +102,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Diverse societies tend to fraction into unitary parts.",
+        "text": "1-4",
         "dimension": 1,
         "aa": [7],
         "pa": [5, 0.5],
@@ -111,7 +111,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "In the modern world, where nation states have replaced empires, multiculturalism is inapplicable.",
+        "text": "1-5",
         "dimension": 1,
         "aa": [7],
         "pa": [5, 0.5],
@@ -122,7 +122,7 @@ var questions = [
 
     // Authoritarianism
     {
-        "text": "Law enforcement should have access to firearms.",
+        "text": "2-1",
         "dimension": 2,
         "aa": [7],
         "pa": [5, 0.5],
@@ -131,7 +131,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The sacrifice of some civil liberties is necessary for establishing an ordered and cooperative society.",
+        "text": "2-2",
         "dimension": 2,
         "aa": [7],
         "pa": [5, 0.5],
@@ -140,7 +140,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The purpose of penal systems is to isolate disruptive individuals from the rest of society.",
+        "text": "2-3",
         "dimension": 2,
         "aa": [7],
         "pa": [5, 0.5],
@@ -149,7 +149,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The right to swing one’s fist ends where the other man’s nose begins.",
+        "text": "2-4",
         "dimension": 2,
         "aa": [7],
         "pa": [5, 0.5],
@@ -158,7 +158,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Human nature is too destructive to be left unsupervised.",
+        "text": "2-5",
         "dimension": 2,
         "aa": [7],
         "pa": [5, 0.5],
@@ -169,7 +169,7 @@ var questions = [
 
     // Autocracy
     {
-        "text": "Masses are too ignorant to be trusted with state authority.",
+        "text": "3-1",
         "dimension": 3,
         "aa": [7],
         "pa": [5, 0.5],
@@ -178,7 +178,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "In desperate times, temporary dictatorship is a reliable option for democracies.",
+        "text": "3-2",
         "dimension": 3,
         "aa": [7],
         "pa": [5, 0.5],
@@ -187,7 +187,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Some differences in governance approach simply cannot be reconciled by the general population.",
+        "text": "3-3",
         "dimension": 3,
         "aa": [7],
         "pa": [5, 0.5],
@@ -196,7 +196,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Individuals may be intelligent but masses are always incompetent.",
+        "text": "3-4",
         "dimension": 3,
         "aa": [7],
         "pa": [5, 0.5],
@@ -205,7 +205,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Democracy is a highly corruptible system with self-destructive tendencies.",
+        "text": "3-5",
         "dimension": 3,
         "aa": [7],
         "pa": [5, 0.5],
@@ -216,7 +216,7 @@ var questions = [
 
     // Capitalism
     {
-        "text": "Human nature’s tendency to selfishness is a reliable basis for economic models.",
+        "text": "4-1",
         "dimension": 4,
         "aa": [7],
         "pa": [5, 0.5],
@@ -225,7 +225,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Market economy is optimal when unregulated.",
+        "text": "4-2",
         "dimension": 4,
         "aa": [7],
         "pa": [5, 0.5],
@@ -234,7 +234,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Supply and demand are the only reliable force for regulating the market.",
+        "text": "4-3",
         "dimension": 4,
         "aa": [7],
         "pa": [5, 0.5],
@@ -243,7 +243,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Within legal boundaries, no harm comes from corporate endeavors.",
+        "text": "4-4",
         "dimension": 4,
         "aa": [7],
         "pa": [5, 0.5],
@@ -252,7 +252,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Wealth is rightfully earned, regardless of proportion.",
+        "text": "4-5",
         "dimension": 4,
         "aa": [7],
         "pa": [5, 0.5],
@@ -263,7 +263,7 @@ var questions = [
 
     // Communism
     {
-        "text": "Revenues and capital should be taxed proportionally to ensure fair distribution of wealth.",
+        "text": "5-1",
         "dimension": 5,
         "aa": [7],
         "pa": [5, 0.5],
@@ -272,7 +272,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Minimum salary must be enough to sustain entertainment expenses, in addition to basic need spendings.",
+        "text": "5-2",
         "dimension": 5,
         "aa": [7],
         "pa": [5, 0.5],
@@ -281,7 +281,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Government intervention on corporations is necessary for a stable economy.",
+        "text": "5-3",
         "dimension": 5,
         "aa": [7],
         "pa": [5, 0.5],
@@ -290,7 +290,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Corporations exploit their employees to an extreme degree.",
+        "text": "5-4",
         "dimension": 5,
         "aa": [7],
         "pa": [5, 0.5],
@@ -299,7 +299,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Those who are accomplished must compensate for the shortcomings of others.",
+        "text": "5-5",
         "dimension": 5,
         "aa": [7],
         "pa": [5, 0.5],
@@ -310,7 +310,7 @@ var questions = [
 
     // Conservatism
     {
-        "text": "Curricula should include national values and traditions.",
+        "text": "6-1",
         "dimension": 6,
         "aa": [7],
         "pa": [5, 0.5],
@@ -319,7 +319,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "National values must be protected and transferred across generations.",
+        "text": "6-2",
         "dimension": 6,
         "aa": [7],
         "pa": [5, 0.5],
@@ -328,7 +328,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Traditions and old methods hold knowledge to be revered.",
+        "text": "6-3",
         "dimension": 6,
         "aa": [7],
         "pa": [5, 0.5],
@@ -337,7 +337,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "States cannot risk walking unknown paths and should stick to what is conventional.",
+        "text": "6-4",
         "dimension": 6,
         "aa": [7],
         "pa": [5, 0.5],
@@ -346,7 +346,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Modernity is imposed degeneration in disguise.",
+        "text": "6-5",
         "dimension": 6,
         "aa": [7],
         "pa": [5, 0.5],
@@ -357,7 +357,7 @@ var questions = [
 
     // Democracy
     {
-        "text": "In elections and referendums extreme ideas cancel one another, leaving only the most reasonable option.",
+        "text": "7-1",
         "dimension": 7,
         "aa": [7],
         "pa": [5, 0.5],
@@ -366,7 +366,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Only the people themselves can truly represent and voice their needs and requests.",
+        "text": "7-2",
         "dimension": 7,
         "aa": [7],
         "pa": [5, 0.5],
@@ -375,7 +375,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Democracy is an irreplaceable component of civilization.",
+        "text": "7-3",
         "dimension": 7,
         "aa": [7],
         "pa": [5, 0.5],
@@ -384,7 +384,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The collective will is always wiser than individual concerns.",
+        "text": "7-4",
         "dimension": 7,
         "aa": [7],
         "pa": [5, 0.5],
@@ -393,7 +393,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Every citizen has equal rights over the state, thus deserves equal representation.",
+        "text": "7-5",
         "dimension": 7,
         "aa": [7],
         "pa": [5, 0.5],
@@ -404,7 +404,7 @@ var questions = [
 
     // Ecocentrism
     {
-        "text": "Extinction of species due to human actions is unacceptable.",
+        "text": "8-1",
         "dimension": 8,
         "aa": [7],
         "pa": [5, 0.5],
@@ -413,7 +413,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Nature has intrinsic rights to protection, regardless of human law.",
+        "text": "8-2",
         "dimension": 8,
         "aa": [7],
         "pa": [5, 0.5],
@@ -422,7 +422,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "For the simple fact that nature is a requirement for human survival, its protection is imperative.",
+        "text": "8-3",
         "dimension": 8,
         "aa": [7],
         "pa": [5, 0.5],
@@ -431,7 +431,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Human exploitation of natural resources is unjustifiably excessive.",
+        "text": "8-4",
         "dimension": 8,
         "aa": [7],
         "pa": [5, 0.5],
@@ -440,7 +440,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Abusing nature will have tremendous consequences for humankind.",
+        "text": "8-5",
         "dimension": 8,
         "aa": [7],
         "pa": [5, 0.5],
@@ -451,7 +451,7 @@ var questions = [
 
     // Elitism
     {
-        "text": "Intellectualism is only found in select groups.",
+        "text": "9-1",
         "dimension": 9,
         "aa": [7],
         "pa": [5, 0.5],
@@ -460,7 +460,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The appeasement of certain circles is more important than satisfying the public for a statesman.",
+        "text": "9-2",
         "dimension": 9,
         "aa": [7],
         "pa": [5, 0.5],
@@ -469,7 +469,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Those who have higher influence on state affairs than the average voter, deserve their position simply because they were able to obtain it.",
+        "text": "9-3",
         "dimension": 9,
         "aa": [7],
         "pa": [5, 0.5],
@@ -478,7 +478,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The educated few are much more difficult to manipulate than the ignorant majority, thus preventing government corruption.",
+        "text": "9-4",
         "dimension": 9,
         "aa": [7],
         "pa": [5, 0.5],
@@ -487,7 +487,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Vote equality wrongfully elevates the uneducated majority to the same value as the competent elite.",
+        "text": "9-5",
         "dimension": 9,
         "aa": [7],
         "pa": [5, 0.5],
@@ -498,7 +498,7 @@ var questions = [
 
     // Globalism
     {
-        "text": "Self-contained countries with no international interactions cannot prosper.",
+        "text": "10-1",
         "dimension": 10,
         "aa": [7],
         "pa": [5, 0.5],
@@ -507,7 +507,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Individuals should be equally concerned about foreigners as if they are compatriots.",
+        "text": "10-2",
         "dimension": 10,
         "aa": [7],
         "pa": [5, 0.5],
@@ -516,7 +516,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Humanity is too intertwined for ignoring foreign issues.",
+        "text": "10-3",
         "dimension": 10,
         "aa": [7],
         "pa": [5, 0.5],
@@ -525,7 +525,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The advantages of interdependent economies outweigh the disadvantages.",
+        "text": "10-4",
         "dimension": 10,
         "aa": [7],
         "pa": [5, 0.5],
@@ -534,7 +534,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Interactions through art, sports, science, and technology are beneficial to every involved party.",
+        "text": "10-5",
         "dimension": 10,
         "aa": [7],
         "pa": [5, 0.5],
@@ -545,7 +545,7 @@ var questions = [
 
     // Internationalism
     {
-        "text": "Ideals are significantly more valuable than one’s country.",
+        "text": "11-1",
         "dimension": 11,
         "aa": [7],
         "pa": [5, 0.5],
@@ -554,7 +554,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Every country must pay reparations for the crimes they have committed.",
+        "text": "11-2",
         "dimension": 11,
         "aa": [7],
         "pa": [5, 0.5],
@@ -563,7 +563,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Foreigners should be given the exact same rights and freedoms in politics as citizens.",
+        "text": "11-3",
         "dimension": 11,
         "aa": [9],
         "pa": [6, 0.5],
@@ -572,7 +572,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Humanity’s achievements cannot be credited to single nations.",
+        "text": "11-4",
         "dimension": 11,
         "aa": [7],
         "pa": [5, 0.5],
@@ -581,7 +581,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Borders are arbitrary, and should eventually be abolished.",
+        "text": "11-5",
         "dimension": 11,
         "aa": [9],
         "pa": [6, 0.5],
@@ -592,7 +592,7 @@ var questions = [
 
     // Isolationism
     {
-        "text": "Research produced by a country should not be made available to other countries.",
+        "text": "12-1",
         "dimension": 12,
         "aa": [7],
         "pa": [5, 0.5],
@@ -601,7 +601,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Deep economic ties only make countries dependent on exterior factors.",
+        "text": "12-2",
         "dimension": 12,
         "aa": [7],
         "pa": [5, 0.5],
@@ -610,7 +610,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "True prosperity comes from complete self-sustainability.",
+        "text": "12-3",
         "dimension": 12,
         "aa": [7],
         "pa": [5, 0.5],
@@ -619,7 +619,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Countries’ internal affairs should be of no concern to other countries.",
+        "text": "12-4",
         "dimension": 12,
         "aa": [7],
         "pa": [5, 0.5],
@@ -628,7 +628,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "International organizations restrict the domestic liberties of their member states to an unacceptable degree.",
+        "text": "12-5",
         "dimension": 12,
         "aa": [7],
         "pa": [5, 0.5],
@@ -639,7 +639,7 @@ var questions = [
 
     // Libertarianism
     {
-        "text": "States should not have the right to collect their citizens’ personal information.",
+        "text": "13-1",
         "dimension": 13,
         "aa": [7],
         "pa": [5, 0.5],
@@ -648,7 +648,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Freedom is a fundamental human need.",
+        "text": "13-2",
         "dimension": 13,
         "aa": [7],
         "pa": [5, 0.5],
@@ -657,7 +657,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Rights should only be restricted when the individual allows.",
+        "text": "13-3",
         "dimension": 13,
         "aa": [7],
         "pa": [5, 0.5],
@@ -666,7 +666,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The right to anonymity on the internet should be guaranteed.",
+        "text": "13-4",
         "dimension": 13,
         "aa": [7],
         "pa": [5, 0.5],
@@ -675,7 +675,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Freedom of expression and the right to protest are untouchable.",
+        "text": "13-5",
         "dimension": 13,
         "aa": [7],
         "pa": [5, 0.5],
@@ -686,7 +686,7 @@ var questions = [
 
     // Meritocracy
     {
-        "text": "Only those who prove their capability should be given positions of power.",
+        "text": "14-1",
         "dimension": 14,
         "aa": [7],
         "pa": [5, 0.5],
@@ -695,7 +695,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The perfect state is rendered ineffective if merit is not the basis of political appointments.",
+        "text": "14-2",
         "dimension": 14,
         "aa": [7],
         "pa": [5, 0.5],
@@ -704,7 +704,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Merit knows no ideology, therefore ensures impartial governance.",
+        "text": "14-3",
         "dimension": 14,
         "aa": [7],
         "pa": [5, 0.5],
@@ -713,7 +713,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The capable assume responsibility to make a difference, the incapable do so for personal gain.",
+        "text": "14-4",
         "dimension": 14,
         "aa": [7],
         "pa": [5, 0.5],
@@ -722,7 +722,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Leaders afraid of the capabilities of their subordinates are not good leaders.",
+        "text": "14-5",
         "dimension": 14,
         "aa": [7],
         "pa": [5, 0.5],
@@ -733,7 +733,7 @@ var questions = [
 
     // Militarism
     {
-        "text": "Armed struggle is necessary to ensure the security of a nation.",
+        "text": "15-1",
         "dimension": 15,
         "aa": [7],
         "pa": [5, 0.5],
@@ -742,7 +742,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Beyond-borders operations are crucial in counter-terrorism.",
+        "text": "15-2",
         "dimension": 15,
         "aa": [7],
         "pa": [5, 0.5],
@@ -751,7 +751,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Development of military technologies is the most beneficial source of technological advancement.",
+        "text": "15-3",
         "dimension": 15,
         "aa": [7],
         "pa": [5, 0.5],
@@ -760,7 +760,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Military coups are a legitimate method of terminating terms of detrimental governance.",
+        "text": "15-4",
         "dimension": 15,
         "aa": [7],
         "pa": [5, 0.5],
@@ -769,7 +769,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The armed forces are a necessary institution to be revered, regardless of the presence of a physical threat.",
+        "text": "15-5",
         "dimension": 15,
         "aa": [7],
         "pa": [5, 0.5],
@@ -780,7 +780,7 @@ var questions = [
 
     // Modernism
     {
-        "text": "Traditions should be periodically questioned and reformed.",
+        "text": "16-1",
         "dimension": 16,
         "aa": [7],
         "pa": [5, 0.5],
@@ -789,7 +789,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Humanity constantly evolves for the better.",
+        "text": "16-2",
         "dimension": 16,
         "aa": [7],
         "pa": [5, 0.5],
@@ -798,7 +798,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Societies that reject change are destined to fade away.",
+        "text": "16-3",
         "dimension": 16,
         "aa": [8],
         "pa": [5, 0.5],
@@ -807,7 +807,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Traditions are habits that are no longer useful in the modern world.",
+        "text": "16-4",
         "dimension": 16,
         "aa": [9],
         "pa": [6, 0.5],
@@ -816,7 +816,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Customs hinder a society’s ability to improve and advance.",
+        "text": "16-5",
         "dimension": 16,
         "aa": [8],
         "pa": [5.5, 0.5],
@@ -827,7 +827,7 @@ var questions = [
 
     // Nationalism
     {
-        "text": "The main objective of states is to serve their citizens above foreigners.",
+        "text": "17-1",
         "dimension": 17,
         "aa": [7],
         "pa": [5, 0.5],
@@ -836,7 +836,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Commonality in language, culture, and history is the major factor in societal unification.",
+        "text": "17-2",
         "dimension": 17,
         "aa": [7],
         "pa": [5, 0.5],
@@ -845,7 +845,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Nationality is an integral part of an individual’s character.",
+        "text": "17-3",
         "dimension": 17,
         "aa": [7],
         "pa": [5, 0.5],
@@ -854,7 +854,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Historical tendencies of a nation provide reliable information regarding their modern behavior.",
+        "text": "17-4",
         "dimension": 17,
         "aa": [7],
         "pa": [5, 0.5],
@@ -863,7 +863,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "A proper state is one fought for and established by a united people.",
+        "text": "17-5",
         "dimension": 17,
         "aa": [7],
         "pa": [5, 0.5],
@@ -874,7 +874,7 @@ var questions = [
 
     // Pacifism
     {
-        "text": "The aftermath of military interventions are never truly justifiable.",
+        "text": "18-1",
         "dimension": 18,
         "aa": [7],
         "pa": [5, 0.5],
@@ -883,7 +883,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Demilitarization should be the common goal of every nation in the world.",
+        "text": "18-2",
         "dimension": 18,
         "aa": [7],
         "pa": [5, 0.5],
@@ -892,7 +892,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Peace through domination is no peace at all.",
+        "text": "18-3",
         "dimension": 18,
         "aa": [7],
         "pa": [5, 0.5],
@@ -901,7 +901,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Military only consumes government budget and offers nothing useful in return.",
+        "text": "18-4",
         "dimension": 18,
         "aa": [9],
         "pa": [6, 0.5],
@@ -910,7 +910,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The only victors of war are the ones who do not fight it.",
+        "text": "18-5",
         "dimension": 18,
         "aa": [7],
         "pa": [5, 0.5],
@@ -921,7 +921,7 @@ var questions = [
 
     // Partisanship
     {
-        "text": "Loyalty is an absolute priority in state business.",
+        "text": "19-1",
         "dimension": 19,
         "aa": [7],
         "pa": [5, 0.5],
@@ -930,7 +930,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Solutions must serve the goals of the ruling authority.",
+        "text": "19-2",
         "dimension": 19,
         "aa": [7],
         "pa": [5, 0.5],
@@ -939,7 +939,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "It is only natural for governments to reward their ideological followers.",
+        "text": "19-3",
         "dimension": 19,
         "aa": [7],
         "pa": [5, 0.5],
@@ -948,7 +948,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Loyalty to a common authority is more important in state affairs than merit.",
+        "text": "19-4",
         "dimension": 19,
         "aa": [7],
         "pa": [5, 0.5],
@@ -957,7 +957,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Neutrality in state decisions is impossible, everyone must subscribe to a camp.",
+        "text": "19-5",
         "dimension": 19,
         "aa": [7],
         "pa": [5, 0.5],
@@ -968,7 +968,7 @@ var questions = [
 
     // Pluralism
     {
-        "text": "Addition or replacement of official languages does not pose a threat towards societies.",
+        "text": "20-1",
         "dimension": 20,
         "aa": [7],
         "pa": [5, 0.5],
@@ -977,7 +977,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Foreign inclusion enriches national cultures.",
+        "text": "20-2",
         "dimension": 20,
         "aa": [7],
         "pa": [5, 0.5],
@@ -986,7 +986,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Asking individuals to forgo their cultural backgrounds is impractical.",
+        "text": "20-3",
         "dimension": 20,
         "aa": [7],
         "pa": [5, 0.5],
@@ -995,7 +995,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Diversity leads to a more capable and adaptable society.",
+        "text": "20-4",
         "dimension": 20,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1004,7 +1004,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "All cultures are compatible.",
+        "text": "20-5",
         "dimension": 20,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1015,7 +1015,7 @@ var questions = [
 
     // Populism
     {
-        "text": "Pleasing the public is the main mission of the state.",
+        "text": "21-1",
         "dimension": 21,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1024,7 +1024,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Manipulation of the majority is necessary for gaining government authority.",
+        "text": "21-2",
         "dimension": 21,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1033,7 +1033,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Promises which will gain popular support are legitimate tools in politics, regardless of their fulfillment.",
+        "text": "21-3",
         "dimension": 21,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1042,7 +1042,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Using public fears is a useful method for initiating political change.",
+        "text": "21-4",
         "dimension": 21,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1051,7 +1051,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The elite use the government authority for selfish gains, hence only the populace can truly run a state for its intended purpose.",
+        "text": "21-5",
         "dimension": 21,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1062,7 +1062,7 @@ var questions = [
 
     // Secularism
     {
-        "text": "Religion, by its very nature, is an undesirable competitor against the state.",
+        "text": "22-1",
         "dimension": 22,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1071,7 +1071,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The presence of religion in politics only facilitates popular manipulation and corruption.",
+        "text": "22-2",
         "dimension": 22,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1080,7 +1080,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Those who had no chance of questioning their faith cannot be considered faithful.",
+        "text": "22-3",
         "dimension": 22,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1089,7 +1089,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Religious commandments will become obsolete, if not outdated already.",
+        "text": "22-4",
         "dimension": 22,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1098,7 +1098,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "The unchangeable nature of religious mandates rules them out as effective methods of governance.",
+        "text": "22-5",
         "dimension": 22,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1109,7 +1109,7 @@ var questions = [
 
     // Theocracy
     {
-        "text": "Out of all current religions, the one true religion is clearly known.",
+        "text": "23-1",
         "dimension": 23,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1118,7 +1118,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Human minds cannot comprehend the reasons behind religious commandments, therefore they should not be questioned.",
+        "text": "23-2",
         "dimension": 23,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1127,7 +1127,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "Religion is the greatest force of unification, much greater than ideology or nationality.",
+        "text": "23-3",
         "dimension": 23,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1136,7 +1136,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "All humankind knows of morality stems from religion.",
+        "text": "23-4",
         "dimension": 23,
         "aa": [7],
         "pa": [5, 0.5],
@@ -1145,7 +1145,7 @@ var questions = [
         "ad": [0]
     },
     {
-        "text": "There is no true evidence refuting religion, only human misunderstanding.",
+        "text": "23-5",
         "dimension": 23,
         "aa": [7],
         "pa": [5, 0.5],

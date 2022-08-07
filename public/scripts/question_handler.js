@@ -4,8 +4,10 @@ var randomizedQuestions;
 var currentQuestion;
 var currentIndex = -1;
 var changesHistory = [];
+var questionsText;
 
-function questionPageInit() {
+function questionPageInit(questionsJSON) {
+    questionsText = JSON.parse(questionsJSON);
     randomizedQuestions = shuffle(questions);
     nextQuestion();
     backButtonSet();
@@ -45,8 +47,8 @@ function nextQuestion() {
     currentIndex++;
     backButtonSet();
     currentQuestion = randomizedQuestions[currentIndex];
-    document.getElementById('question-font').innerHTML = currentQuestion.text;
-    document.getElementById('question-number').innerHTML = `Question ${currentIndex + 1} / ${questions.length}`
+    document.getElementById('question-font').innerHTML = questionsText[currentQuestion.text];
+    document.getElementById('question-number').innerHTML = `${questionsText.question} ${currentIndex + 1} / ${questions.length}`
 }
 
 function addScores(dimensionId, scoreArr) {
@@ -61,9 +63,9 @@ function addScores(dimensionId, scoreArr) {
 }
 
 function initializesResults() {
-    var generatedUrl = `/results?d0=${dimensionScores[0][0]},${dimensionScores[0][1]}`;
+    var generatedUrl = `/results?0=${dimensionScores[0][0]},${dimensionScores[0][1]}`;
     for(var i = 1; i < dimensionScores.length; i++) {
-        generatedUrl += `&d${i}=${dimensionScores[i][0]},${dimensionScores[i][1]}`
+        generatedUrl += `&${i}=${dimensionScores[i][0]},${dimensionScores[i][1]}`
     }
     location.href = generatedUrl;
 }
@@ -76,8 +78,8 @@ function previousQuestion() {
         dimensionScores[history[0]][0] -= history[1];
         dimensionScores[history[0]][1] -= history[2];
         currentQuestion = randomizedQuestions[currentIndex];
-        document.getElementById('question-font').innerHTML = currentQuestion.text;
-        document.getElementById('question-number').innerHTML = `Question ${currentIndex + 1} / ${questions.length}`
+        document.getElementById('question-font').innerHTML = questionsText[currentQuestion.text];
+        document.getElementById('question-number').innerHTML = `${questionsText.question} ${currentIndex + 1} / ${questions.length}`
     }
 }
 
