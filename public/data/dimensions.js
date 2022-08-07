@@ -220,6 +220,6 @@ var dimensions = {
         "text": "Higher Theocracy scores point to the notion of religious dictations being the most applicable for governance. Those who agree with Theocracy believe that following religious law is the only path to salvation in both the mortal world and the afterlife.",
         "imageSrc": "../images/theocracy.png"
     }
-}
+};
 
 module.exports = dimensions;
