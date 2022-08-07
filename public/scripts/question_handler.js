@@ -47,7 +47,7 @@ function nextQuestion() {
     currentIndex++;
     backButtonSet();
     currentQuestion = randomizedQuestions[currentIndex];
-    document.getElementById('question-font').innerHTML = currentQuestion.text;
+    document.getElementById('question-font').innerHTML = questionsText[currentQuestion.text];
     document.getElementById('question-number').innerHTML = `${questionsText.question} ${currentIndex + 1} / ${questions.length}`
 }
 
