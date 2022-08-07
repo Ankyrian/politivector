@@ -1,17 +1,17 @@
 <div class="row">
     <div class="column">
       <div class="row text-row">
-        <span class="aligned left-aligned">Zaza<%= leftDimension.name %></span>
+        <span class="aligned left-aligned"><%= leftDimension.name %></span>
         <span class="aligned right-aligned"><%= rightDimension.name %></span>
       </div>
       <div class="row">
         <img src="../images/<%= leftDimension.imageSrc %>" alt="<%= leftDimension.name %> Logo" height="80px" class="img-left">
-        <div class="rail" style="background-color: #<%= leftDimension.color %>; text-align: left; width: <%= calculateWidth(leftPercent) %>%;">
+        <div class="rail" style="background-color: #<%= leftDimension.color %>; text-align: left; width: <%= resultsHandler.calculateWidth(leftPercent) %>%;">
           <span class="rail-text"><%= leftPercent %>%</span>
         </div>
             <% if (neutralPercent > 0) %>
-                <div class="rail neutral" style="width: <%= calculateWidth(neutralPercent) %>%;"><%= neutralPercent %> </div>
-        <div class="rail" style="background-color: #<%= rightDimension.color %>; text-align: right; width: <%= calculateWidth(rightPercent) %>%;">
+                <div class="rail neutral" style="width: <%= resultsHandler.calculateWidth(neutralPercent) %>%;"><%= neutralPercent %> </div>
+        <div class="rail" style="background-color: #<%= rightDimension.color %>; text-align: right; width: <%= resultsHandler.calculateWidth(rightPercent) %>%;">
           <span class="rail-text"><%= leftPercent %>%</span>
         </div>
         <img src="../images/<%= leftDimension.imageSrc %>" alt="<%= leftDimension.name %> Logo" height="80px" class="img-right">

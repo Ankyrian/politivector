@@ -1,15 +1,5 @@
 var preferredRenderOrder = [[11, 17], [10, 12], [15, 18], [2, 13], [22, 23], [16, 6], [1, 20], [14, 19], [3, 7], [5, 4], [8, 0], [9, 21]];
 
-function getDimensionById(dimensionId) {
-  var correctDim;
-  dimensions.forEach(element => {
-    if(element.id == dimensionId) {
-      correctDim = element;
-    }
-  });
-  return correctDim;
-}
-
 function resultsPageInit() {
   var resultsBody = document.getElementById('results-panel-content');
   var scoresMap = generateScoresMap();
@@ -45,14 +35,12 @@ function resultsPageInit() {
 }
 
 function generateScoresMap(resultsQuery) {
-  var result = new Map();
-  console.log(resultsQuery);
-  var dimensions = resultsQuery.split("&");
-  for (var i = 0; i < dimensions.length; i++) {
-    var idScoresPair = dimensions[i].split("=");
-    var scoresPair = idScoresPair[1].split(",");
-    result.set(idScoresPair[0], [parseInt(scoresPair[0]), parseInt(scoresPair[1])]);
+  var result = {};
+  for (const [key, value] of Object.entries(resultsQuery)) {
+    let scoresPair = resultsQuery[key].split(",");
+    result[key] = [parseInt(scoresPair[0]), parseInt(scoresPair[1])];
   }
+  console.log(result);
   return result;
 }
 
@@ -97,7 +85,6 @@ function calculateWidth(percent) {
 }
 
 module.exports = {
-    getDimensionById,
     generateScoresMap,
     calculateScorePercentages,
     calculateWidth,

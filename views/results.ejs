@@ -46,12 +46,13 @@
         <div id="results-panel-content">
   
             <% let scoresMap = resultsHandler.generateScoresMap(resultsQuery); %>
+            <% console.log(dimensions); %>
             <% resultsHandler.preferredRenderOrder.forEach(element => { %> 
                 <% let percentagesArr = 
-                    resultsHandler.calculateScorePercentages(scoresMap.get(`d${element[0]}`), scoresMap.get(`d${element[1]}`)); %>
+                    resultsHandler.calculateScorePercentages(scoresMap[element[0]], scoresMap[element[1]]); %>
                 <%- include("partials/dimension_partial.ejs", {
-                    leftDimension: resultsHandler.dimensions[element[0]],
-                    rightDimension: resultsHandler.dimensions[element[1]],
+                    leftDimension: dimensions[element[0]],
+                    rightDimension: dimensions[element[1]],
                     leftPercent: percentagesArr[0],
                     neutralPercent: percentagesArr[1],
                     rightPercent: percentagesArr[2]
