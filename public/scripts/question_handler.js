@@ -78,7 +78,7 @@ function previousQuestion() {
         dimensionScores[history[0]][0] -= history[1];
         dimensionScores[history[0]][1] -= history[2];
         currentQuestion = randomizedQuestions[currentIndex];
-        document.getElementById('question-font').innerHTML = currentQuestion.text;
+        document.getElementById('question-font').innerHTML = questionsText[currentQuestion.text];
         document.getElementById('question-number').innerHTML = `${questionsText.question} ${currentIndex + 1} / ${questions.length}`
     }
 }
