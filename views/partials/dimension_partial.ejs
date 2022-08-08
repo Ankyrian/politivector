@@ -12,9 +12,9 @@
             <% if (neutralPercent > 0) %>
                 <div class="rail neutral" style="width: <%= resultsHandler.calculateWidth(neutralPercent) %>%;"><%= neutralPercent %>%</div>
         <div class="rail" style="background-color: #<%= rightDimension.color %>; text-align: right; width: <%= resultsHandler.calculateWidth(rightPercent) %>%;">
-          <span class="rail-text"><%= leftPercent %>%</span>
+          <span class="rail-text"><%= rightPercent %>%</span>
         </div>
-        <img src="../images/<%= rightDimension.imageSrc %>" alt="<%= leftDimension.name %> Logo" height="80px" class="img-right">
+        <img src="../images/<%= rightDimension.imageSrc %>" alt="<%= rightDimension.name %> <%= __("logo") %>" height="80px" class="img-right">
       </div>
     </div>
   </div>
