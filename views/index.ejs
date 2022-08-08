@@ -34,7 +34,7 @@
             <p class="head-text"><%= __("indexHeaderText") %></p>
             <a class="head-text" href="/future"><%= __("learnMore") %> &#8594;</a>
             <button class="start-test" onclick="location.href='/start'"><%= __("startTest") %></button>
-            <div class="language"><a href="index.html"><b>EN</b></a><p>|</p><a href="turkish/index_tr.html">TR</a></div>
+            <%- include("partials/language_select.ejs", {path: "/", locale: getLocale()}) %> 
         </section>
         
         <section class="more-info">
