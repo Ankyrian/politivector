@@ -62,7 +62,16 @@ function addScores(dimensionId, scoreArr) {
     }
 }
 
+function postTestData() {
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "record-test-data");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.send(JSON.stringify(dimensionScores));
+}
+
 function initializesResults() {
+    postTestData();
+
     var generatedUrl = `/results?0=${dimensionScores[0][0]},${dimensionScores[0][1]}`;
     for(var i = 1; i < dimensionScores.length; i++) {
         generatedUrl += `&${i}=${dimensionScores[i][0]},${dimensionScores[i][1]}`
