@@ -1,51 +1,27 @@
-/// FUNCTIONS
-
-function getArgs() {
-    const arguments = process.argv.slice(2);
-    let argDict = {};
-
-    arguments.forEach(arg => {
-        let keyValue = arg.split("=")
-        argDict[keyValue[0]] = keyValue[1];
-    });
-    return argDict;
-}
-
-function getQuestions(locale) {
-    let questions;
-    if (!locale || locale == "en") {
-        questions = questionsTextEN;
-    } else if (locale == "tr") {
-        questions = questionsTextTR;
-    }
-    return JSON.stringify(questions);
-}
-
-/// MIDDLEWARES
-
-function detectLocaleQuery(req, res, next) {
-    if (req.query.lang) {
-        res.cookie("locale", req.query.lang, { maxAge: 90000000, httpOnly: true });
-    }
-    next();
-}
-
 /// REQUIREMENTS
 
+// Functions
+const getQuestions = require("./libs/functions/getQuestions"),
+    getArgs = require("./libs/functions/getArgs");
+
+// Middlewares
+const localeQueryMiddleware = require("./libs/middlewares/localeQueryMiddleware");
+
+// Dependencies
 const express = require("express"),
     http = require("http"),
     path = require("path"),
     cookieParser = require('cookie-parser'),
     i18n = require('i18n');
 
+// Client-side scripts/data
+const resultsGenerationFunctions = require("./public/scripts/results_handler"),
+    dimensions = require("./public/data/dimensions.js");
+
+// Arguments
 const arguments = getArgs();
 const port = arguments["port"];
-const app = express();
 
-const questionsTextEN = require("./public/data/questions_text_en.json"),
-    questionsTextTR = require("./public/data/questions_text_tr.json"),
-    resultsGenerationFunctions = require("./public/scripts/results_handler"),
-    dimensions = require("./public/data/dimensions.js");
 
 /// i18n
 
@@ -58,12 +34,15 @@ i18n.configure({
     directory: path.join(__dirname, "locales") // where to store json files - defaults to './locales'
 });
 
+
 /// SERVER SETUP
+
+const app = express();
 
 app.set("view engine", "ejs");
 
 app.use(cookieParser());
-app.use(detectLocaleQuery);
+app.use(localeQueryMiddleware);
 app.use(i18n.init);
 app.use(express.static(path.join(__dirname, "/public")));
 
