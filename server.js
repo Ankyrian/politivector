@@ -22,6 +22,10 @@ const resultsGenerationFunctions = require("./public/scripts/results_handler"),
 const arguments = getArgs();
 const port = arguments["port"];
 
+// Database and Models
+const dbConnection = require("./controllers/dbConnection"),
+    dbResultCRUD = require('./controllers/resultsTableOps');
+
 
 /// i18n
 
@@ -40,10 +44,12 @@ i18n.configure({
 const app = express();
 
 app.set("view engine", "ejs");
+app.set('trust proxy', true);
 
 app.use(cookieParser());
 app.use(localeQueryMiddleware);
 app.use(i18n.init);
+app.use(express.json());
 app.use(express.static(path.join(__dirname, "/public")));
 
 const server = http.createServer(app);
@@ -76,3 +82,11 @@ app.get("/results", (req, res) => {
 app.get("*", (req, res) => {
     res.sendFile("404.html", {root: "./public"});
 })
+
+app.post("/record-test-data", (req, res) => {
+    let formattedDims = [];
+    for (i = 0; i < req.body.length; i++) {
+        formattedDims.push( {"id": i, "value": req.body[i][0], "neutral": req.body[i][1]} );
+    }
+    dbResultCRUD.createResult(req.ip, formattedDims);
+});
