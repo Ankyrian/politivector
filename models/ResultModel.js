@@ -5,4 +5,4 @@ let resultSchema = new mongoose.Schema({
   resultsArrays: [ {type: Map, of: Number} ]
 })
 
-module.exports = mongoose.model('Result', resultSchema)
+module.exports = mongoose.model('Result', resultSchema); // , 'politivector_db'

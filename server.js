@@ -89,4 +89,5 @@ app.post("/record-test-data", (req, res) => {
         formattedDims.push( {"id": i, "value": req.body[i][0], "neutral": req.body[i][1]} );
     }
     dbResultCRUD.createResult(req.ip, formattedDims);
+    res.sendStatus(200);
 });
