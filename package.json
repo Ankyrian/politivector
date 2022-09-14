@@ -7,7 +7,9 @@
     "url": "https://github.com/Ankyrian/politivector.git"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "cookie-parser": "^1.4.6",
+    "country-locale-map": "^1.8.8",
     "debug": "^4.3.4",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
