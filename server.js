@@ -6,8 +6,7 @@ const getQuestions = require("./libs/functions/getQuestions"),
     handleAsyncMiddleware = require("./libs/functions/handleAsyncMiddleware");
 
 // Middlewares
-const localeQueryMiddleware = require("./libs/middlewares/localeQueryMiddleware"),
-    setLocaleMiddleware = require("./libs/middlewares/setLocalMiddleware");
+const localeQueryMiddleware = require("./libs/middlewares/localeQueryMiddleware");
 
 // Dependencies
 const express = require("express"),
@@ -50,7 +49,6 @@ app.set('trust proxy', true);
 
 app.use(cookieParser());
 app.use(localeQueryMiddleware);
-// app.use(handleAsyncMiddleware(setLocaleMiddleware));
 app.use(i18n.init);
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "/public")));
@@ -62,7 +60,7 @@ server.listen(port, () => {
 
 /// ROUTES
 
-app.get("/", setLocaleMiddleware(), (req, res) => {
+app.get("/", (req, res) => {
     res.render("index.ejs");
 })
 
