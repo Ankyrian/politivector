@@ -3,7 +3,7 @@
 // Functions
 const getQuestions = require("./libs/functions/getQuestions"),
     getArgs = require("./libs/functions/getArgs"),
-    handleAsyncMiddleware = require("./libs/functions/handleAsyncMiddleware");
+    ipToCountry = require("./controllers/ipToCountry");
 
 // Middlewares
 const localeQueryMiddleware = require("./libs/middlewares/localeQueryMiddleware");
@@ -13,7 +13,8 @@ const express = require("express"),
     http = require("http"),
     path = require("path"),
     cookieParser = require('cookie-parser'),
-    i18n = require('i18n');
+    i18n = require('i18n'),
+    clm = require("country-locale-map");
 
 // Client-side scripts/data
 const resultsGenerationFunctions = require("./public/scripts/results_handler"),
@@ -89,6 +90,13 @@ app.post("/record-test-data", (req, res) => {
     for (i = 0; i < req.body.length; i++) {
         formattedDims.push( {"id": i, "value": req.body[i][0], "neutral": req.body[i][1]} );
     }
-    dbResultCRUD.createResult(req.ip, formattedDims);
-    res.sendStatus(200);
+    
+    ipToCountry(req.ip)
+        .then(countryData => {
+            const countryName = countryData["country"];
+            const countryNumeric = clm.getNumericByName(countryName);
+            dbResultCRUD.createResult(countryNumeric, 0, formattedDims);
+        })
+        .catch(err => console.log(err))
+        .then(() => res.sendStatus(200));
 });

@@ -1,8 +1,9 @@
 let resultModel = require('../models/ResultModel');
 
-function createResult(userIP, arrayOfDimensions) {
+function createResult(userCountryId, testTypeId , arrayOfDimensions) {
     let newResult = new resultModel({
-        ip: userIP,
+        countryId: userCountryId,
+        testType: testTypeId,
         resultsArrays: arrayOfDimensions
     })
 
