@@ -5,6 +5,7 @@ var currentQuestion;
 var currentIndex = -1;
 var changesHistory = [];
 var questionsText;
+var quizEnded = false;
 
 function questionPageInit(questionsJSON) {
     questionsText = JSON.parse(questionsJSON);
@@ -62,7 +63,22 @@ function addScores(dimensionId, scoreArr) {
     }
 }
 
+function postTestData() {
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "record-test-data");
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.send(JSON.stringify(dimensionScores));
+}
+
 function initializesResults() {
+    if (quizEnded)
+        return;
+
+    quizEnded = true;
+
+    postTestData();
+
     var generatedUrl = `/results?0=${dimensionScores[0][0]},${dimensionScores[0][1]}`;
     for(var i = 1; i < dimensionScores.length; i++) {
         generatedUrl += `&${i}=${dimensionScores[i][0]},${dimensionScores[i][1]}`
