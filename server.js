@@ -93,6 +93,8 @@ app.post("/record-test-data", (req, res) => {
     
     ipToCountry(req.ip)
         .then(countryData => {
+            if (countryData == false)
+                return;
             const countryName = countryData["country"];
             const countryNumeric = clm.getNumericByName(countryName);
             dbResultCRUD.createResult(countryNumeric, 0, formattedDims);
