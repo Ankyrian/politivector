@@ -22,7 +22,7 @@ const resultsGenerationFunctions = require("./public/scripts/results_handler"),
 
 // Arguments
 const arguments = getArgs();
-const port = arguments["port"];
+const port = 3000; //arguments["port"];
 
 // Database and Models
 const dbConnection = require("./controllers/dbConnection"),
