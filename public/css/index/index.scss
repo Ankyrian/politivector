@@ -1,14 +1,14 @@
-@import "../components/buttons.css";
-@import "../components/footer.css";
-@import "../components/menu.css";
-@import "../components/nav.css";
-@import "../components/select.css";
+@import "/css/components/buttons.css";
+@import "/css/components/footer.css";
+@import "/css/components/menu.css";
+@import "/css/components/nav.css";
+@import "/css/components/select.css";
 
-@import "banner.css";
-@import "features.css";
-@import "goals.css";
-@import "illustrations.css";
-@import "info.css";
+@import "/css/index/banner.css";
+@import "/css/index/features.css";
+@import "/css/index/goals.css";
+@import "/css/index/illustrations.css";
+@import "/css/index/info.css";
 
 body {
   margin: 8px 0 0;
@@ -37,7 +37,7 @@ body {
 
 #nav {
   order: 0;
-  height: 10vh;
+  height: 10svh;
   min-height: 50px;
   max-height: 75px;
 }
@@ -51,45 +51,49 @@ body {
 
 #banner {
   order: 3;
-  height: 45vh;
+  height: 40svh;
   min-height: 200px;
   max-height: 700px;
-  padding: 3vh 0;
+  padding: 3svh 0;
 }
 
 #hero {
   order: 2;
-  height: 45vh;
+  height: 48svh;
   min-height: 200px;
   max-height: 700px;
+  margin-top: 2svh;
 }
 
 #features {
   order: 4;
-  height: 100vh;
+  height: 100svh;
   min-height: 300px;
   max-height: 750px;
+  margin-top: 10svh;
 }
 
 #visual-info {
   order: 6;
-  height: 30vh;
+  height: 30svh;
   min-height: 300px;
   max-height: 550px;
+  margin-top: 5svh;
 }
 
 #info {
   order: 5;
-  height: 70vh;
+  height: 70svh;
   min-height: 300px;
   max-height: 550px;
 }
 
 #goals {
   order: 7;
-  height: 100vh;
+  height: 100svh;
   min-height: 300px;
   max-height: 1000px;
+  margin-top: 7svh;
 }
 
 #visual-goals {
@@ -100,7 +104,7 @@ body {
 }
 
 footer {
-  height: 80vh;
+  height: 80svh;
   min-height: 300px;
   max-height: 600px;
 }
@@ -108,12 +112,12 @@ footer {
 @media screen and (min-width: 50em) {
   #nav {
     grid-column: 1 / span 1;
-    height: 10vh;
+    height: 10svh;
   }
 
   #menu {
     grid-column: 2 / span 4;
-    height: 10vh;
+    height: 10svh;
     min-height: 50px;
     max-height: 75px;
 
@@ -123,44 +127,48 @@ footer {
   #banner {
     grid-column: 1 / span 3;
     order: 1;
-    height: 90vh;
-    padding: 12.5vh 0;
+    height: 90svh;
+    padding: 12.5svh 0;
   }
 
   #hero {
     grid-column: 4 / span 2;
     order: 2;
-    height: 90vh;
-    padding-top: 7.5vh;
-    padding-bottom: 12.5vh;
+    height: 90svh;
+    padding-top: 7.5svh;
+    padding-bottom: 12.5svh;
   }
 
   #features {
-    height: 50vh;
+    height: 50svh;
     max-height: 350px;
   }
 
   #visual-info {
     grid-column: 1 / span 2;
     order: 4;
-    height: 70vh;
+    height: 70svh;
+    margin-top: 15svh;
   }
 
   #info {
     grid-column: 3 / span 3;
     order: 5;
-    height: 70vh;
+    height: 70svh;
+    margin-top: 15svh;
   }
 
   #goals {
     grid-column: 1 / span 3;
-    height: 70vh;
+    height: 70svh;
+    margin-top: 5svh;
   }
 
   #visual-goals {
     grid-column: 4 / span 2;
     display: block;
-    height: 70vh;
+    height: 70svh;
+    margin-top: 5svh;
   }
 
   footer {
