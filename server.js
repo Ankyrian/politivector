@@ -65,8 +65,8 @@ app.get("/", (req, res) => {
     res.render("index.ejs");
 })
 
-app.get("/future", (req, res) => {
-    res.render("future_plans.ejs");
+app.get("/plans", (req, res) => {
+    res.render("plans.ejs");
 })
 
 app.get("/start", (req, res) => {
