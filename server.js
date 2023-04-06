@@ -70,7 +70,7 @@ app.get("/plans", (req, res) => {
 })
 
 app.get("/start", (req, res) => {
-    res.render("questions.ejs", {questionsTextJSON: getQuestions(req.cookies.locale)});
+    res.render("questions.ejs", {questionsTextJSON: getQuestions(i18n.getLocale(req))});
 })
 
 app.get("/results", (req, res) => {
