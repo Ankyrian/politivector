@@ -2,7 +2,7 @@
 
 // Functions
 const getQuestions = require("./libs/functions/getQuestions"),
-    getArgs = require("./libs/functions/getArgs"),
+    //getArgs = require("./libs/functions/getArgs"),
     ipToCountry = require("./controllers/ipToCountry");
 
 // Middlewares
@@ -21,19 +21,19 @@ const resultsGenerationFunctions = require("./public/scripts/results_handler"),
     dimensions = require("./public/data/dimensions.js");
 
 // Arguments
-const arguments = getArgs();
+//const arguments = getArgs();
 const port = 3000; //arguments["port"];
 
 // Database and Models
-const dbConnection = require("./controllers/dbConnection"),
-    dbResultCRUD = require('./controllers/resultsTableOps');
+//const dbConnection = require("./controllers/dbConnection");
+const dbResultCRUD = require('./controllers/resultsTableOps');
 
 
 /// i18n
 
 i18n.configure({
     locales: ["en", "tr"], // setup some locales - other locales default to en silently
-    defaultLocale: "en", // defualt locale will be en until changed by user (also defaults for non-existent locale code)
+    defaultLocale: "en", // default locale will be en until changed by user (also defaults for non-existent locale code)
     cookie: "locale", // sets a custom cookie name to parse locale settings from
     // I added queryParameter despite having the cookie since the cookie method requires a refresh to take effect
     queryParameter: 'lang', // query parameter to switch locale (ie. /home?lang=ch) 
@@ -87,13 +87,13 @@ app.get("*", (req, res) => {
 
 app.post("/record-test-data", (req, res) => {
     let formattedDims = [];
-    for (i = 0; i < req.body.length; i++) {
+    for (let i = 0; i < req.body.length; i++) {
         formattedDims.push( {"id": i, "value": req.body[i][0], "neutral": req.body[i][1]} );
     }
     
     ipToCountry(req.ip)
         .then(countryData => {
-            if (countryData == false)
+            if (!countryData)
                 return;
             const countryName = countryData["country"];
             const countryNumeric = clm.getNumericByName(countryName);
