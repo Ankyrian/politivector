@@ -4,7 +4,7 @@
     const selector = document.querySelector('#language-selector');
 
     const lang = selector.getAttribute('data-locale');
-    const path = selector.getAttribute('data-path');
+    let path = selector.getAttribute('data-path');
 
     const selected = document.createElement('div');
     selected.setAttribute('id', `${lang}-selected`);
@@ -37,7 +37,13 @@
     for (const option of dropdown.children) {
         const flag = option.children[0];
         flag.addEventListener('click', () => {
-            window.location.href = `${path}?lang=${flag.getAttribute('data-locale')}`;
+            if (path === '/results') {
+                path = window.location.href.slice(0, -8);
+                window.location.href = `${path}&lang=${flag.getAttribute('data-locale')}`;
+            }
+            else {
+                window.location.href = `${path}?lang=${flag.getAttribute('data-locale')}`;
+            }
         });
     }
 })();
