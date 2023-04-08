@@ -82,7 +82,7 @@ app.get("/results", (req, res) => {
 })
 
 app.get("*", (req, res) => {
-    res.sendFile("404.html", {root: "./public"});
+    res.render("404.ejs");
 })
 
 app.post("/record-test-data", (req, res) => {
