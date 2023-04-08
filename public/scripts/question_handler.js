@@ -84,6 +84,8 @@ function initializesResults() {
     for(let i = 1; i < dimensionScores.length; i++) {
         generatedUrl += `&${i}=${dimensionScores[i][0]},${dimensionScores[i][1]}`
     }
+    generatedUrl += `&lang=${document.querySelector('#language-selector').getAttribute('data-locale')}`;
+
     location.href = generatedUrl;
 }
 
