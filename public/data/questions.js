@@ -25,7 +25,7 @@
   "THEOCRACY": 23
 */
 
-var questions = [
+const questions = [
     // Anthropocentrism
     {
         "text": "0-1",
