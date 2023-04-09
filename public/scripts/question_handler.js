@@ -7,8 +7,18 @@ let changesHistory = [];
 let questionsText;
 let quizEnded = false;
 
+let questions = completeQuestions;
+let test = 'complete';
+
 function questionPageInit(questionsJSON) {
     questionsText = JSON.parse(questionsJSON);
+
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('test') === 'basic') {
+        test = 'basic';
+        questions = basicQuestions;
+    }
+
     randomizedQuestions = shuffle(questions);
     nextQuestion();
     backButtonSet();
@@ -84,6 +94,7 @@ function initializesResults() {
     for(let i = 1; i < dimensionScores.length; i++) {
         generatedUrl += `&${i}=${dimensionScores[i][0]},${dimensionScores[i][1]}`
     }
+    generatedUrl += `&test=${test}`;
     generatedUrl += `&lang=${document.querySelector('#language-selector').getAttribute('data-locale')}`;
 
     location.href = generatedUrl;
