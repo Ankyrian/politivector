@@ -4,8 +4,10 @@
     const overlay = document.querySelector('#overlay');
 
     const button = document.querySelector('#get-started');
+    const footerSelect = document.querySelector('#footer-select');
 
     button.addEventListener('click', () => {handlePopup(select)});
+    footerSelect.addEventListener('click', () => {handlePopup(select)});
 
     popupCancel.addEventListener('click', () => {handleCancel(select)});
 
