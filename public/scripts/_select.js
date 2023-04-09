@@ -14,8 +14,8 @@
     const startCompleteButton = document.querySelector('#start-complete-button');
     const startBasicButton = document.querySelector('#start-basic-button');
 
-    startCompleteButton.addEventListener('click', () => {window.location.href = '/start'});
-    startBasicButton.addEventListener('click', () => {window.location.href = '/start'});
+    startCompleteButton.addEventListener('click', () => {window.location.href = '/start?test=complete'});
+    startBasicButton.addEventListener('click', () => {window.location.href = '/start?test=basic'});
 
     function handlePopup(select) {
         select.style.setProperty('display', 'flex');
