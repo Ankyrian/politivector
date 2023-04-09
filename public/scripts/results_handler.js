@@ -1,12 +1,14 @@
-const preferredRenderOrder = [[11, 17], [10, 12], [15, 18], [2, 13], [22, 23], [16, 6], [1, 20], [14, 19], [3, 7], [5, 4], [8, 0], [9, 21]];
+const completeRenderOrder = [[11, 17], [10, 12], [15, 18], [2, 13], [22, 23], [16, 6], [1, 20], [14, 19], [3, 7], [5, 4], [8, 0], [9, 21]];
+const basicRenderOrder = [[11, 17], [2, 13], [16, 6], [5, 4], [10, 12], [15, 18], [22, 23], [1, 20], [14, 19], [3, 7], [8, 0], [9, 21]];
 
 function generateScoresMap(resultsQuery) {
+  let preferredRenderOrder = resultsQuery.test === 'complete' ? completeRenderOrder : basicRenderOrder;
   let result = {};
   for (const [key, _value] of Object.entries(resultsQuery)) {
     let scoresPair = resultsQuery[key].split(",");
     result[key] = [parseInt(scoresPair[0]), parseInt(scoresPair[1])];
   }
-  return result;
+  return [result, preferredRenderOrder];
 }
 
 function calculateScorePercentages(left, right) {
@@ -52,6 +54,5 @@ function calculateWidth(percent) {
 module.exports = {
     generateScoresMap,
     calculateScorePercentages,
-    calculateWidth,
-    preferredRenderOrder
+    calculateWidth
 }
