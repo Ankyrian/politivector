@@ -25,7 +25,9 @@
   "THEOCRACY": 23
 */
 
-const questions = [
+const basicDimensions = [2, 4, 5, 6, 11, 13, 16, 17];
+
+const completeQuestions = [
     // Anthropocentrism
     {
         "text": "0-1",
@@ -1154,3 +1156,5 @@ const questions = [
         "ad": [0]
     }
 ]
+
+const basicQuestions = completeQuestions.filter(obj => basicDimensions.includes(obj.dimension));
