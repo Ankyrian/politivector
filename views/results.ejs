@@ -132,8 +132,8 @@
         <div id="content">
             <h1 class="semi-bold"><%= __("results") %></h1>
             <div id="panel">
-                <% let scoresMap = resultsHandler.generateScoresMap(resultsQuery); %>
-                <% resultsHandler.preferredRenderOrder.forEach(element => { %>
+                <% let [scoresMap, renderOrder] = resultsHandler.generateScoresMap(resultsQuery); %>
+                <% renderOrder.forEach(element => { %>
                     <% let percentagesArr =
                             resultsHandler.calculateScorePercentages(scoresMap[element[0]], scoresMap[element[1]]); %>
                     <%- include("partials/dimension_partial.ejs", {
