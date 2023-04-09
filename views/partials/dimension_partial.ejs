@@ -1,6 +1,6 @@
-<div class="axis">
+<div class="axis <%= isNaN(leftPercent) ? 'blank' : ''%>">
   <img src="<%= leftDimension.imageSrc %>" alt="<%= __(leftDimension.name) %> <%= __("icon") %>">
-  <div class="rail left-aligned" style="background-color: #<%= leftDimension.color %>; width: <%= resultsHandler.calculateWidth(leftPercent) %>%; <%= leftPercent > 0 ? '' : 'padding: 0;'%>;">
+  <div class="rail left-aligned" style="background-color: #<%= leftDimension.color %>; width: <%= resultsHandler.calculateWidth(leftPercent) %>%; <%= leftPercent > 0 ? '' : 'padding-right: 0;'%>;">
     <span class="rail-name"><%= __(leftDimension.name) %></span>
     <span class="rail-percent" style="<%= leftPercent > 0 ? '' : 'display: none;'%>"><%= leftPercent %>%</span>
   </div>
