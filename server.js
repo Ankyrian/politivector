@@ -2,7 +2,7 @@
 
 // Functions
 const getQuestions = require("./libs/functions/getQuestions"),
-    //getArgs = require("./libs/functions/getArgs"),
+    getArgs = require("./libs/functions/getArgs"),
     ipToCountry = require("./controllers/ipToCountry");
 
 // Middlewares
@@ -21,11 +21,11 @@ const resultsGenerationFunctions = require("./public/scripts/results_handler"),
     dimensions = require("./public/data/dimensions.js");
 
 // Arguments
-//const arguments = getArgs();
-const port = 3000; //arguments["port"];
+const arguments = getArgs();
+const port = arguments["port"];
 
 // Database and Models
-//const dbConnection = require("./controllers/dbConnection");
+const dbConnection = require("./controllers/dbConnection");
 const dbResultCRUD = require('./controllers/resultsTableOps');
 
 
