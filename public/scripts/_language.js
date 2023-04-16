@@ -37,13 +37,11 @@
     for (const option of dropdown.children) {
         const flag = option.children[0];
         flag.addEventListener('click', () => {
-            if (path === '/results') {
-                path = window.location.href.slice(0, -8);
-                window.location.href = `${path}&lang=${flag.getAttribute('data-locale')}`;
-            }
-            else {
-                window.location.href = `${path}?lang=${flag.getAttribute('data-locale')}`;
-            }
+            const url = new URL(window.location.href);
+            const params = new URLSearchParams(url.search);
+            params.set('lang', flag.getAttribute('data-locale'));
+
+            window.location.href = `${path}?${params}`;
         });
     }
 })();
