@@ -2,48 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= __("test") %> - Politivector</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo.ico?">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/questions.css">
+    <title>Politivector</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/questions/questions.css">
+
+    <script src="scripts/_menu.js" defer></script>
+    <script src="scripts/_language.js" defer></script>
+    <script src="scripts/_variant_font.js" defer></script>
+
     <script type="text/javascript" src="data/questions.js"></script>
     <script type="text/javascript" src="scripts/question_handler.js"></script>
 </head>
 <body onload="questionPageInit('<%= questionsTextJSON %>');">
-    <div class="wrapper">
-        <a href="/">
-            <div class="logo"></div>
-        </a>
-        <div id="inner-header">
-            <span id="question-number"></span>
-        </div>
-        <div id="question-font"></div>
-    </div>
-    <div id="text-content">
-        <div class="question-content">
-            <div>
-                <button class="button question-button" id="d-agree" onclick="questionAnswered(0);"><%= __("stronglyAgree") %></button>
-            </div>
-            <div>
-                <button class="button question-button" id="agree" onclick="questionAnswered(1);"><%= __("agree") %></button>
-            </div>
-            <div>
-                <button class="button question-button" id="neutral" onclick="questionAnswered(2);"><%= __("neutral") %></button>
-            </div>
-            <div>
-                <button class="button question-button" id="disagree" onclick="questionAnswered(3);"><%= __("disagree") %></button>
-            </div>
-            <div>
-                <button class="button question-button" id="d-disagree" onclick="questionAnswered(4);"><%= __("stronglyDisagree") %></button>
-            </div>
-            <div>
-                <button class="button question-button" id="back" onclick="previousQuestion();"><%= __("back") %></button>
+    <div class="grid-container">
+        <%- include("partials/nav_menu_partial.ejs", {path: "/start"}) %>
+        <div id="question">
+            <div id="card">
+                <h3 id="question-number" class="semi-bold"><!-- Rendered by the server--></h3>
+                <p id="question-text"><!-- Rendered by the server--></p>
+                <div class="button-container">
+                    <button id="aa" class="button" onclick="questionAnswered(0);"><%= __("questions-absolutely-agree") %></button>
+                    <button id="pa" class="button" onclick="questionAnswered(1);"><%= __("questions-partially-agree") %></button>
+                    <button id="ne" class="button" onclick="questionAnswered(2);"><%= __("questions-neutral") %></button>
+                    <button id="pd" class="button" onclick="questionAnswered(3);"><%= __("questions-partially-disagree") %></button>
+                    <button id="ad" class="button" onclick="questionAnswered(4);"><%= __("questions-absolutely-disagree") %></button>
+                    <button id="back" class="button" onclick="previousQuestion();"></button>
+                </div>
             </div>
         </div>
     </div>
+    <%- include("partials/footer_partial.ejs") %>
 </body>
 </html>

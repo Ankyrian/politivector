@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Politivector</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/plans/plans.css">
+
+    <script src="scripts/_menu.js" defer></script>
+    <script src="scripts/_language.js" defer></script>
+    <script src="scripts/_variant_font.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <%- include("partials/nav_menu_partial.ejs", {path: "/plans"}) %>
+        <div id="banner">
+            <h1><%- __("plans-banner") %></h1>
+        </div>
+        <div id="content">
+            <div id="questions" class="content-item">
+                <h4><%= __("plans-questions-title") %></h4>
+                <p><%- __("plans-questions-text") %></p>
+            </div>
+            <div id="data" class="content-item">
+                <h4><%= __("plans-data-title") %></h4>
+                <p><%- __("plans-data-text") %></p>
+            </div>
+            <div id="results" class="content-item">
+                <h4><%= __("plans-results-title") %></h4>
+                <p><%- __("plans-results-text") %></p>
+            </div>
+            <div class="content-item">
+                <h4><%= __("plans-much-more-title") %></h4>
+                <p><%- __("plans-much-more-text") %></p>
+            </div>
+        </div>
+    </div>
+    <%- include("partials/footer_partial.ejs") %>
+</body>
+</html>

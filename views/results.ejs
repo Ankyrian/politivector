@@ -1,64 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= __("Results") %> - Politivector</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo.ico?">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/results.css">
-  </head>
+    <title>Politivector</title>
 
-  <body>
-    <header>
-      <a href="/">
-        <img class="mini-logo" src="assets/mini.png" alt="">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="/" id="home"><%= __("Home") %></a></li>
-          <li><a href="/future" id="future-plans"><%= __("Future") %></a></li>
-        </ul>
-      </nav>
-    </header>
-  
-    <section class="hero">
-      <div>
-        <h1><%= __("resultsHeaderOne") %></h1>
-        <h1><%= __("resultsHeaderTwo") %></h1>
-        <% if (getLocale() != "tr") { %>
-            <h1><%= __("resultsHeaderThree") %></h1>
-        <% } %>
-      </div>
-      <button class="start-test" onclick="document.getElementById('scroll-to').scrollIntoView()">&#8595; <%= __("viewResults") %> &#8595;</button>
-    </section>
-    <div class="container"><img src="assets/blob.png" alt=""></div>
-    <div class="content-box">
-      <p><%= __("Results") %></p>
-      <div class="results-content results-panel" id="scroll-to">
-        <div id="inner-header">
-          <img src="assets/logo.png" alt="Politivector Logo">
-        </div>
-        <div id="results-panel-content">
-  
-            <% let scoresMap = resultsHandler.generateScoresMap(resultsQuery); %>
-            <% resultsHandler.preferredRenderOrder.forEach(element => { %> 
-                <% let percentagesArr = 
-                    resultsHandler.calculateScorePercentages(scoresMap[element[0]], scoresMap[element[1]]); %>
-                <%- include("partials/dimension_partial.ejs", {
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/results/results.css">
+
+    <script src="scripts/_menu.js" defer></script>
+    <script src="scripts/_language.js" defer></script>
+    <script src="scripts/_variant_font.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <%- include("partials/nav_menu_partial.ejs", {path: "/results"}) %>
+        <div id="content">
+            <h1 class="semi-bold"><%= __("results") %></h1>
+            <div id="panel">
+                <% let [scoresMap, renderOrder] = resultsHandler.generateScoresMap(resultsQuery); %>
+                <% renderOrder.forEach(element => { %>
+                    <% let percentagesArr =
+                            resultsHandler.calculateScorePercentages(scoresMap[element[0]], scoresMap[element[1]]); %>
+                    <%- include("partials/dimension_partial.ejs", {
                     leftDimension: dimensions[element[0]],
                     rightDimension: dimensions[element[1]],
                     leftPercent: percentagesArr[0],
                     neutralPercent: percentagesArr[1],
                     rightPercent: percentagesArr[2]
-                }) %> 
-            <% }); %>
-
+                    }) %>
+                <% }); %>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+    <%- include("partials/footer_partial.ejs") %>
+</body>
 </html>

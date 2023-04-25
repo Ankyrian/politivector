@@ -1,3 +1,4 @@
+/* UNUSED
 const Dimensions = Object.freeze(
     {
         "ANTHROPOCENTRISM": 0,
@@ -26,8 +27,9 @@ const Dimensions = Object.freeze(
         "THEOCRACY": 23
     }
 );
+*/
 
-var dimensions = {
+const dimensions = {
     "0": {
         "opposite": 8,
         "color": "787878",

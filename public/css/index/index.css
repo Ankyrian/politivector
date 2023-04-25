@@ -1,0 +1,166 @@
+@import "/css/components/buttons.css";
+@import "/css/components/footer.css";
+@import "/css/components/menu.css";
+@import "/css/components/nav.css";
+@import "/css/components/select.css";
+@import "/css/index/banner.css";
+@import "/css/index/features.css";
+@import "/css/index/goals.css";
+@import "/css/index/illustrations.css";
+@import "/css/index/info.css";
+body {
+  margin: 8px 0 0;
+}
+
+.grid-container {
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+#nav,
+#menu,
+#banner,
+#hero,
+#features,
+#info,
+#visual-info,
+#goals {
+  grid-column: 1/span 5;
+}
+
+#nav {
+  order: 0;
+  height: 10svh;
+  min-height: 50px;
+  max-height: 75px;
+}
+
+#menu {
+  overflow: clip;
+  order: 1;
+  transition: height 300ms ease-in-out;
+}
+
+#banner {
+  order: 3;
+  height: 40svh;
+  min-height: 200px;
+  max-height: 700px;
+  padding: 3svh 0;
+}
+
+#hero {
+  order: 2;
+  height: 48svh;
+  min-height: 200px;
+  max-height: 700px;
+  margin-top: 2svh;
+}
+
+#features {
+  order: 4;
+  height: 100svh;
+  min-height: 300px;
+  max-height: 750px;
+  margin-top: 10svh;
+}
+
+#visual-info {
+  order: 6;
+  height: 30svh;
+  min-height: 300px;
+  max-height: 550px;
+  margin-top: 5svh;
+}
+
+#info {
+  order: 5;
+  height: 70svh;
+  min-height: 300px;
+  max-height: 550px;
+}
+
+#goals {
+  order: 7;
+  height: 100svh;
+  min-height: 300px;
+  max-height: 1000px;
+  margin-top: 7svh;
+}
+
+#visual-goals {
+  display: none;
+  order: 8;
+  min-height: 300px;
+  max-height: 1000px;
+}
+
+footer {
+  height: 80svh;
+  min-height: 300px;
+  max-height: 600px;
+}
+
+@media screen and (min-width: 50em) {
+  #nav {
+    grid-column: 1/span 1;
+    height: 10svh;
+  }
+  #menu {
+    grid-column: 2/span 4;
+    height: 10svh;
+    min-height: 50px;
+    max-height: 75px;
+    transition: none;
+  }
+  #banner {
+    grid-column: 1/span 3;
+    order: 1;
+    height: 90svh;
+    padding: 12.5svh 0;
+  }
+  #hero {
+    grid-column: 4/span 2;
+    order: 2;
+    height: 90svh;
+    padding-top: 7.5svh;
+    padding-bottom: 12.5svh;
+  }
+  #features {
+    height: 50svh;
+    max-height: 350px;
+  }
+  #visual-info {
+    grid-column: 1/span 2;
+    order: 4;
+    height: 70svh;
+    margin-top: 15svh;
+  }
+  #info {
+    grid-column: 3/span 3;
+    order: 5;
+    height: 70svh;
+    margin-top: 15svh;
+  }
+  #goals {
+    grid-column: 1/span 3;
+    height: 70svh;
+    margin-top: 5svh;
+  }
+  #visual-goals {
+    grid-column: 4/span 2;
+    display: block;
+    height: 70svh;
+    margin-top: 5svh;
+  }
+  footer {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

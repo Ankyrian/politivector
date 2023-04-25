@@ -1,21 +1,31 @@
-var dimensionScores = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]];
+let dimensionScores = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]];
 
-var randomizedQuestions;
-var currentQuestion;
-var currentIndex = -1;
-var changesHistory = [];
-var questionsText;
-var quizEnded = false;
+let randomizedQuestions;
+let currentQuestion;
+let currentIndex = -1;
+let changesHistory = [];
+let questionsText;
+let quizEnded = false;
+
+let questions = completeQuestions;
+let test = 'complete';
 
 function questionPageInit(questionsJSON) {
     questionsText = JSON.parse(questionsJSON);
+
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('test') === 'basic') {
+        test = 'basic';
+        questions = basicQuestions;
+    }
+
     randomizedQuestions = shuffle(questions);
     nextQuestion();
     backButtonSet();
 }
 
 function questionAnswered(choice) {
-    dimensionId = currentQuestion.dimension;
+    let dimensionId = currentQuestion.dimension;
     switch (choice) {
         case 0:
             addScores(dimensionId, currentQuestion.aa);
@@ -48,15 +58,16 @@ function nextQuestion() {
     currentIndex++;
     backButtonSet();
     currentQuestion = randomizedQuestions[currentIndex];
-    document.getElementById('question-font').innerHTML = questionsText[currentQuestion.text];
-    document.getElementById('question-number').innerHTML = `${questionsText.question} ${currentIndex + 1} / ${questions.length}`
+    document.getElementById('question-number').innerHTML = `${questionsText.question} ${currentIndex + 1} / ${questions.length}`;
+    document.getElementById('question-text').innerHTML = questionsText[currentQuestion.text];
 }
 
 function addScores(dimensionId, scoreArr) {
-    var addedScore = scoreArr[0];
+    let addedScore = scoreArr[0];
     changesHistory[currentIndex] = [dimensionId, addedScore, 0];
     dimensionScores[dimensionId][0] += addedScore;
-    if(scoreArr.length == 2) {
+    let neutralScore;
+    if (scoreArr.length === 2) {
         neutralScore = scoreArr[1];
         changesHistory[currentIndex][2] = neutralScore;
         dimensionScores[dimensionId][1] += neutralScore;
@@ -79,10 +90,13 @@ function initializesResults() {
 
     postTestData();
 
-    var generatedUrl = `/results?0=${dimensionScores[0][0]},${dimensionScores[0][1]}`;
-    for(var i = 1; i < dimensionScores.length; i++) {
+    let generatedUrl = `/results?0=${dimensionScores[0][0]},${dimensionScores[0][1]}`;
+    for(let i = 1; i < dimensionScores.length; i++) {
         generatedUrl += `&${i}=${dimensionScores[i][0]},${dimensionScores[i][1]}`
     }
+    generatedUrl += `&test=${test}`;
+    generatedUrl += `&lang=${document.querySelector('#language-selector').getAttribute('data-locale')}`;
+
     location.href = generatedUrl;
 }
 
@@ -90,19 +104,19 @@ function previousQuestion() {
     if(currentIndex >= 1) {
         currentIndex--;
         backButtonSet();
-        var history = changesHistory[currentIndex];
+        let history = changesHistory[currentIndex];
         dimensionScores[history[0]][0] -= history[1];
         dimensionScores[history[0]][1] -= history[2];
         currentQuestion = randomizedQuestions[currentIndex];
-        document.getElementById('question-font').innerHTML = questionsText[currentQuestion.text];
         document.getElementById('question-number').innerHTML = `${questionsText.question} ${currentIndex + 1} / ${questions.length}`
+        document.getElementById('question-text').innerHTML = questionsText[currentQuestion.text];
     }
 }
 
 // Fisher–Yates Shuffle
 function shuffle(arr) {
-    var current = arr.length;
-    var next = 0;
+    let current = arr.length;
+    let next = 0;
 
     while (0 !== current) {
         next = Math.floor(current * Math.random());
@@ -113,11 +127,6 @@ function shuffle(arr) {
 }
 
 function backButtonSet() {
-    var backButtonStyle = document.getElementById("back").style;
-    if(currentIndex == 0) {
-        backButtonStyle.visibility = "hidden";
-    }
-    else if(currentIndex == 1){
-        backButtonStyle.visibility = "visible";
-    }
+    document.getElementById('back').style.setProperty('visibility',
+        currentIndex === 0 ? 'hidden' : 'visible');
 }
