@@ -5,6 +5,10 @@
 @import "/css/results/content.css";
 body {
   margin: 8px 0 0;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .grid-container {
@@ -39,12 +43,7 @@ body {
 #content {
   order: 2;
   margin-top: 2.5vh;
-}
-
-footer {
-  height: 80vh;
-  min-height: 300px;
-  max-height: 600px;
+  margin-bottom: auto;
 }
 
 @media screen and (min-width: 50em) {
