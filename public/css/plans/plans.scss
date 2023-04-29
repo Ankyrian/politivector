@@ -6,14 +6,6 @@
 @import "/css/plans/banner.css";
 @import "/css/plans/content.css";
 
-body {
-  margin: 8px 0 0;
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .grid-container {
   top: 0;
   margin-left: auto;
@@ -62,12 +54,6 @@ body {
   height: auto;
 
   margin-bottom: 10svh;
-}
-
-footer {
-  //height: 80svh;
-  //min-height: 300px;
-  //max-height: 600px;
 }
 
 @media screen and (min-width: 50em) {
