@@ -10,6 +10,10 @@
 @import "/css/index/info.css";
 body {
   margin: 8px 0 0;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .grid-container {
@@ -64,46 +68,27 @@ body {
 
 #features {
   order: 4;
-  height: 100svh;
-  min-height: 300px;
-  max-height: 750px;
   margin-top: 10svh;
 }
 
 #visual-info {
   order: 6;
-  height: 30svh;
-  min-height: 300px;
-  max-height: 550px;
-  margin-top: 5svh;
+  margin-top: 10svh;
 }
 
 #info {
   order: 5;
-  height: 70svh;
-  min-height: 300px;
-  max-height: 550px;
+  margin-top: 10svh;
 }
 
 #goals {
   order: 7;
-  height: 100svh;
-  min-height: 300px;
-  max-height: 1000px;
-  margin-top: 7svh;
+  margin-top: 10svh;
 }
 
 #visual-goals {
   display: none;
   order: 8;
-  min-height: 300px;
-  max-height: 1000px;
-}
-
-footer {
-  height: 80svh;
-  min-height: 300px;
-  max-height: 600px;
 }
 
 @media screen and (min-width: 50em) {
@@ -131,32 +116,24 @@ footer {
     padding-top: 7.5svh;
     padding-bottom: 12.5svh;
   }
-  #features {
-    height: 50svh;
-    max-height: 350px;
-  }
   #visual-info {
     grid-column: 1/span 2;
     order: 4;
-    height: 70svh;
     margin-top: 15svh;
   }
   #info {
     grid-column: 3/span 3;
     order: 5;
-    height: 70svh;
     margin-top: 15svh;
   }
   #goals {
     grid-column: 1/span 3;
-    height: 70svh;
-    margin-top: 5svh;
+    margin-top: 10svh;
   }
   #visual-goals {
     grid-column: 4/span 2;
     display: block;
-    height: 70svh;
-    margin-top: 5svh;
+    margin-top: 10svh;
   }
   footer {
     height: auto;
