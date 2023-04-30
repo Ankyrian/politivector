@@ -8,14 +8,6 @@
 @import "/css/index/goals.css";
 @import "/css/index/illustrations.css";
 @import "/css/index/info.css";
-body {
-  margin: 8px 0 0;
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .grid-container {
   top: 0;
   margin-left: auto;
@@ -60,7 +52,7 @@ body {
 
 #hero {
   order: 2;
-  height: 48svh;
+  height: 46svh;
   min-height: 200px;
   max-height: 700px;
   margin-top: 2svh;
