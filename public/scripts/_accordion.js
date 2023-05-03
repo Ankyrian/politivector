@@ -22,6 +22,12 @@
 
             arrow.setAttribute('class', `arrow ${isClicked ? 'down' : 'right'}`);
             text.style.setProperty('height', `${isClicked ? textHeight : 0}px`);
+            if (isClicked) {
+                text.classList.add('accordion-expanded');
+            }
+            else {
+                text.classList.remove('accordion-expanded');
+            }
         }
     }
 })();
