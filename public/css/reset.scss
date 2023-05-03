@@ -59,6 +59,7 @@ html,
 body {
   height: 100%;
   background-color: var(--clr-background);
+  overscroll-behavior-y: none;
 }
 
 body {
@@ -83,6 +84,25 @@ picture,
 svg {
   max-width: 100%;
   display: block;
+}
+
+.no-reveal {
+  opacity: 0;
+}
+
+.reveal {
+  opacity: 0;
+  animation: reveal 1s forwards var(--delay);
+}
+
+@keyframes reveal {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
