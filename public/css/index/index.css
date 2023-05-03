@@ -52,7 +52,7 @@
 
 #hero {
   order: 2;
-  height: 46svh;
+  height: 45svh;
   min-height: 200px;
   max-height: 700px;
   margin-top: 2svh;
@@ -81,6 +81,10 @@
 #visual-goals {
   display: none;
   order: 8;
+}
+
+footer {
+  margin-top: 10svh;
 }
 
 @media screen and (min-width: 50em) {
