@@ -1,4 +1,4 @@
-<div class="axis">
+<div class="axis no-reveal" style="--delay: <%= delay.toString() %>ms">
   <img src="<%= leftDimension.imageSrc %>" alt="<%= __(leftDimension.name) %> <%= __("icon") %>">
   <div class="rail left-aligned" style="background-color: #<%= leftDimension.color %>; width: <%= resultsHandler.calculateWidth(leftPercent) %>; <%= leftPercent > 0 ? '' : 'padding-right: 0;'%>;">
     <span class="rail-name"><%= __(leftDimension.name) %></span>

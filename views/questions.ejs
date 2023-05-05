@@ -17,6 +17,7 @@
     <script src="scripts/_menu.js" defer></script>
     <script src="scripts/_language.js" defer></script>
     <script src="scripts/_variant_font.js" defer></script>
+    <script src="scripts/_reveal.js" defer></script>
 
     <script type="text/javascript" src="data/questions.js"></script>
     <script type="text/javascript" src="scripts/question_handler.js"></script>
@@ -26,15 +27,15 @@
         <%- include("partials/nav_menu_partial.ejs", {path: "/start"}) %>
         <div id="question">
             <div id="card">
-                <h3 id="question-number" class="semi-bold"><!-- Rendered by the server--></h3>
-                <p id="question-text"><!-- Rendered by the server--></p>
+                <h3 id="question-number" class="semi-bold no-reveal" style="--delay: 100ms"><!-- Rendered by the server--></h3>
+                <p id="question-text" class="no-reveal" style="--delay: 200ms"><!-- Rendered by the server--></p>
                 <div class="button-container">
-                    <button id="aa" class="button" onclick="questionAnswered(0);"><%= __("questions-absolutely-agree") %></button>
-                    <button id="pa" class="button" onclick="questionAnswered(1);"><%= __("questions-partially-agree") %></button>
-                    <button id="ne" class="button" onclick="questionAnswered(2);"><%= __("questions-neutral") %></button>
-                    <button id="pd" class="button" onclick="questionAnswered(3);"><%= __("questions-partially-disagree") %></button>
-                    <button id="ad" class="button" onclick="questionAnswered(4);"><%= __("questions-absolutely-disagree") %></button>
-                    <button id="back" class="button" onclick="previousQuestion();"></button>
+                    <button id="aa" class="button no-reveal" onclick="questionAnswered(0);" style="--delay: 300ms"><%= __("questions-absolutely-agree") %></button>
+                    <button id="pa" class="button no-reveal" onclick="questionAnswered(1);" style="--delay: 400ms"><%= __("questions-partially-agree") %></button>
+                    <button id="ne" class="button no-reveal" onclick="questionAnswered(2);" style="--delay: 500ms"><%= __("questions-neutral") %></button>
+                    <button id="pd" class="button no-reveal" onclick="questionAnswered(3);" style="--delay: 600ms"><%= __("questions-partially-disagree") %></button>
+                    <button id="ad" class="button no-reveal" onclick="questionAnswered(4);" style="--delay: 700ms"><%= __("questions-absolutely-disagree") %></button>
+                    <button id="back" class="button no-reveal" onclick="previousQuestion();" style="--delay: 800ms"></button>
                 </div>
             </div>
         </div>

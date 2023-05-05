@@ -17,14 +17,16 @@
     <script src="scripts/_menu.js" defer></script>
     <script src="scripts/_language.js" defer></script>
     <script src="scripts/_variant_font.js" defer></script>
+    <script src="scripts/_reveal.js" defer></script>
 </head>
 <body>
     <div class="grid-container">
         <%- include("partials/nav_menu_partial.ejs", {path: "/results"}) %>
         <div id="content">
-            <h1 class="semi-bold"><%= __("results") %></h1>
+            <h1 class="semi-bold no-reveal" style="--delay: 100ms"><%= __("results") %></h1>
             <div id="panel">
                 <% let [scoresMap, renderOrder] = resultsHandler.generateScoresMap(resultsQuery); %>
+                <% let d = 100; %>
                 <% renderOrder.forEach(element => { %>
                     <% let percentagesArr =
                             resultsHandler.calculateScorePercentages(scoresMap[element[0]], scoresMap[element[1]]); %>
@@ -33,8 +35,10 @@
                     rightDimension: dimensions[element[1]],
                     leftPercent: percentagesArr[0],
                     neutralPercent: percentagesArr[1],
-                    rightPercent: percentagesArr[2]
+                    rightPercent: percentagesArr[2],
+                    delay: d
                     }) %>
+                    <% d = d + 100; %>
                 <% }); %>
             </div>
         </div>

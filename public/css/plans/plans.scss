@@ -44,9 +44,6 @@
   max-height: 600px;
 
   margin: 2.5svh 0 7.5svh 0;
-
-  background: url("/assets/plans/mobile/banner.svg") center no-repeat;
-  background-size: contain;
 }
 
 #content {
@@ -75,9 +72,6 @@
     grid-column: 1 / span 5;
     height: 70svh;
     margin: 5svh 0 15svh 0;
-
-    background-image: url("/assets/plans/desktop/banner.svg");
-    background-size: 70%;
   }
 
   footer {

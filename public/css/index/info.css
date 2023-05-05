@@ -16,7 +16,9 @@
   align-items: center;
   width: 100%;
   cursor: pointer;
-  transition: scale 500ms ease-in-out;
+  transform: scale(1);
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 #info .accordion-item .accordion-title .arrow {
   margin-top: 0;
@@ -26,14 +28,19 @@
   font-size: var(--fs-body);
 }
 #info .accordion-item .accordion-title:hover {
-  scale: 1.01;
+  transform: scale(1.01);
 }
 #info .accordion-item .accordion-text {
   overflow: clip;
   font-size: var(--fs-body);
   height: 0;
   cursor: default;
-  transition: height 300ms ease-in-out;
+  transform: scaleY(0%) translateY(-50%);
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+#info .accordion-item .accordion-expanded {
+  transform: scaleY(100%) translateY(0%);
 }
 
 /*# sourceMappingURL=info.css.map */
