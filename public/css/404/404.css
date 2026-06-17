@@ -36,15 +36,22 @@ body button {
     justify-content: center;
     flex-direction: row;
     text-align: left;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100svh;
     padding: 0;
     gap: var(--fs-404);
   }
   body #visual {
-    width: auto;
+    width: 50%;
     height: 30svh;
     margin: 0;
   }
-  body h3 {
+  body #content {
+    width: 40%;
+  }
+  body #content h3 {
     font-size: var(--fs-primary);
   }
 }

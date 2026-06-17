@@ -47,18 +47,28 @@ body {
     flex-direction: row;
     text-align: left;
 
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100svh;
+
     padding: 0;
     gap: var(--fs-404);
 
     #visual {
-      width: auto;
+      width: 50%;
       height: 30svh;
 
       margin: 0;
     }
 
-    h3 {
-      font-size: var(--fs-primary);
+    #content {
+      width: 40%;
+
+      h3 {
+        font-size: var(--fs-primary);
+      }
     }
+
   }
 }
