@@ -51,8 +51,5 @@ function calculateWidth(percent) {
   return `${percent}%`
 }
 
-module.exports = {
-    generateScoresMap,
-    calculateScorePercentages,
-    calculateWidth
-}
+// generateScoresMap, calculateScorePercentages, calculateWidth are browser globals.
+// module.exports removed for static/browser use.

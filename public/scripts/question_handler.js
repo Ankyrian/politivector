@@ -10,18 +10,22 @@ let quizEnded = false;
 let questions = completeQuestions;
 let test = 'complete';
 
-function questionPageInit(questionsJSON) {
-    questionsText = JSON.parse(questionsJSON);
-
+function questionPageInit() {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('test') === 'basic') {
         test = 'basic';
         questions = basicQuestions;
     }
 
-    randomizedQuestions = shuffle(questions);
-    nextQuestion();
-    backButtonSet();
+    const locale = window.__locale || localStorage.getItem('locale') || 'en';
+    fetch('data/questions_text_' + locale + '.json')
+        .then(r => r.json())
+        .then(data => {
+            questionsText = data;
+            randomizedQuestions = shuffle(questions);
+            nextQuestion();
+            backButtonSet();
+        });
 }
 
 function questionAnswered(choice) {
@@ -75,11 +79,7 @@ function addScores(dimensionId, scoreArr) {
 }
 
 function postTestData() {
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST", "record-test-data");
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.send(JSON.stringify(dimensionScores));
+    // Data collection removed — static site has no backend.
 }
 
 function initializesResults() {
@@ -88,17 +88,22 @@ function initializesResults() {
 
     quizEnded = true;
 
-    postTestData();
+    // postTestData() removed
 
-    let generatedUrl = `/results?0=${dimensionScores[0][0]},${dimensionScores[0][1]}`;
+    let generatedUrl = `results.html?0=${dimensionScores[0][0]},${dimensionScores[0][1]}`;
     for(let i = 1; i < dimensionScores.length; i++) {
         generatedUrl += `&${i}=${dimensionScores[i][0]},${dimensionScores[i][1]}`
     }
     generatedUrl += `&test=${test}`;
-    generatedUrl += `&lang=${document.querySelector('#language-selector').getAttribute('data-locale')}`;
+    generatedUrl += `&lang=${window.__locale || localStorage.getItem('locale') || 'en'}`;
 
     location.href = generatedUrl;
 }
+
+// ...existing code...
+
+// Auto-start when page is ready
+document.addEventListener('DOMContentLoaded', questionPageInit);
 
 function previousQuestion() {
     if(currentIndex >= 1) {

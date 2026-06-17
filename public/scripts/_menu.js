@@ -1,8 +1,23 @@
 (function () {
     const logo = document.querySelector('#logo-container');
     logo.addEventListener('click', () => {
-        window.location.href = '/';
+        window.location.href = 'index.html';
     });
+
+    // Fetch and inject the logo SVG inline so CSS can target #rim for the hover animation
+    // and CSS custom properties (fill="var(--clr-text-primary)") resolve correctly.
+    fetch('assets/navigation/logo.svg')
+        .then(r => r.text())
+        .then(svgText => {
+            const tmp = document.createElement('div');
+            tmp.innerHTML = svgText.trim();
+            const svg = tmp.querySelector('svg');
+            if (svg) {
+                // Insert before the type-logo <p>
+                logo.insertBefore(svg, logo.firstChild);
+            }
+        })
+        .catch(() => { /* logo silently missing – non-critical */ });
 
     const menuIcon = document.querySelector('#menu-icon');
     const menu = document.querySelector('#menu');
