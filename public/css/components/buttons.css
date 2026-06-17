@@ -36,7 +36,7 @@
 }
 .primary::after {
   content: "";
-  background-image: url("/assets/arrows/right.svg");
+  background-image: url("../../assets/arrows/right.svg");
   background-size: var(--size-arrow) var(--size-arrow);
   height: var(--size-arrow);
   width: var(--size-arrow);
@@ -67,7 +67,7 @@
 }
 .secondary::after {
   content: "";
-  background-image: url("/assets/arrows/diagonal.svg");
+  background-image: url("../../assets/arrows/diagonal.svg");
   background-size: var(--size-arrow) var(--size-arrow);
   height: var(--size-arrow);
   width: var(--size-arrow);
@@ -132,7 +132,7 @@
 }
 #back::after {
   content: "";
-  background-image: url("/assets/arrows/left.svg");
+  background-image: url("../../assets/arrows/left.svg");
   background-size: var(--size-arrow) var(--size-arrow);
   height: var(--size-arrow);
   width: var(--size-arrow);
