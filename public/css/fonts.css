@@ -30,7 +30,7 @@
 }
 :root {
   /* Font rules */
-  --font-family: "Poppins", sans-serif;
+  --font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
   --fw-regular: 400;
   --fw-medium: 600;

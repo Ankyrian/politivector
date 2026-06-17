@@ -1,43 +1,43 @@
 @font-face {
   font-family: "Poppins";
   font-weight: 400;
-  src: url("/fonts/Poppins/Poppins-Regular.woff") format("woff"),
-  url("/fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+  src: url("../fonts/Poppins/Poppins-Regular.woff") format("woff"),
+  url("../fonts/Poppins/Poppins-Regular.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Poppins";
   font-weight: 600;
-  src: url("/fonts/Poppins/Poppins-Medium.woff") format("woff"),
-  url("/fonts/Poppins/Poppins-Medium.ttf") format("ttf");
+  src: url("../fonts/Poppins/Poppins-Medium.woff") format("woff"),
+  url("../fonts/Poppins/Poppins-Medium.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Poppins";
   font-weight: 800;
-  src: url("/fonts/Poppins/Poppins-SemiBold.woff") format("woff"),
-  url("/fonts/Poppins/Poppins-SemiBold.ttf") format("ttf");
+  src: url("../fonts/Poppins/Poppins-SemiBold.woff") format("woff"),
+  url("../fonts/Poppins/Poppins-SemiBold.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "MuseoModerno";
   font-weight: 400;
-  src: url("/fonts/MuseoModerno/MuseoModerno-Regular.woff2") format("woff2"),
-       url("/fonts/MuseoModerno/MuseoModerno-Regular.woff") format("woff");
+  src: url("../fonts/MuseoModerno/MuseoModerno-Regular.woff2") format("woff2"),
+       url("../fonts/MuseoModerno/MuseoModerno-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "MuseoModerno";
   font-weight: 600;
-  src: url("/fonts/MuseoModerno/MuseoModerno-Medium.woff2") format("woff2"),
-       url("/fonts/MuseoModerno/MuseoModerno-Medium.woff") format("woff");
+  src: url("../fonts/MuseoModerno/MuseoModerno-Medium.woff2") format("woff2"),
+       url("../fonts/MuseoModerno/MuseoModerno-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "MuseoModerno";
   font-weight: 800;
-  src: url("/fonts/MuseoModerno/MuseoModerno-SemiBold.woff2") format("woff2"),
-       url("/fonts/MuseoModerno/MuseoModerno-SemiBold.woff") format("woff");
+  src: url("../fonts/MuseoModerno/MuseoModerno-SemiBold.woff2") format("woff2"),
+       url("../fonts/MuseoModerno/MuseoModerno-SemiBold.woff") format("woff");
 }
 
 :root {

@@ -1,9 +1,9 @@
-@import "/css/components/buttons.css";
-@import "/css/components/footer.css";
-@import "/css/components/menu.css";
-@import "/css/components/nav.css";
+@import "../components/buttons.css";
+@import "../components/footer.css";
+@import "../components/menu.css";
+@import "../components/nav.css";
 
-@import "/css/questions/question.css";
+@import "./question.css";
 
 .grid-container {
   top: 0;
