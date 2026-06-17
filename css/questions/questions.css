@@ -2,7 +2,7 @@
 @import "../components/footer.css";
 @import "../components/menu.css";
 @import "../components/nav.css";
-@import "./content.css";
+@import "question.css";
 .grid-container {
   top: 0;
   margin-left: auto;
@@ -15,7 +15,7 @@
 
 #nav,
 #menu,
-#content {
+#question {
   grid-column: 1/span 5;
 }
 
@@ -32,10 +32,12 @@
   transition: height 300ms ease-in-out;
 }
 
-#content {
+#question {
   order: 2;
+  height: 80vh;
+  min-height: 200px;
+  max-height: 700px;
   margin-top: 2.5vh;
-  margin-bottom: auto;
 }
 
 @media screen and (min-width: 50em) {
@@ -50,8 +52,9 @@
     max-height: 75px;
     transition: none;
   }
-  #content {
+  #question {
     grid-column: 1/span 5;
+    height: 70vh;
     margin-top: 7.5vh;
     margin-bottom: 7.5vh;
   }
@@ -60,4 +63,4 @@
   }
 }
 
-/*# sourceMappingURL=results.css.map */
+/*# sourceMappingURL=questions.css.map */

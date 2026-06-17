@@ -3,11 +3,13 @@
 @import "../components/menu.css";
 @import "../components/nav.css";
 @import "../components/select.css";
-@import "./banner.css";
-@import "./features.css";
-@import "./goals.css";
-@import "./illustrations.css";
-@import "./info.css";
+
+@import "banner.css";
+@import "features.css";
+@import "goals.css";
+@import "illustrations.css";
+@import "info.css";
+
 .grid-container {
   top: 0;
   margin-left: auto;
@@ -26,7 +28,7 @@
 #info,
 #visual-info,
 #goals {
-  grid-column: 1/span 5;
+  grid-column: 1 / span 5;
 }
 
 #nav {
@@ -39,6 +41,7 @@
 #menu {
   overflow: clip;
   order: 1;
+
   transition: height 300ms ease-in-out;
 }
 
@@ -89,51 +92,58 @@ footer {
 
 @media screen and (min-width: 50em) {
   #nav {
-    grid-column: 1/span 1;
+    grid-column: 1 / span 1;
     height: 10svh;
   }
+
   #menu {
-    grid-column: 2/span 4;
+    grid-column: 2 / span 4;
     height: 10svh;
     min-height: 50px;
     max-height: 75px;
+
     transition: none;
   }
+
   #banner {
-    grid-column: 1/span 3;
+    grid-column: 1 / span 3;
     order: 1;
     height: 90svh;
     padding: 12.5svh 0;
   }
+
   #hero {
-    grid-column: 4/span 2;
+    grid-column: 4 / span 2;
     order: 2;
     height: 90svh;
     padding-top: 7.5svh;
     padding-bottom: 12.5svh;
   }
+
   #visual-info {
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
     order: 4;
     margin-top: 15svh;
   }
+
   #info {
-    grid-column: 3/span 3;
+    grid-column: 3 / span 3;
     order: 5;
     margin-top: 15svh;
   }
+
   #goals {
-    grid-column: 1/span 3;
+    grid-column: 1 / span 3;
     margin-top: 10svh;
   }
+
   #visual-goals {
-    grid-column: 4/span 2;
+    grid-column: 4 / span 2;
     display: block;
     margin-top: 10svh;
   }
+
   footer {
     height: auto;
   }
 }
-
-/*# sourceMappingURL=index.css.map */

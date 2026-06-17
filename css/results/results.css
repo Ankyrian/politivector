@@ -2,8 +2,7 @@
 @import "../components/footer.css";
 @import "../components/menu.css";
 @import "../components/nav.css";
-@import "./banner.css";
-@import "./content.css";
+@import "content.css";
 .grid-container {
   top: 0;
   margin-left: auto;
@@ -16,14 +15,13 @@
 
 #nav,
 #menu,
-#banner,
 #content {
   grid-column: 1/span 5;
 }
 
 #nav {
   order: 0;
-  height: 10svh;
+  height: 10vh;
   min-height: 50px;
   max-height: 75px;
 }
@@ -34,40 +32,32 @@
   transition: height 300ms ease-in-out;
 }
 
-#banner {
-  order: 2;
-  height: 80svh;
-  min-height: 200px;
-  max-height: 600px;
-  margin: 2.5svh 0 7.5svh 0;
-}
-
 #content {
-  order: 3;
-  height: auto;
-  margin-bottom: 10svh;
+  order: 2;
+  margin-top: 2.5vh;
+  margin-bottom: auto;
 }
 
 @media screen and (min-width: 50em) {
   #nav {
     grid-column: 1/span 1;
-    height: 10svh;
+    height: 10vh;
   }
   #menu {
     grid-column: 2/span 4;
-    height: 10svh;
+    height: 10vh;
     min-height: 50px;
     max-height: 75px;
     transition: none;
   }
-  #banner {
+  #content {
     grid-column: 1/span 5;
-    height: 70svh;
-    margin: 5svh 0 15svh 0;
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
   }
   footer {
     height: auto;
   }
 }
 
-/*# sourceMappingURL=plans.css.map */
+/*# sourceMappingURL=results.css.map */
